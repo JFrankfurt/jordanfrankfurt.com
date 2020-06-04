@@ -4,7 +4,9 @@
   "description": "personal website",
   "main": "",
   "scripts": {
-    "dev": "npx next"
+    "build": "next build",
+    "start": "next start",
+    "dev": "next"
   },
   "repository": {
     "type": "git",

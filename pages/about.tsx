@@ -1,33 +1,43 @@
 import { css } from '@emotion/core'
 import Layout from 'components/Layout'
-import { theme } from 'styles/theme'
 
 const rootCss = css`
-  display: flex;
-  flex-direction: column;
-
-  @media screen and (min-width: ${theme.width.tablet}) {
-    flex-direction: row;
-  }
-`
-
-const sectionCss = css`
-  margin: 1em;
-`
-
-const titleCss = css`
-  margin: 0 auto;
+  min-width: 360px;
+  width: 45vw;
 `
 
 export default () => (
   <Layout>
     <div css={rootCss}>
-      <section css={sectionCss}>
-        <h1 css={titleCss}>About this blog</h1>
-      </section>
-      <section css={sectionCss}>
-        <h1 css={titleCss}>About me</h1>
-      </section>
+      <h1>About Jordan Frankfurt</h1>
+      <p>
+        I'm a software engineer. I started writing code around 2014. A big
+        thanks to&nbsp;
+        <a
+          href="https://twitter.com/pearoftheweek"
+          target="_blank"
+          rel="noopener noreferrer">
+          Trevor
+        </a>
+        &nbsp;for making that happen.
+      </p>
+      <p>
+        I'm married to&nbsp;
+        <a
+          href="https://laurenfrankfurtyoga.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          Lauren
+        </a>
+        . I fight people (
+        <a
+          href="https://www.youtube.com/watch?v=4qdaVwwz1bw"
+          target="_blank"
+          rel="noopener noreferrer">
+          poorly
+        </a>
+        ) as often as I can.
+      </p>
     </div>
   </Layout>
 )

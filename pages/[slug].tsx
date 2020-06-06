@@ -27,7 +27,6 @@ export default Post
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { slug } = params as { slug: string }
   const post = await import(`posts/${slug}.md`).catch(console.error)
-  console.log(post, slug)
   return { props: { ...post.default } }
 }
 

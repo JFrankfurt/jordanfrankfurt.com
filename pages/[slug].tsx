@@ -39,13 +39,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
     .keys()
     .map((relativePath: string) => relativePath.substring(2))
 
-  const posts = await Promise.all(
+  const posts = (await Promise.all(
     markdownFiles.map(async (path: string) => {
       const markdown = await import(`posts/${path}`)
       return { ...markdown, slug: path.substring(0, path.length - 3) } // remove ".md" from path
     })
-  )
-  // @ts-ignore
+  )) as { html: string; slug: string }[]
   const paths = posts.map(({ slug }) => ({ params: { slug } }))
   return {
     paths,

@@ -54,10 +54,14 @@ const GLOBAL_STYLES = css`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 0 0.25em;
+    max-width: 500px;
     width: 100%;
-    max-width: ${theme.width.mobile};
     @media screen and (min-width: ${theme.width.tablet}) {
-      max-width: 600px;
+      max-width: 650px;
+    }
+    @media screen and (min-width: ${theme.width.desktop}) {
+      max-width: 800px;
     }
   }
 
@@ -98,9 +102,15 @@ const rootCss = css`
   align-items: center;
   display: flex;
   font-family: sans-serif;
-  font-size: 4vmin;
+  font-size: 3.8vmin;
   flex-direction: column;
   justify-content: center;
+  @media screen and (min-width: ${theme.width.mobile}) {
+    font-size: 3.5vmin;
+  }
+  @media screen and (min-width: ${theme.width.tablet}) {
+    font-size: 2.3vmin;
+  }
   @media screen and (min-width: ${theme.width.desktopSmall}) {
     font-size: 2.1vmin;
   }

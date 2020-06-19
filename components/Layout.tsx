@@ -39,7 +39,7 @@ const GLOBAL_STYLES = css`
   h3 {
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.2em;
     margin: 0.2em 0;
     padding: 0;
     padding-top: 0.5em;
@@ -83,6 +83,10 @@ const GLOBAL_STYLES = css`
     word-spacing: 0.05em;
   }
 
+  p {
+    line-height: 1.55em;
+  }
+
   table {
     border-collapse: collapse;
     margin: 0 auto;
@@ -112,7 +116,7 @@ const rootCss = css`
     font-size: 2.3vmin;
   }
   @media screen and (min-width: ${theme.width.desktopSmall}) {
-    font-size: 2.1vmin;
+    font-size: 2vmin;
   }
 `
 const navCss = css`

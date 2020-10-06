@@ -145,11 +145,11 @@ interface props {
   title?: string
 }
 const defaultDescription = 'The blog and personal website of Jordan Frankfurt'
-const defaultTitle = '👺'
+const baseTitle = '👺'
 const Layout: FunctionComponent<props> = ({
   children,
   description = defaultDescription,
-  title = defaultTitle,
+  title,
 }) => (
   <>
     <Head>
@@ -158,7 +158,10 @@ const Layout: FunctionComponent<props> = ({
       <meta name="description" content={description} />
       <meta name="robots" content="index, follow" />
 
-      <meta property="og:title" content={title} />
+      <meta
+        property="og:title"
+        content={`${baseTitle} ${title ? title : ''}`}
+      />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:url" content="https://jordanfrankfurt.com" />
@@ -166,7 +169,10 @@ const Layout: FunctionComponent<props> = ({
       <meta property="og:image:height" content="2048" />
       <meta property="og:image:width" content="1597" />
 
-      <meta property="twitter:title" content={title} />
+      <meta
+        property="twitter:title"
+        content={`${baseTitle} ${title ? title : ''}`}
+      />
       <meta property="twitter:image" content="/me.jpg" />
       <meta property="twitter:url" content="https://jordanfrankfurt.com" />
       <meta property="twitter:card" content="summary" />

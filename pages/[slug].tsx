@@ -12,7 +12,7 @@ const Post: NextPage<props> = ({ attributes, html }) => {
 
   const DT = DateTime.fromISO(attributes.date)
   return (
-    <Layout>
+    <Layout title={attributes.title}>
       <main>
         <h1>{attributes.title}</h1>
         <sub>{DT.toLocaleString(DateTime.DATE_MED)}</sub>

@@ -140,18 +140,25 @@ const titleCss = css`
   }
 `
 
-const Layout: FunctionComponent = ({ children }) => (
+interface props {
+  description?: string
+  title?: string
+}
+const defaultDescription = 'The blog and personal website of Jordan Frankfurt'
+const defaultTitle = '👺'
+const Layout: FunctionComponent<props> = ({
+  children,
+  description = defaultDescription,
+  title = defaultTitle,
+}) => (
   <>
     <Head>
       <title>Jordan Frankfurt</title>
       <meta name="theme-color" content={theme.palette.black} />
-      <meta
-        name="description"
-        content="The blog and personal website of Jordan Frankfurt"
-      />
+      <meta name="description" content={description} />
       <meta name="robots" content="index, follow" />
 
-      <meta property="og:title" content="👺" />
+      <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:url" content="https://jordanfrankfurt.com" />
@@ -159,14 +166,11 @@ const Layout: FunctionComponent = ({ children }) => (
       <meta property="og:image:height" content="2048" />
       <meta property="og:image:width" content="1597" />
 
-      <meta property="twitter:title" content="👺" />
+      <meta property="twitter:title" content={title} />
       <meta property="twitter:image" content="/me.jpg" />
       <meta property="twitter:url" content="https://jordanfrankfurt.com" />
       <meta property="twitter:card" content="summary" />
-      <meta
-        property="twitter:description"
-        content="The blog and personal website of Jordan Frankfurt"
-      />
+      <meta property="twitter:description" content={description} />
 
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
       <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />

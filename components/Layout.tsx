@@ -33,7 +33,7 @@ const GLOBAL_STYLES = css`
     border-bottom: 1px solid #ccc;
     font-family: TiemposText, Georgia, serif;
     font-size: 2em;
-    margin: 0.3em 0;
+    margin: 1em 0 0.3em 0;
   }
 
   h3 {

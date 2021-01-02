@@ -1,3 +1,7 @@
 export const resolvers = {
-  Query: {},
+  Query: {
+    async submissions() {
+      return []
+    },
+  },
 }

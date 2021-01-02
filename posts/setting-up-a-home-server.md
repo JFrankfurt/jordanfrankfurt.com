@@ -5,7 +5,7 @@ date: 2021-01-01T16:25:00-05:00
 
 For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing "philanthropic" donations to decentralized software networks/protocols I support.
 
-About a month ago I finally took the leap and got started. Thanks to Greg Taschuk and Nicholas Bourikas I've got an old laptop I used in college running Arch next to our router now. In fact, I'm writing this post with vim ssh'd into the thing from my couch.
+About a month ago I finally took the leap and got started. (Thanks to Greg Taschuk and Nicholas Bourikas for the inspiration to finally go for it.) I've got an old laptop I used in college running Arch next to our router now. In fact, I'm writing this post with vim ssh'd into the thing from my couch.
 
 So far I've absolutely loved it. It feels like the learning:effort ratio is just insanely high. Every time I want to figure out how to accomplish anything, the knowledge for how to accomplish it is readily available at any degree of depth. I've learned so much about linux in the past month. My first task was getting the Arch install completed. That was probably the most challenging thing to accomplish. A lot of the steps involved had to do with physical aspects of the computer that I've not worked with in the past.
 

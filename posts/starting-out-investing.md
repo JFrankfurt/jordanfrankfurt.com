@@ -5,7 +5,7 @@ date: 2021-04-15T01:36:00-05:00
 
 Occasionally people I care about ask me something like "Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?" At first the question made me a little uncomfortable because:
 1. I don't have a ton of money
-1. I haven't made a ton of money investing said money
+1. I haven't made insane returns investing what money I do have
 1. I don't want to be responsible for people I care about losing any portion of their savings
 I've started to get over all three of those frustrations only somewhat recently. It's more complicated than "I just got over it", but basically I just accepted that:
 1. I care/read more about markets and personal finance than any normal person should
@@ -15,6 +15,7 @@ I've started to get over all three of those frustrations only somewhat recently.
 So, if you're reading this, it's probably because you asked me something closeish to the question above. 👆
 
 Here's Jordan's **420xXxBlazeIt_Investing_ProTipsxXx69**
+
 Investing is about balancing these priorities:
 - maximizing returns over time
 - minimizing opportunity cost
@@ -42,7 +43,7 @@ Opportunity cost is the value that you miss out on by choosing an option from a 
 
 Practically this means minimizing your cash on hand, minimizing low-return asset exposure (government bonds), and allocating the majority of your capital to the few best opportunities you are aware of.
 
-caveat - Don't put all your money in one investment. Aim for maybe 12 investments that are independently high quality and are preferably uncorrellated. (Don't invest in two insurance companies, since they're pretty similar.)
+A caveat - Don't put all your money in one investment. Aim for maybe 12 investments that are independently high quality and are preferably uncorrellated. (Don't invest in two insurance companies, since they're pretty similar.)
 
 ## Preserving Liquidity
 
@@ -66,20 +67,21 @@ Unfortunately, the financial system is configured such that you're effectively r
 
 The cash back credit cards are just discounts on everything you spend. Don't ever let your balance accumulate. Only ever spend money you have.
 
-The Wealthfront account is, in my opinion, the core of my portfolio and the most unique thing about it. I chose to use this account in conjunction with their Portfolio Line of Credit product *in lieu of an emergency fund*. Using a low-risk investment account as an emergency fund exposes you to high opportunity cost because you're trying to ensure that you'll always have money if the market dips. On top of this, the IRS takes a cut when you sell a position that gained in value. I solve this by saving a substantially greater amount in a high-risk portfolio, then using that portfolio as collateral for a **very** cheap (3.65% at time of writing) line of credit from wealthfront. You just need to click two or three buttons, and they'll ACH deposit up to 30% of your account value into your bank account immediately. This means you don't have to sell (pay taxes) to access liquidity, and it solves the opportunity cost problem by investing your money in high quality equity ETFs.
+The Wealthfront account is the most unique aspect of my portfolio and the part I'm the most proud of. I chose to use this account in conjunction with their Portfolio Line of Credit product *in lieu of an emergency fund*. Using a low-risk investment account as an emergency fund exposes you to high opportunity cost because you're trying to ensure that you'll always have money if the market dips. On top of this, the IRS takes a cut when you sell a position that gained in value. I solve this by saving a substantially greater amount in a high-risk portfolio, then using that portfolio as collateral for a **very** cheap (3.65% at time of writing) line of credit from wealthfront. You just need to click two or three buttons, and they'll ACH deposit up to 30% of your account value into your bank account immediately. This means you don't have to sell (pay taxes) to access liquidity, and it solves the opportunity cost problem by investing your money in high quality equity ETFs. 
+
+The 💰 from the PLoC can be used for more than just the emergency fund value, too. I've used it in the past for fixed-return low-risk investments that yield more than the interest rate Wealthfront charges me. This is great, since it basically prints me free money.
 
 I don't purchase individual stocks. There are many very smart very hard-working people who dedicate their lives to pricing assets, and I don't have any reason to think that my knowledge of a stock's correct price is better than theirs. 
 
 The random retirement funds are all in high-risk ETFs. They're uninteresting. If you have the chance, put your money in them. If your company matches deposits, get the maximum match you can.
 
 Crypto is generally where I feel the most concerned about leading people astray. Some tips:
-- don't buy something you don't understand
-- if you aren't managing your private keys off an exchange, you don't truly own your crypto
-- people **will** try to scam you and steal your money
+- Don't buy something you don't understand.
+- If you aren't managing your private keys off an exchange, you don't truly own your crypto.
+- People **will** try to scam you. 
 
-Here's what my portfolio looks like right now:
+Here's roughly what my portfolio looks like right now:
 ### Compound
-- supply BAT
 - supply UNI
 - supply COMP
 - borrow ETH (25% of supply value)
@@ -87,7 +89,6 @@ net APY roughly 2%
 
 ### Uniswap Liquidity Provision
 - DPI:WETH
-- COMP:WETH
 - ETH2x-FLI:WETH
 
 ### PoolTogether

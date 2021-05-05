@@ -7,7 +7,9 @@ Occasionally people I care about ask me something like "Hey, can you help me und
 1. I don't have a ton of money
 1. I haven't made insane returns investing what money I do have
 1. I don't want to be responsible for people I care about losing any portion of their savings
+
 I've started to get over all three of those frustrations only somewhat recently. It's more complicated than "I just got over it", but basically I just accepted that:
+
 1. I care/read more about markets and personal finance than any normal person should
 1. I likely have a *far* better understanding of crypto than anyone else they'll ask about the topic
 1. If it hurts my relationships, that's their problem. I'll disclose risks responsibly and expect adults to behave as such.

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "personal website",
   "main": "",
+  "engines": {
+    "node": "^16.0.0"
+  },
   "scripts": {
     "build": "next build",
     "start": "next start",

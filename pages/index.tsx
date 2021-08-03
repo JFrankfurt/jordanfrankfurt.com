@@ -5,6 +5,8 @@ import { NextPage } from 'next'
 import Link from 'next/link'
 import React from 'react'
 import { theme } from 'styles/theme'
+import { runBuildJobs } from 'utils'
+import { getBlogPostsData, Post } from 'utils/blog'
 
 const rootCss = css``
 const titleLink = css`
@@ -17,31 +19,6 @@ const postTitleCss = css`
     color: ${theme.palette.linkHoverRed};
   }
 `
-const importPosts = async (): Promise<Post[]> => {
-  // https://webpack.js.org/guides/dependency-management/#requirecontext
-  const markdownFiles = require
-    // @ts-ignore
-    .context('posts', false, /\.md$/)
-    .keys()
-    .filter((path: string) => path.substring(0, 1) !== '.')
-
-  return Promise.all(
-    markdownFiles.map(async (path: string) => {
-      const markdown = await import(`../${path}`)
-      // .substring removes ".md" from path
-      let slug = path.substring(0, path.length - 3)
-      // .slice removes posts prefix
-      slug = slug.slice('posts'.length)
-      return { ...markdown, slug }
-    })
-  )
-}
-
-interface Post {
-  attributes: Record<string, any>
-  html: string
-  slug: string
-}
 
 interface props {
   posts: Post[]
@@ -78,6 +55,7 @@ const Index: NextPage<props> = ({ posts }) => (
 export default Index
 
 export const getStaticProps = async () => {
-  let posts = await importPosts()
+  let posts = await getBlogPostsData()
+  await runBuildJobs()
   return { props: { posts } }
 }

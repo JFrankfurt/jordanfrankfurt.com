@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Jordan Frankfurt's blog</title>
+        <link>http://localhost:3000</link>
+        <description></description>
+        <lastBuildDate>Tue, 03 Aug 2021 15:56:47 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Jordan Frankfurt's blog</title>
+            <url>http://localhost:3000/me.png</url>
+            <link>http://localhost:3000</link>
+        </image>
+        <copyright>All rights reserved 2021, Jordan Frankfurt</copyright>
+        <item>
+            <title><![CDATA[investment strategy]]></title>
+            <link>http://localhost:3000/investment-strategy</link>
+            <guid>http://localhost:3000/investment-strategy</guid>
+            <pubDate>Thu, 15 Apr 2021 06:36:00 GMT</pubDate>
+            <description><![CDATA[<p>Occasionally people I care about ask me something like &quot;Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?&quot; At first the question made me a little uncomfortable because:</p>
+<ol>
+<li>I don't have a ton of money</li>
+<li>I haven't made insane returns investing what money I do have</li>
+<li>I don't want to be responsible for people I care about losing any portion of their savings</li>
+</ol>
+<p>I've started to get over all three of those frustrations only somewhat recently. It's more complicated than &quot;I just got over it&quot;, but basically I just accepted that:</p>
+<ol>
+<li>I care/read more about markets and personal finance than any normal person should</li>
+<li>I likely have a <em>far</em> better understanding of crypto than anyone else they'll ask about the topic</li>
+<li>If it hurts my relationships, that's their problem. I'll disclose risks responsibly and expect adults to behave as such.</li>
+</ol>
+<p>So, if you're reading this, it's probably because you asked me something closeish to the question above. 👆</p>
+<p>Here's Jordan's <strong>420xXxBlazeIt_Investing_ProTipsxXx69</strong></p>
+<p>Investing is about balancing these priorities:</p>
+<ul>
+<li>maximizing returns over time</li>
+<li>minimizing opportunity cost</li>
+<li>preserving liquidity</li>
+</ul>
+<h2>Maximizing Returns Over Time</h2>
+<p>You've probably heard the term &quot;compounding interest&quot; at some point in your reading about personal finance. (If so, you may have come away from the topic underwhelmed, since typical examples are unrealistic have to do with bank interest.) Basically, the more money you make, the faster you make money in the future. Here's an example: If an investment opportunity could yield you a 10% annual return on $5,000 and it (or something like it) is available to you for multiple years, you'll make more money in each subsequent year than you did in year 1.</p>
+<p>Year 1 - $5,000 * 10% = $5,500 (Δ 500)</p>
+<p>Year 2 - $5,500 * 10% = $6,050 (Δ 550)</p>
+<p>Year 3 - $6,050 * 10% = $6,655 (Δ 605)</p>
+<p>Year 4 - $6,655 * 10% = $7,321 (Δ 666)</p>
+<p>Year 5 - $7,321 * 10% = $8,053 (Δ 732)</p>
+<p>Your goal is to maximize Δ in each period. The sooner you get higher Δ values, the sooner you'll get <em>more</em> higher Δ values. That means faster financial security for you and the people you care for.</p>
+<h2>Minimizing Opportunity Cost</h2>
+<p>Opportunity cost is the value that you miss out on by choosing an option from a set that precludes selection of the other options in that set. (i.e., You're presented with a pie and a cake. You can eat one, but the other will burn up once you pick. If you pick pie, your opportunity cost is cake.) When investing, you should select options that minimize opportunity cost. Evaluate all your possible investment opportunities and select the ones that have the best possible return. Disregard (or minimize) investments that have small returns.</p>
+<p>Practically this means minimizing your cash on hand, minimizing low-return asset exposure (government bonds), and allocating the majority of your capital to the few best opportunities you are aware of.</p>
+<p>A caveat - Don't put all your money in one investment. Aim for maybe 12 investments that are independently high quality and are preferably uncorrellated. (Don't invest in two insurance companies, since they're pretty similar.)</p>
+<h2>Preserving Liquidity</h2>
+<p>At any moment, you might encounter a surprise expense. You might find out you're having a kid, or need to relocate suddenly. Don't put your self in a situation where a sudden large expense will be difficult to manage because you've got to wait two weeks for your brokerage and bank to figure out how to get your money back to you.</p>
+<p><code>/fin 420xXxBlazeIt_Investing_ProTipsxXx69</code></p>
+<p>This is my <em>general</em> framework for evaluating investment opportunities. Now I'll tell you about how I accomplish this specifically, and what my portfolio generally looks like today.</p>
+<p><a href="https://i.imgur.com/qaXYcwz.jpg">First, I internalized this flowchart.</a></p>
+<p>Then, I built this:</p>
+<ul>
+<li>Interest bearing checking account (1.75 months expenses)</li>
+<li>5% cash back credit card for Amazon and Whole Foods</li>
+<li>2% cash back credit card for all other spending</li>
+<li>20x monthly expenses invested in a standard (non-tax advantaged) Wealthfront account spread across their highest risk-score's index fund allocation.</li>
+<li>random accumulated retirement accounts from employers/IRAs, etc.</li>
+<li>crypto</li>
+</ul>
+<p>Unfortunately, the financial system is configured such that you're effectively required to carry a USD cash balance. This is bad from an investments perspective, because the opportunity cost of cash is quite high. The stategy here is to mitigate the damage by getting at least <strong>something</strong> for your money. I've heard good things about <a href="https://www.ally.com/bank/view-rates/">Ally</a>. Unfortunately, I don't recommend using the bank I currently have.</p>
+<p>The cash back credit cards are just discounts on everything you spend. Don't ever let your balance accumulate. Only ever spend money you have.</p>
+<p>The Wealthfront account is the most unique aspect of my portfolio and the part I'm the most proud of. I chose to use this account in conjunction with their Portfolio Line of Credit product <em>in lieu of an emergency fund</em>. Using a low-risk investment account as an emergency fund exposes you to high opportunity cost because you're trying to ensure that you'll always have money if the market dips. On top of this, the IRS takes a cut when you sell a position that gained in value. I solve this by saving a substantially greater amount in a high-risk portfolio, then using that portfolio as collateral for a <strong>very</strong> cheap (3.65% at time of writing) line of credit from wealthfront. You just need to click two or three buttons, and they'll ACH deposit up to 30% of your account value into your bank account immediately. This means you don't have to sell (pay taxes) to access liquidity, and it solves the opportunity cost problem by investing your money in high quality equity ETFs.</p>
+<p>The 💰 from the PLoC can be used for more than just the emergency fund value, too. I've used it in the past for fixed-return low-risk investments that yield more than the interest rate Wealthfront charges me. This is great, since it basically prints me free money.</p>
+<p>I don't purchase individual stocks. There are many very smart very hard-working people who dedicate their lives to pricing assets, and I don't have any reason to think that my knowledge of a stock's correct price is better than theirs.</p>
+<p>The random retirement funds are all in high-risk ETFs. They're uninteresting. If you have the chance, put your money in them. If your company matches deposits, get the maximum match you can.</p>
+<p>Crypto is generally where I feel the most concerned about leading people astray. Some tips:</p>
+<ul>
+<li>Don't buy something you don't understand.</li>
+<li>If you aren't managing your private keys off an exchange, you don't truly own your crypto.</li>
+<li>People <strong>will</strong> try to scam you.</li>
+</ul>
+<p>Here's roughly what my portfolio looks like right now:</p>
+<h3>Compound</h3>
+<ul>
+<li>supply UNI</li>
+<li>supply COMP</li>
+<li>borrow ETH (25% of supply value)
+net APY roughly 2%</li>
+</ul>
+<h3>Uniswap Liquidity Provision</h3>
+<ul>
+<li>DPI:WETH</li>
+<li>ETH2x-FLI:WETH</li>
+</ul>
+<h3>PoolTogether</h3>
+<ul>
+<li>UNI pool</li>
+<li>USDC pool</li>
+</ul>
+<h3>Yield Farming</h3>
+<ul>
+<li>COMP</li>
+<li>INDEX</li>
+<li>POOL</li>
+</ul>
+<h3>Holding</h3>
+<ul>
+<li>ETH</li>
+<li>INDEX</li>
+<li>LINK</li>
+<li>ATOM</li>
+<li>BTC</li>
+</ul>
+<p>Explaining the reasoning behind each of these investments is outside the scope of what I'm hoping to accomplish here. If you're interested, get in touch and maybe I'll use our convesation about one of these (or something you're interested in) to write another post explaining my thoughts on a particular crypto investment option. It's not my intent to encourage you to buy anything listed here, but I do think that you'll learn fun/interesting things if you spend time reading about these projects.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>Occasionally people I care about ask me something like &quot;Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?&quot; At first the question made me a little uncomfortable because:</p>
+<ol>
+<li>I don't have a ton of money</li>
+<li>I haven't made insane returns investing what money I do have</li>
+<li>I don't want to be responsible for people I care about losing any portion of their savings</li>
+</ol>
+<p>I've started to get over all three of those frustrations only somewhat recently. It's more complicated than &quot;I just got over it&quot;, but basically I just accepted that:</p>
+<ol>
+<li>I care/read more about markets and personal finance than any normal person should</li>
+<li>I likely have a <em>far</em> better understanding of crypto than anyone else they'll ask about the topic</li>
+<li>If it hurts my relationships, that's their problem. I'll disclose risks responsibly and expect adults to behave as such.</li>
+</ol>
+<p>So, if you're reading this, it's probably because you asked me something closeish to the question above. 👆</p>
+<p>Here's Jordan's <strong>420xXxBlazeIt_Investing_ProTipsxXx69</strong></p>
+<p>Investing is about balancing these priorities:</p>
+<ul>
+<li>maximizing returns over time</li>
+<li>minimizing opportunity cost</li>
+<li>preserving liquidity</li>
+</ul>
+<h2>Maximizing Returns Over Time</h2>
+<p>You've probably heard the term &quot;compounding interest&quot; at some point in your reading about personal finance. (If so, you may have come away from the topic underwhelmed, since typical examples are unrealistic have to do with bank interest.) Basically, the more money you make, the faster you make money in the future. Here's an example: If an investment opportunity could yield you a 10% annual return on $5,000 and it (or something like it) is available to you for multiple years, you'll make more money in each subsequent year than you did in year 1.</p>
+<p>Year 1 - $5,000 * 10% = $5,500 (Δ 500)</p>
+<p>Year 2 - $5,500 * 10% = $6,050 (Δ 550)</p>
+<p>Year 3 - $6,050 * 10% = $6,655 (Δ 605)</p>
+<p>Year 4 - $6,655 * 10% = $7,321 (Δ 666)</p>
+<p>Year 5 - $7,321 * 10% = $8,053 (Δ 732)</p>
+<p>Your goal is to maximize Δ in each period. The sooner you get higher Δ values, the sooner you'll get <em>more</em> higher Δ values. That means faster financial security for you and the people you care for.</p>
+<h2>Minimizing Opportunity Cost</h2>
+<p>Opportunity cost is the value that you miss out on by choosing an option from a set that precludes selection of the other options in that set. (i.e., You're presented with a pie and a cake. You can eat one, but the other will burn up once you pick. If you pick pie, your opportunity cost is cake.) When investing, you should select options that minimize opportunity cost. Evaluate all your possible investment opportunities and select the ones that have the best possible return. Disregard (or minimize) investments that have small returns.</p>
+<p>Practically this means minimizing your cash on hand, minimizing low-return asset exposure (government bonds), and allocating the majority of your capital to the few best opportunities you are aware of.</p>
+<p>A caveat - Don't put all your money in one investment. Aim for maybe 12 investments that are independently high quality and are preferably uncorrellated. (Don't invest in two insurance companies, since they're pretty similar.)</p>
+<h2>Preserving Liquidity</h2>
+<p>At any moment, you might encounter a surprise expense. You might find out you're having a kid, or need to relocate suddenly. Don't put your self in a situation where a sudden large expense will be difficult to manage because you've got to wait two weeks for your brokerage and bank to figure out how to get your money back to you.</p>
+<p><code>/fin 420xXxBlazeIt_Investing_ProTipsxXx69</code></p>
+<p>This is my <em>general</em> framework for evaluating investment opportunities. Now I'll tell you about how I accomplish this specifically, and what my portfolio generally looks like today.</p>
+<p><a href="https://i.imgur.com/qaXYcwz.jpg">First, I internalized this flowchart.</a></p>
+<p>Then, I built this:</p>
+<ul>
+<li>Interest bearing checking account (1.75 months expenses)</li>
+<li>5% cash back credit card for Amazon and Whole Foods</li>
+<li>2% cash back credit card for all other spending</li>
+<li>20x monthly expenses invested in a standard (non-tax advantaged) Wealthfront account spread across their highest risk-score's index fund allocation.</li>
+<li>random accumulated retirement accounts from employers/IRAs, etc.</li>
+<li>crypto</li>
+</ul>
+<p>Unfortunately, the financial system is configured such that you're effectively required to carry a USD cash balance. This is bad from an investments perspective, because the opportunity cost of cash is quite high. The stategy here is to mitigate the damage by getting at least <strong>something</strong> for your money. I've heard good things about <a href="https://www.ally.com/bank/view-rates/">Ally</a>. Unfortunately, I don't recommend using the bank I currently have.</p>
+<p>The cash back credit cards are just discounts on everything you spend. Don't ever let your balance accumulate. Only ever spend money you have.</p>
+<p>The Wealthfront account is the most unique aspect of my portfolio and the part I'm the most proud of. I chose to use this account in conjunction with their Portfolio Line of Credit product <em>in lieu of an emergency fund</em>. Using a low-risk investment account as an emergency fund exposes you to high opportunity cost because you're trying to ensure that you'll always have money if the market dips. On top of this, the IRS takes a cut when you sell a position that gained in value. I solve this by saving a substantially greater amount in a high-risk portfolio, then using that portfolio as collateral for a <strong>very</strong> cheap (3.65% at time of writing) line of credit from wealthfront. You just need to click two or three buttons, and they'll ACH deposit up to 30% of your account value into your bank account immediately. This means you don't have to sell (pay taxes) to access liquidity, and it solves the opportunity cost problem by investing your money in high quality equity ETFs.</p>
+<p>The 💰 from the PLoC can be used for more than just the emergency fund value, too. I've used it in the past for fixed-return low-risk investments that yield more than the interest rate Wealthfront charges me. This is great, since it basically prints me free money.</p>
+<p>I don't purchase individual stocks. There are many very smart very hard-working people who dedicate their lives to pricing assets, and I don't have any reason to think that my knowledge of a stock's correct price is better than theirs.</p>
+<p>The random retirement funds are all in high-risk ETFs. They're uninteresting. If you have the chance, put your money in them. If your company matches deposits, get the maximum match you can.</p>
+<p>Crypto is generally where I feel the most concerned about leading people astray. Some tips:</p>
+<ul>
+<li>Don't buy something you don't understand.</li>
+<li>If you aren't managing your private keys off an exchange, you don't truly own your crypto.</li>
+<li>People <strong>will</strong> try to scam you.</li>
+</ul>
+<p>Here's roughly what my portfolio looks like right now:</p>
+<h3>Compound</h3>
+<ul>
+<li>supply UNI</li>
+<li>supply COMP</li>
+<li>borrow ETH (25% of supply value)
+net APY roughly 2%</li>
+</ul>
+<h3>Uniswap Liquidity Provision</h3>
+<ul>
+<li>DPI:WETH</li>
+<li>ETH2x-FLI:WETH</li>
+</ul>
+<h3>PoolTogether</h3>
+<ul>
+<li>UNI pool</li>
+<li>USDC pool</li>
+</ul>
+<h3>Yield Farming</h3>
+<ul>
+<li>COMP</li>
+<li>INDEX</li>
+<li>POOL</li>
+</ul>
+<h3>Holding</h3>
+<ul>
+<li>ETH</li>
+<li>INDEX</li>
+<li>LINK</li>
+<li>ATOM</li>
+<li>BTC</li>
+</ul>
+<p>Explaining the reasoning behind each of these investments is outside the scope of what I'm hoping to accomplish here. If you're interested, get in touch and maybe I'll use our convesation about one of these (or something you're interested in) to write another post explaining my thoughts on a particular crypto investment option. It's not my intent to encourage you to buy anything listed here, but I do think that you'll learn fun/interesting things if you spend time reading about these projects.</p>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+        </item>
+        <item>
+            <title><![CDATA[My desktop setup]]></title>
+            <link>http://localhost:3000/my-desktop-setup</link>
+            <guid>http://localhost:3000/my-desktop-setup</guid>
+            <pubDate>Wed, 23 Dec 2020 21:25:00 GMT</pubDate>
+            <description><![CDATA[<p>I've finally got a desktop workstation arrangement that I'm relatively happy with. I'm usually working with two computers throughout the day one runs Windows/Ubuntu for personal gaming and dev work. The second is a macbook pro for work.</p>
+<h2>Common Components</h2>
+<ul>
+<li>DSLR camera: Fuji X-T4</li>
+<li>Lens: Fujinon XF16-55mmF2.8 R LM WR</li>
+<li>Magewell HDMI-USB 1080p capture dongle (The Elgato 4k camlink was sold out due to Corona, else I would have purchased that.)</li>
+<li>Manfrotto PIXI Mini Tripod</li>
+<li>Dell 24&quot; 1440p 144hz monitor</li>
+<li>Dell 27&quot; 4k 60hz monitor</li>
+<li>Dual monitor arm desktop VESA mount</li>
+<li>Vari electric standing desk</li>
+<li>Coolermaster Master Keys M w/ white LEDs</li>
+<li>Razer Deathadder mouse</li>
+<li>Razer mousepad (Mine is no longer produced, but the Acari seems like the closest that's available.)</li>
+<li>Elgato Key Light</li>
+<li>Elgato Wave:3</li>
+<li>Tripp Lite 1500VA UPS</li>
+<li>Amazon Basics 12 outlet surge protector</li>
+</ul>
+<h2>Personal Machine</h2>
+<ul>
+<li>Lian Li mITX case</li>
+<li>Some ASRock motherboard 🤷‍♀️</li>
+<li>GTX 1080ti</li>
+<li>Intel Core i5</li>
+<li>Corsair Dominator Platinum 16gb DDR4 3000mhz</li>
+<li>Corsair VOID RGB Elite wireless gaming headset</li>
+</ul>
+<h2>Work Machine</h2>
+<ul>
+<li><code>macbook pro</code></li>
+<li>Cablematters 85W Thunderbolt 3 dock</li>
+<li>Bose QC35 II headphones</li>
+</ul>
+<h2>Potential improvements</h2>
+<ul>
+<li>I am still missing an external audio setup. It would be nice to not <em>have</em> to use headphones for everything.</li>
+<li>I wish I didn't have to manually switch my mouse, keyboard, headphones, and mic when I switch machines. I want a simple button to switch which machine is receiving peripheral output.</li>
+<li>Now that I've got desktop mic I'm hoping to switch to a pair of wired dedicated headphones.</li>
+</ul>
+]]></description>
+            <content:encoded><![CDATA[<p>I've finally got a desktop workstation arrangement that I'm relatively happy with. I'm usually working with two computers throughout the day one runs Windows/Ubuntu for personal gaming and dev work. The second is a macbook pro for work.</p>
+<h2>Common Components</h2>
+<ul>
+<li>DSLR camera: Fuji X-T4</li>
+<li>Lens: Fujinon XF16-55mmF2.8 R LM WR</li>
+<li>Magewell HDMI-USB 1080p capture dongle (The Elgato 4k camlink was sold out due to Corona, else I would have purchased that.)</li>
+<li>Manfrotto PIXI Mini Tripod</li>
+<li>Dell 24&quot; 1440p 144hz monitor</li>
+<li>Dell 27&quot; 4k 60hz monitor</li>
+<li>Dual monitor arm desktop VESA mount</li>
+<li>Vari electric standing desk</li>
+<li>Coolermaster Master Keys M w/ white LEDs</li>
+<li>Razer Deathadder mouse</li>
+<li>Razer mousepad (Mine is no longer produced, but the Acari seems like the closest that's available.)</li>
+<li>Elgato Key Light</li>
+<li>Elgato Wave:3</li>
+<li>Tripp Lite 1500VA UPS</li>
+<li>Amazon Basics 12 outlet surge protector</li>
+</ul>
+<h2>Personal Machine</h2>
+<ul>
+<li>Lian Li mITX case</li>
+<li>Some ASRock motherboard 🤷‍♀️</li>
+<li>GTX 1080ti</li>
+<li>Intel Core i5</li>
+<li>Corsair Dominator Platinum 16gb DDR4 3000mhz</li>
+<li>Corsair VOID RGB Elite wireless gaming headset</li>
+</ul>
+<h2>Work Machine</h2>
+<ul>
+<li><code>macbook pro</code></li>
+<li>Cablematters 85W Thunderbolt 3 dock</li>
+<li>Bose QC35 II headphones</li>
+</ul>
+<h2>Potential improvements</h2>
+<ul>
+<li>I am still missing an external audio setup. It would be nice to not <em>have</em> to use headphones for everything.</li>
+<li>I wish I didn't have to manually switch my mouse, keyboard, headphones, and mic when I switch machines. I want a simple button to switch which machine is receiving peripheral output.</li>
+<li>Now that I've got desktop mic I'm hoping to switch to a pair of wired dedicated headphones.</li>
+</ul>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+        </item>
+        <item>
+            <title><![CDATA[setting up a home server]]></title>
+            <link>http://localhost:3000/setting-up-a-home-server</link>
+            <guid>http://localhost:3000/setting-up-a-home-server</guid>
+            <pubDate>Fri, 01 Jan 2021 21:25:00 GMT</pubDate>
+            <description><![CDATA[<p>For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing &quot;philanthropic&quot; donations to decentralized software networks/protocols I support.</p>
+<p>About a month ago I finally took the leap and got started. (Thanks to Greg Taschuk and Nicholas Bourikas for the inspiration to finally go for it.) I've got an old laptop I used in college running Arch next to our router now. In fact, I'm writing this post with vim ssh'd into the thing from my couch.</p>
+<p>So far I've absolutely loved it. It feels like the learning:effort ratio is just insanely high. Every time I want to figure out how to accomplish anything, the knowledge for how to accomplish it is readily available at any degree of depth. I've learned so much about linux in the past month. My first task was getting the Arch install completed. That was probably the most challenging thing to accomplish. A lot of the steps involved had to do with physical aspects of the computer that I've not worked with in the past.</p>
+<p>Since then things have slowly gotten more familiar both due to my general work experience and due to my continued learning. I've figured out how to mount external drives, edited my logind.conf, set up an ssh server, installed gcc, go, python, node, and this evening I got geth running.</p>
+<p>I have a LOT more I want to accomplish, and tbh it's a little overwhelming to think of all the things I want to learn at once.</p>
+<p>I want to figure out my router configuration and port opening such that I can access the server from outside our network. I want to get IPFS and bitcoind running smoothly, with the ipfs api server resolving assets that are requested by other computers on the network. I want to get familiar enough with systemd services that I can confidently use them to their fullest extent in managing one-off cron-like jobs, and potentially get some automated crypto bots up and running using data from the nodes on the system.</p>
+<p>I'm having a blast.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing &quot;philanthropic&quot; donations to decentralized software networks/protocols I support.</p>
+<p>About a month ago I finally took the leap and got started. (Thanks to Greg Taschuk and Nicholas Bourikas for the inspiration to finally go for it.) I've got an old laptop I used in college running Arch next to our router now. In fact, I'm writing this post with vim ssh'd into the thing from my couch.</p>
+<p>So far I've absolutely loved it. It feels like the learning:effort ratio is just insanely high. Every time I want to figure out how to accomplish anything, the knowledge for how to accomplish it is readily available at any degree of depth. I've learned so much about linux in the past month. My first task was getting the Arch install completed. That was probably the most challenging thing to accomplish. A lot of the steps involved had to do with physical aspects of the computer that I've not worked with in the past.</p>
+<p>Since then things have slowly gotten more familiar both due to my general work experience and due to my continued learning. I've figured out how to mount external drives, edited my logind.conf, set up an ssh server, installed gcc, go, python, node, and this evening I got geth running.</p>
+<p>I have a LOT more I want to accomplish, and tbh it's a little overwhelming to think of all the things I want to learn at once.</p>
+<p>I want to figure out my router configuration and port opening such that I can access the server from outside our network. I want to get IPFS and bitcoind running smoothly, with the ipfs api server resolving assets that are requested by other computers on the network. I want to get familiar enough with systemd services that I can confidently use them to their fullest extent in managing one-off cron-like jobs, and potentially get some automated crypto bots up and running using data from the nodes on the system.</p>
+<p>I'm having a blast.</p>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+        </item>
+        <item>
+            <title><![CDATA[Starting Sima]]></title>
+            <link>http://localhost:3000/starting-sima</link>
+            <guid>http://localhost:3000/starting-sima</guid>
+            <pubDate>Sat, 06 Jun 2020 19:14:16 GMT</pubDate>
+            <description><![CDATA[<p>Lauren and I had just gotten married, and she had about $55k in student loans. &gt;$20k of that was at 11.75% We were both working reliable jobs with decent salaries. I had gotten my first credit card about three years prior, so I had a (short) credit history. In spite of this, no one would refinance the 11% loan for us. It blew my mind that people like us who were clearly safe borrowers couldn't access credit at all. It wasn't that people would lend to us, but only at bad rates; no one would lend to us in any amount at any price.</p>
+<p>After college we were starting to build a social circle that included close friends who were further along in their lives and had been saving for a decade or more. I had the thought &quot;If I knew there were an easy way to refi my friend's 11% loan and I had the money, I'd do it.&quot; But at that point I didn't know of any way to make it happen without it being pretty socially uncomfortable.</p>
+<p>A year or so later I had a good friend and coworker who is Indian and had gotten his masters degree in the US. He had more student debt than we did, and his was at about 17%. He was having the same experience I did trying to refinance our loans, though I imagine his citizenship made accessing credit in the US essentially impossible.</p>
+<p>I was blown away by that. <em>Surely</em> there had to be an easy way for me to pay off a small piece of his loans and cut his rate in half. I trusted my friend would pay me back and never have trouble finding work, and of course I'd love to get an 8% yield on an investment. Again, I looked for an easy way to manage funding/repaying loans between friends, and I couldn't find anything that I liked.</p>
+<p>So I started building. I figured all we really needed was an ACH api to set up auto-pay, and basically, that's what we are today.</p>
+<p>The basic flow for Sima:</p>
+<ol>
+<li>Connect you bank</li>
+<li>Add your friend as a connection</li>
+<li>Offer your friend a loan at terms you both like</li>
+<li>They review the offer (accept/decline)</li>
+<li>The loan amount changes hands</li>
+<li>ACH repayment executes according to your agreement. (We even have IO/deferral available!)</li>
+</ol>
+<p>My use-case here, given my social situation, is based on friendships. But I have a feeling that the bigger opportunity is within families. Generational wealth differences are, obviously, huge. When a student goes through college, they are immediately massively indebted (average &gt;$30k) and the compensation the student (or recent grad) commands for their skills/experience is essentially the lowest it will ever be. At the same time, many have a family network that is in their peak earning period. The students' relatives are either making more money than they ever have or are transitioning from a growth to a wealth-preservation portfolio where fixed income is more attractive than it ever has been before. In fact, the older generation's FI portfolio is likely heavily weighted in diversified ABS instruments that are the ultimate buyer of student loan debt. It seems intuitive to me that there is more yield to be made for and a non-0 emotional value to be accrued to the older generation by funding the younger generation's education and early career endeavors.</p>
+<p>The limiting factor in these situations is social risk. A lender doesn't want to fund a loan and end up having to hound their niece for missed payments over thanksgiving dinner. Sima aims to solve that w/ autopay, clear notifications, and a shared record of the state of the loan. Ideally you can just set it and forget it, which solves the social cost of servicing loans traditionally.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>Lauren and I had just gotten married, and she had about $55k in student loans. &gt;$20k of that was at 11.75% We were both working reliable jobs with decent salaries. I had gotten my first credit card about three years prior, so I had a (short) credit history. In spite of this, no one would refinance the 11% loan for us. It blew my mind that people like us who were clearly safe borrowers couldn't access credit at all. It wasn't that people would lend to us, but only at bad rates; no one would lend to us in any amount at any price.</p>
+<p>After college we were starting to build a social circle that included close friends who were further along in their lives and had been saving for a decade or more. I had the thought &quot;If I knew there were an easy way to refi my friend's 11% loan and I had the money, I'd do it.&quot; But at that point I didn't know of any way to make it happen without it being pretty socially uncomfortable.</p>
+<p>A year or so later I had a good friend and coworker who is Indian and had gotten his masters degree in the US. He had more student debt than we did, and his was at about 17%. He was having the same experience I did trying to refinance our loans, though I imagine his citizenship made accessing credit in the US essentially impossible.</p>
+<p>I was blown away by that. <em>Surely</em> there had to be an easy way for me to pay off a small piece of his loans and cut his rate in half. I trusted my friend would pay me back and never have trouble finding work, and of course I'd love to get an 8% yield on an investment. Again, I looked for an easy way to manage funding/repaying loans between friends, and I couldn't find anything that I liked.</p>
+<p>So I started building. I figured all we really needed was an ACH api to set up auto-pay, and basically, that's what we are today.</p>
+<p>The basic flow for Sima:</p>
+<ol>
+<li>Connect you bank</li>
+<li>Add your friend as a connection</li>
+<li>Offer your friend a loan at terms you both like</li>
+<li>They review the offer (accept/decline)</li>
+<li>The loan amount changes hands</li>
+<li>ACH repayment executes according to your agreement. (We even have IO/deferral available!)</li>
+</ol>
+<p>My use-case here, given my social situation, is based on friendships. But I have a feeling that the bigger opportunity is within families. Generational wealth differences are, obviously, huge. When a student goes through college, they are immediately massively indebted (average &gt;$30k) and the compensation the student (or recent grad) commands for their skills/experience is essentially the lowest it will ever be. At the same time, many have a family network that is in their peak earning period. The students' relatives are either making more money than they ever have or are transitioning from a growth to a wealth-preservation portfolio where fixed income is more attractive than it ever has been before. In fact, the older generation's FI portfolio is likely heavily weighted in diversified ABS instruments that are the ultimate buyer of student loan debt. It seems intuitive to me that there is more yield to be made for and a non-0 emotional value to be accrued to the older generation by funding the younger generation's education and early career endeavors.</p>
+<p>The limiting factor in these situations is social risk. A lender doesn't want to fund a loan and end up having to hound their niece for missed payments over thanksgiving dinner. Sima aims to solve that w/ autopay, clear notifications, and a shared record of the state of the loan. Ideally you can just set it and forget it, which solves the social cost of servicing loans traditionally.</p>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+        </item>
+        <item>
+            <title><![CDATA[We're having a kid]]></title>
+            <link>http://localhost:3000/thinking-about-kid-1</link>
+            <guid>http://localhost:3000/thinking-about-kid-1</guid>
+            <pubDate>Tue, 06 Oct 2020 23:25:00 GMT</pubDate>
+            <description><![CDATA[<p>I find it amusing that I was writing drafts of another post titled &quot;thinking about having kids&quot; seven months ago. It's happening for sure now for sure. Lauren's four months pregnant.</p>
+<p>People ask me how it feels frequently. I think the thing that crosses my mind most is confusion at the state of myself in relation to parenthood. Parenting seems an act of people who understand more about the world (and themselves) than I do. While I think I am maybe slightly better prepared to shepherd another human into the world than the average, I am having a hard time imagining what I will actually need to <em>do</em>. I am concerned that one day when the kid is 12 I will realize that I totally forgot something important I should/could have done for them and it'll be too late.</p>
+<p>It's reassuring to see people like Bryan Caplan talking about how you really don't need to do that much for kids to turn out alright, but at the same time it's clear he puts a lot of effort into providing his homeschooled kids what he believes to be the ideal educational and general childhood experience. So, I guess to summarize, I'm stressed out because I care a lot and I'm not sure where I should be applying that care (if anywhere).</p>
+]]></description>
+            <content:encoded><![CDATA[<p>I find it amusing that I was writing drafts of another post titled &quot;thinking about having kids&quot; seven months ago. It's happening for sure now for sure. Lauren's four months pregnant.</p>
+<p>People ask me how it feels frequently. I think the thing that crosses my mind most is confusion at the state of myself in relation to parenthood. Parenting seems an act of people who understand more about the world (and themselves) than I do. While I think I am maybe slightly better prepared to shepherd another human into the world than the average, I am having a hard time imagining what I will actually need to <em>do</em>. I am concerned that one day when the kid is 12 I will realize that I totally forgot something important I should/could have done for them and it'll be too late.</p>
+<p>It's reassuring to see people like Bryan Caplan talking about how you really don't need to do that much for kids to turn out alright, but at the same time it's clear he puts a lot of effort into providing his homeschooled kids what he believes to be the ideal educational and general childhood experience. So, I guess to summarize, I'm stressed out because I care a lot and I'm not sure where I should be applying that care (if anywhere).</p>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+        </item>
+        <item>
+            <title><![CDATA[TWAMM reading]]></title>
+            <link>http://localhost:3000/twamm</link>
+            <guid>http://localhost:3000/twamm</guid>
+            <pubDate>Mon, 02 Aug 2021 09:15:00 GMT</pubDate>
+            <description><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
+<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB" title="TWAMM">audio file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49" title="TWAMM">video file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e" title="TWAMM">original post pdf (ipfs)</a></p>
+<p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>
+]]></description>
+            <content:encoded><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
+<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB" title="TWAMM">audio file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49" title="TWAMM">video file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e" title="TWAMM">original post pdf (ipfs)</a></p>
+<p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+            <enclosure url="https://www.youtube.com/watch?v=miCP-Qt4WII" length="0" type="video//watch"/>
+        </item>
+        <item>
+            <title><![CDATA[Some fortunate tax planning opportunities]]></title>
+            <link>http://localhost:3000/using-sima-for-tax-planning</link>
+            <guid>http://localhost:3000/using-sima-for-tax-planning</guid>
+            <pubDate>Tue, 06 Oct 2020 10:57:16 GMT</pubDate>
+            <description><![CDATA[<p>We've been trying to sell our car in Brooklyn for the past month or so, but have been stymied by issues with our title. The lender apparently never got around to putting themselves on it. So, in order to sell the thing in good faith I'm paying off the loan (very) early. Unfortunately, that means an unexpected short-term expense of about $25,000.</p>
+<p>Covering that would require me to sell some ADBE stock that has appreciated quite a bit in the past couple of years. This is obviously a great situation to be in, but unfortunately it means I'll owe a fair bit in capital gains taxes. Luckily, there's a classic trick of high-end personal finance that works perfectly for me here. What many executives with an equity-heavy compensation or net-worth will do in this situation is use their assets as collateral on a loan. The loan isn't taxable, and the lender knows that the debt is backed fully by your portfolio.</p>
+<p>Usually this isn't accessible to people like me, but I happen to run a <a href="https://getsima.com">side project that facilitates interpersonal credit transactions</a>, so I happen to be able to do this, weirdly. For the car transaction, all I have to do is explain the details, offer a hefty interest rate (10% seems reasonable) and borrow their money for a couple months while I pay off the car, sell it, and return their money to them with interest. This way I turn what would have been thousands of dollars in taxes into a few hundred in interest payments to a friend.</p>
+<p>It's win-win, if you ask me. (Tax-man aside.)</p>
+]]></description>
+            <content:encoded><![CDATA[<p>We've been trying to sell our car in Brooklyn for the past month or so, but have been stymied by issues with our title. The lender apparently never got around to putting themselves on it. So, in order to sell the thing in good faith I'm paying off the loan (very) early. Unfortunately, that means an unexpected short-term expense of about $25,000.</p>
+<p>Covering that would require me to sell some ADBE stock that has appreciated quite a bit in the past couple of years. This is obviously a great situation to be in, but unfortunately it means I'll owe a fair bit in capital gains taxes. Luckily, there's a classic trick of high-end personal finance that works perfectly for me here. What many executives with an equity-heavy compensation or net-worth will do in this situation is use their assets as collateral on a loan. The loan isn't taxable, and the lender knows that the debt is backed fully by your portfolio.</p>
+<p>Usually this isn't accessible to people like me, but I happen to run a <a href="https://getsima.com">side project that facilitates interpersonal credit transactions</a>, so I happen to be able to do this, weirdly. For the car transaction, all I have to do is explain the details, offer a hefty interest rate (10% seems reasonable) and borrow their money for a couple months while I pay off the car, sell it, and return their money to them with interest. This way I turn what would have been thousands of dollars in taxes into a few hundred in interest payments to a friend.</p>
+<p>It's win-win, if you ask me. (Tax-man aside.)</p>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+        </item>
+    </channel>
+</rss>

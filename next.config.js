@@ -8,6 +8,11 @@ module.exports = {
       options: {},
     })
 
+    config.module.rules.push({
+      test: /\.xml/,
+      type: 'asset/resource',
+    })
+
     config.resolve.modules.push(resolve('./'))
     return config
   },

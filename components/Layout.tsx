@@ -1,9 +1,9 @@
-import { FunctionComponent } from 'react'
-import { theme } from 'styles/theme'
+import { css, Global } from '@emotion/core'
 import Head from 'next/head'
 import Link from 'next/link'
-import { css, Global } from '@emotion/core'
-import { FaTwitter, FaGithub } from 'react-icons/fa'
+import React, { FunctionComponent } from 'react'
+import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { theme } from 'styles/theme'
 
 const GLOBAL_STYLES = css`
   img,

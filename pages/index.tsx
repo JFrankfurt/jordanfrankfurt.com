@@ -1,8 +1,9 @@
 import { css } from '@emotion/core'
 import Layout from 'components/Layout'
-import Link from 'next/link'
 import { DateTime } from 'luxon'
 import { NextPage } from 'next'
+import Link from 'next/link'
+import React from 'react'
 import { theme } from 'styles/theme'
 
 const rootCss = css``
@@ -16,21 +17,22 @@ const postTitleCss = css`
     color: ${theme.palette.linkHoverRed};
   }
 `
-const postSubTitleCss = css``
-
 const importPosts = async (): Promise<Post[]> => {
   // https://webpack.js.org/guides/dependency-management/#requirecontext
   const markdownFiles = require
     // @ts-ignore
     .context('posts', false, /\.md$/)
     .keys()
-    .map((relativePath: string) => relativePath.substring(2))
+    .filter((path: string) => path.substring(0, 1) !== '.')
 
   return Promise.all(
     markdownFiles.map(async (path: string) => {
-      const markdown = await import(`posts/${path}`)
+      const markdown = await import(`../${path}`)
       // .substring removes ".md" from path
-      return { ...markdown, slug: path.substring(0, path.length - 3) }
+      let slug = path.substring(0, path.length - 3)
+      // .slice removes posts prefix
+      slug = slug.slice('posts'.length)
+      return { ...markdown, slug }
     })
   )
 }
@@ -59,7 +61,7 @@ const Index: NextPage<props> = ({ posts }) => (
           const DT = DateTime.fromISO(attributes.date)
           return (
             <div key={`post-list-${slug}`}>
-              <Link href="/[slug]" as={`/${slug}`} passHref>
+              <Link href={slug} passHref>
                 <a key={slug} css={titleLink}>
                   <h1 css={postTitleCss}>{attributes.title}</h1>
                 </a>

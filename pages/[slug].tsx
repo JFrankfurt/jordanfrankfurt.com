@@ -36,12 +36,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
     // @ts-ignore
     .context('posts', false, /\.md$/)
     .keys()
-    .map((relativePath: string) => relativePath.substring(2))
+    .filter((path: string) => path.substring(0, 1) !== '.')
 
   const posts = (await Promise.all(
     markdownFiles.map(async (path: string) => {
-      const markdown = await import(`posts/${path}`)
-      return { ...markdown, slug: path.substring(0, path.length - 3) } // remove ".md" from path
+      const markdown = await import(`../${path}`)
+      // .substring removes ".md" from path
+      let slug = path.substring(0, path.length - 3)
+      // .slice removes posts prefix
+      slug = slug.slice('posts/'.length)
+      return { ...markdown, slug }
     })
   )) as { html: string; slug: string }[]
   const paths = posts.map(({ slug }) => ({ params: { slug } }))

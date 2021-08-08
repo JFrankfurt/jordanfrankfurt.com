@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Jordan Frankfurt videos</title>
+        <link>http://localhost:3000</link>
+        <description>mostly reading things</description>
+        <lastBuildDate>Sun, 08 Aug 2021 08:35:49 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <language>en</language>
+        <image>
+            <title>Jordan Frankfurt videos</title>
+            <url>http://localhost:3000/me.png</url>
+            <link>http://localhost:3000</link>
+        </image>
+        <copyright>All rights reserved 2021, Jordan Frankfurt</copyright>
+    </channel>
+</rss>

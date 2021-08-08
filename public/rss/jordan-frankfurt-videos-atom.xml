@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:3000</id>
+    <title>Jordan Frankfurt videos</title>
+    <updated>2021-08-08T08:35:49.701Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>Jordan Frankfurt</name>
+        <email>jordanwfrankfurt@gmail.com</email>
+        <uri>https://twitter.com/JordanFrankfurt</uri>
+    </author>
+    <link rel="alternate" href="http://localhost:3000"/>
+    <link rel="self" href="http://localhost:3000/rss/jordan-frankfurt-videos-atom.xml"/>
+    <subtitle>mostly reading things</subtitle>
+    <logo>http://localhost:3000/me.png</logo>
+    <icon>http://localhost:3000/favicon.png</icon>
+    <rights>All rights reserved 2021, Jordan Frankfurt</rights>
+</feed>

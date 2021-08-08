@@ -6,5 +6,7 @@
 # Next.js
 .next
 
+.env.local
+
 # JS
 node_modules

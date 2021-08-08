@@ -25,7 +25,7 @@ const generateRssFeeds = async () => {
     generator: 'Feed for Node.js',
     title: 'Jordan Frankfurt',
     id: siteURL,
-    image: `${siteURL}/me.png`,
+    image: `${siteURL}/me.jpg`,
     language: 'en',
     link: siteURL,
     updated: date,

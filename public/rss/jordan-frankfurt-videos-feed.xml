@@ -4,13 +4,13 @@
         <title>Jordan Frankfurt videos</title>
         <link>http://localhost:3000</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Sun, 08 Aug 2021 08:35:49 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Aug 2021 10:12:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
         <image>
             <title>Jordan Frankfurt videos</title>
-            <url>http://localhost:3000/me.png</url>
+            <url>http://localhost:3000/me.jpg</url>
             <link>http://localhost:3000</link>
         </image>
         <copyright>All rights reserved 2021, Jordan Frankfurt</copyright>

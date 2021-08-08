@@ -4,7 +4,7 @@
   "home_page_url": "http://localhost:3000",
   "feed_url": "http://localhost:3000/rss/jordan-frankfurt-blog-feed.json",
   "description": "mostly reading things",
-  "icon": "http://localhost:3000/me.png",
+  "icon": "http://localhost:3000/me.jpg",
   "author": {
     "name": "Jordan Frankfurt",
     "url": "https://twitter.com/JordanFrankfurt"

@@ -1,4 +1,4 @@
-import { Feed, Item } from 'feed'
+import { Feed, FeedOptions, Item } from 'feed'
 import { mkdirSync, writeFileSync } from 'fs'
 import { getBlogPostsData } from 'utils/blog'
 
@@ -17,7 +17,7 @@ const generateRssFeeds = async () => {
     email: 'jordanwfrankfurt@gmail.com',
     link: 'https://twitter.com/JordanFrankfurt',
   }
-  const baseFeed = {
+  const baseFeed: FeedOptions = {
     author,
     copyright: `All rights reserved ${date.getFullYear()}, Jordan Frankfurt`,
     description: 'mostly reading things',
@@ -69,7 +69,7 @@ const generateRssFeeds = async () => {
       )}-atom.xml`,
     },
   })
-  posts.forEach((post) => {
+  posts.forEach(async (post) => {
     const url = `${siteURL}${post.slug}`
 
     const item: Item = {
@@ -86,8 +86,16 @@ const generateRssFeeds = async () => {
     }
 
     if (post.attributes.audio) {
-      item.link = post.attributes.audio
       item.audio = post.attributes.audio
+      const response = await fetch(item.audio)
+      const data = await response.arrayBuffer()
+      item.enclosure = {
+        url: item.audio,
+        type: 'audio/mp4',
+        title: item.title,
+        length: data.byteLength,
+      }
+      item.link = post.attributes.audio
       AudioFeed.addItem(item)
       return
     }
@@ -105,7 +113,7 @@ const generateRssFeeds = async () => {
   const feeds = [AudioFeed, TextFeed, VideoFeed]
   feeds.forEach((feed) => {
     mkdirSync('./public/rss', { recursive: true })
-    console.log(feed)
+
     const title = encodeTitle(feed.options.title)
     writeFileSync(`./public/rss/${title}-feed.xml`, feed.rss2())
     writeFileSync(`./public/rss/${title}-atom.xml`, feed.atom1())

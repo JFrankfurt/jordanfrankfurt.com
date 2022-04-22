@@ -7,6 +7,8 @@ export default async function handler(
   _req: NextApiRequest,
   res: NextApiResponse
 ) {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET')
   try {
     await nightmare
       .goto(

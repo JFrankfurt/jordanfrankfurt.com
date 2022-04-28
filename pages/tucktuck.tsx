@@ -31,6 +31,10 @@ const errorCss = css`
   color: red;
 `
 
+const controlsCss = css`
+  margin-top: 1em;
+`
+
 const pulseAnim = keyframes`
   from {
     transform: scale(0.95);
@@ -49,6 +53,7 @@ interface TuckerData {
   list: string[]
   url: string
   title: string
+  timeAgo: string
 }
 interface TuckerState {
   data: TuckerData | null
@@ -62,6 +67,7 @@ function useEndpoint(endpoint: string): TuckerState {
   const [data, setData] = useState<TuckerData | null>(null)
   useEffect(() => {
     setLoading(true)
+    setError('')
     fetch(endpoint)
       .then(async (res) => {
         if (res.ok) {
@@ -75,8 +81,27 @@ function useEndpoint(endpoint: string): TuckerState {
 }
 
 export default function TuckTuck() {
-  const { data, error, loading } = useEndpoint('/api/scrape-tucker')
-  const now = new Date()
+  const baseEndpoint = '/api/scrape-tucker'
+  const [offset, setOffset] = useState('1')
+  const { data, error, loading } = useEndpoint(
+    `${baseEndpoint}${offset ? `?offset=${offset}` : ''}`
+  )
+
+  const handleOffsetChange: React.ChangeEventHandler<HTMLInputElement> = ({
+    target: { value },
+  }) => {
+    if (!value) {
+      return setOffset('1')
+    }
+    if (Number.isNaN(parseInt(value))) {
+      return setOffset('1')
+    }
+    if (parseInt(value) > 10) {
+      return setOffset('1')
+    }
+    return setOffset(value)
+  }
+
   return (
     <Layout>
       <div css={rootCss}>
@@ -87,6 +112,20 @@ export default function TuckTuck() {
           width="400px"
           height="225px"
         />
+        <div css={controlsCss}>
+          <label htmlFor="offset">
+            days ago: &nbsp;
+            <input
+              min={0}
+              max={10}
+              id="offset"
+              type="number"
+              name="offset"
+              value={offset}
+              onChange={handleOffsetChange}
+            />
+          </label>
+        </div>
         {data && (
           <h1 css={titleCss}>
             <a
@@ -98,7 +137,7 @@ export default function TuckTuck() {
             </a>
           </h1>
         )}
-        <div>{now.toLocaleDateString()}</div>
+        {data && <div>{data.timeAgo}</div>}
         {loading && 'loading...'}
         {error && <code css={errorCss}>{error}</code>}
         <div css={dataWrapperCss}>

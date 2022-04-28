@@ -161,10 +161,11 @@ export default function TuckTuck() {
           </h1>
         )}
         {data && <div>{data.timeAgo}</div>}
-        {loading && 'loading...'}
         {error && <code css={errorCss}>{error}</code>}
         <div css={dataWrapperCss}>
-          {Boolean(!loading && !error && data && data.list.length) ? (
+          {loading ? (
+            'loading...'
+          ) : Boolean(!error && data && data.list.length) ? (
             <>
               <strong>Speakers:</strong>
               {data?.list.map((entry) => (

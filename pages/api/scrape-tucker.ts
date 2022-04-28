@@ -62,6 +62,7 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
       new Set(
         queriedNodes
           .map((string) => string.innerHTML?.trim() ?? '')
+          .filter((string) => Boolean(string))
           .map((trimmedString) => {
             if (trimmedString[trimmedString.length - 1] === ':') {
               return trimmedString.substring(0, trimmedString.length - 1)
@@ -70,10 +71,7 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
           })
           .filter((string) => {
             // add entries you don't care about here
-            return (
-              string &&
-              !['TUCKER CARLSON ORIGINALS', 'REPORTER'].includes(string)
-            )
+            return !['TUCKER CARLSON ORIGINALS', 'REPORTER'].includes(string)
           })
       )
     )

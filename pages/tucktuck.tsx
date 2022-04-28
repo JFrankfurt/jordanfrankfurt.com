@@ -56,7 +56,7 @@ function useEndpoint(endpoint: string) {
 
 export default function TuckTuck() {
   const { data, error, loading } = useEndpoint('/api/scrape-tucker')
-
+  const now = new Date()
   return (
     <Layout>
       <div css={rootCss}>
@@ -67,10 +67,16 @@ export default function TuckTuck() {
           width="400px"
           height="225px"
         />
+        <div>{now.toLocaleDateString()}</div>
         {loading && 'loading...'}
         {error && <code css={errorCss}>{error}</code>}
         <div css={dataWrapperCss}>
-          {data && data.map((entry) => <div css={dataEntryCss}>{entry}</div>)}
+          {data &&
+            data.map((entry) => (
+              <div css={dataEntryCss} key={entry}>
+                {entry}
+              </div>
+            ))}
         </div>
       </div>
     </Layout>

@@ -1,6 +1,6 @@
 import { css, keyframes } from '@emotion/core'
 import Layout from 'components/Layout'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 const rootCss = css`
@@ -33,6 +33,7 @@ const errorCss = css`
 
 const controlsCss = css`
   margin-top: 1em;
+  text-align: center;
 `
 
 const pulseAnim = keyframes`
@@ -87,8 +88,10 @@ export default function TuckTuck() {
     `${baseEndpoint}${offset ? `?offset=${offset}` : ''}`
   )
 
-  const handleOffsetChange: React.ChangeEventHandler<HTMLInputElement> = ({
+  const handleOffsetChange = ({
     target: { value },
+  }: {
+    target: { value: string }
   }) => {
     if (value === undefined || value === '') {
       return setOffset('0')
@@ -102,29 +105,49 @@ export default function TuckTuck() {
     return setOffset(value)
   }
 
+  function decrement() {
+    const cur = parseInt(offset)
+    const newOffset = cur - 1
+    if (newOffset >= 0 && newOffset <= 10) {
+      setOffset(newOffset.toString())
+    }
+  }
+
+  function increment() {
+    const cur = parseInt(offset)
+    const newOffset = cur + 1
+    if (newOffset >= 0 && newOffset <= 10) {
+      setOffset(newOffset.toString())
+    }
+  }
+
   return (
     <Layout>
       <div css={rootCss}>
-        <Image
-          css={imageCss}
-          src="/tucker.jpg"
-          alt="the man himself"
-          width="400px"
-          height="225px"
-        />
+        <a
+          href="https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript"
+          target="_blank"
+          rel="noopener noreferrer">
+          <Image
+            css={imageCss}
+            src="/tucker.jpg"
+            alt="the man himself"
+            width="400px"
+            height="225px"
+          />
+        </a>
         <div css={controlsCss}>
-          <label htmlFor="offset">
-            days ago: &nbsp;
-            <input
-              min={0}
-              max={10}
-              id="offset"
-              type="number"
-              name="offset"
-              value={offset}
-              onChange={handleOffsetChange}
-            />
-          </label>
+          days ago: &nbsp; {offset}
+          <div>
+            <button onClick={decrement}>➖</button>
+            &nbsp;
+            <button onClick={increment}>➕</button>
+          </div>
+          {offset === '10' && (
+            <div>
+              <code>cant go more than 10 days back</code>
+            </div>
+          )}
         </div>
         {data && (
           <h1 css={titleCss}>
@@ -141,13 +164,18 @@ export default function TuckTuck() {
         {loading && 'loading...'}
         {error && <code css={errorCss}>{error}</code>}
         <div css={dataWrapperCss}>
-          <strong>Speakers:</strong>
-          {data &&
-            data.list.map((entry) => (
-              <div css={dataEntryCss} key={entry}>
-                {entry}
-              </div>
-            ))}
+          {Boolean(data && data.list.length) ? (
+            <>
+              <strong>Speakers:</strong>
+              {data?.list.map((entry) => (
+                <div css={dataEntryCss} key={entry}>
+                  {entry}
+                </div>
+              ))}
+            </>
+          ) : (
+            <strong>no other speakers in this transcript</strong>
+          )}
         </div>
       </div>
     </Layout>

@@ -10,7 +10,7 @@ export default function About() {
   return (
     <Layout>
       <div css={rootCss}>
-        <h1>About Jordan Frankfurt</h1>
+        <h1>About me</h1>
         <p>
           I fight people (
           <a

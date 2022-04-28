@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:3000</id>
+    <id>https://jordanfrankfurt.com</id>
     <title>Jordan Frankfurt blog</title>
-    <updated>2021-08-08T10:12:17.454Z</updated>
+    <updated>2022-04-28T02:43:10.938Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Jordan Frankfurt</name>
         <email>jordanwfrankfurt@gmail.com</email>
         <uri>https://twitter.com/JordanFrankfurt</uri>
     </author>
-    <link rel="alternate" href="http://localhost:3000"/>
-    <link rel="self" href="http://localhost:3000/rss/jordan-frankfurt-blog-atom.xml"/>
+    <link rel="alternate" href="https://jordanfrankfurt.com"/>
+    <link rel="self" href="https://jordanfrankfurt.com/rss/jordan-frankfurt-blog-atom.xml"/>
     <subtitle>mostly reading things</subtitle>
-    <logo>http://localhost:3000/me.jpg</logo>
-    <icon>http://localhost:3000/favicon.png</icon>
-    <rights>All rights reserved 2021, Jordan Frankfurt</rights>
+    <logo>https://jordanfrankfurt.com/me.jpg</logo>
+    <icon>https://jordanfrankfurt.com/favicon.png</icon>
+    <rights>All rights reserved 2022, Jordan Frankfurt</rights>
     <entry>
         <title type="html"><![CDATA[investment strategy]]></title>
-        <id>http://localhost:3000/investment-strategy</id>
-        <link href="http://localhost:3000/investment-strategy"/>
+        <id>https://jordanfrankfurt.com/investment-strategy</id>
+        <link href="https://jordanfrankfurt.com/investment-strategy"/>
         <updated>2021-04-15T06:36:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Occasionally people I care about ask me something like &quot;Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?&quot; At first the question made me a little uncomfortable because:</p>
 <ol>
@@ -218,8 +218,8 @@ net APY roughly 2%</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[My desktop setup]]></title>
-        <id>http://localhost:3000/my-desktop-setup</id>
-        <link href="http://localhost:3000/my-desktop-setup"/>
+        <id>https://jordanfrankfurt.com/my-desktop-setup</id>
+        <link href="https://jordanfrankfurt.com/my-desktop-setup"/>
         <updated>2020-12-23T21:25:00.000Z</updated>
         <summary type="html"><![CDATA[<p>I've finally got a desktop workstation arrangement that I'm relatively happy with. I'm usually working with two computers throughout the day one runs Windows/Ubuntu for personal gaming and dev work. The second is a macbook pro for work.</p>
 <h2>Common Components</h2>
@@ -317,8 +317,8 @@ net APY roughly 2%</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[setting up a home server]]></title>
-        <id>http://localhost:3000/setting-up-a-home-server</id>
-        <link href="http://localhost:3000/setting-up-a-home-server"/>
+        <id>https://jordanfrankfurt.com/setting-up-a-home-server</id>
+        <link href="https://jordanfrankfurt.com/setting-up-a-home-server"/>
         <updated>2021-01-01T21:25:00.000Z</updated>
         <summary type="html"><![CDATA[<p>For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing &quot;philanthropic&quot; donations to decentralized software networks/protocols I support.</p>
 <p>About a month ago I finally took the leap and got started. (Thanks to Greg Taschuk and Nicholas Bourikas for the inspiration to finally go for it.) I've got an old laptop I used in college running Arch next to our router now. In fact, I'm writing this post with vim ssh'd into the thing from my couch.</p>
@@ -350,8 +350,8 @@ net APY roughly 2%</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[Starting Sima]]></title>
-        <id>http://localhost:3000/starting-sima</id>
-        <link href="http://localhost:3000/starting-sima"/>
+        <id>https://jordanfrankfurt.com/starting-sima</id>
+        <link href="https://jordanfrankfurt.com/starting-sima"/>
         <updated>2020-06-06T19:14:16.000Z</updated>
         <summary type="html"><![CDATA[<p>Lauren and I had just gotten married, and she had about $55k in student loans. &gt;$20k of that was at 11.75% We were both working reliable jobs with decent salaries. I had gotten my first credit card about three years prior, so I had a (short) credit history. In spite of this, no one would refinance the 11% loan for us. It blew my mind that people like us who were clearly safe borrowers couldn't access credit at all. It wasn't that people would lend to us, but only at bad rates; no one would lend to us in any amount at any price.</p>
 <p>After college we were starting to build a social circle that included close friends who were further along in their lives and had been saving for a decade or more. I had the thought &quot;If I knew there were an easy way to refi my friend's 11% loan and I had the money, I'd do it.&quot; But at that point I didn't know of any way to make it happen without it being pretty socially uncomfortable.</p>
@@ -401,8 +401,8 @@ net APY roughly 2%</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[We're having a kid]]></title>
-        <id>http://localhost:3000/thinking-about-kid-1</id>
-        <link href="http://localhost:3000/thinking-about-kid-1"/>
+        <id>https://jordanfrankfurt.com/thinking-about-kid-1</id>
+        <link href="https://jordanfrankfurt.com/thinking-about-kid-1"/>
         <updated>2020-10-06T23:25:00.000Z</updated>
         <summary type="html"><![CDATA[<p>I find it amusing that I was writing drafts of another post titled &quot;thinking about having kids&quot; seven months ago. It's happening for sure now for sure. Lauren's four months pregnant.</p>
 <p>People ask me how it feels frequently. I think the thing that crosses my mind most is confusion at the state of myself in relation to parenthood. Parenting seems an act of people who understand more about the world (and themselves) than I do. While I think I am maybe slightly better prepared to shepherd another human into the world than the average, I am having a hard time imagining what I will actually need to <em>do</em>. I am concerned that one day when the kid is 12 I will realize that I totally forgot something important I should/could have done for them and it'll be too late.</p>
@@ -426,8 +426,8 @@ net APY roughly 2%</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[Some fortunate tax planning opportunities]]></title>
-        <id>http://localhost:3000/using-sima-for-tax-planning</id>
-        <link href="http://localhost:3000/using-sima-for-tax-planning"/>
+        <id>https://jordanfrankfurt.com/using-sima-for-tax-planning</id>
+        <link href="https://jordanfrankfurt.com/using-sima-for-tax-planning"/>
         <updated>2020-10-06T10:57:16.000Z</updated>
         <summary type="html"><![CDATA[<p>We've been trying to sell our car in Brooklyn for the past month or so, but have been stymied by issues with our title. The lender apparently never got around to putting themselves on it. So, in order to sell the thing in good faith I'm paying off the loan (very) early. Unfortunately, that means an unexpected short-term expense of about $25,000.</p>
 <p>Covering that would require me to sell some ADBE stock that has appreciated quite a bit in the past couple of years. This is obviously a great situation to be in, but unfortunately it means I'll owe a fair bit in capital gains taxes. Luckily, there's a classic trick of high-end personal finance that works perfectly for me here. What many executives with an equity-heavy compensation or net-worth will do in this situation is use their assets as collateral on a loan. The loan isn't taxable, and the lender knows that the debt is backed fully by your portfolio.</p>

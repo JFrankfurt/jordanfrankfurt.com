@@ -1,10 +1,10 @@
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "Jordan Frankfurt videos",
-  "home_page_url": "http://localhost:3000",
-  "feed_url": "http://localhost:3000/rss/jordan-frankfurt-videos-feed.json",
+  "home_page_url": "https://jordanfrankfurt.com",
+  "feed_url": "https://jordanfrankfurt.com/rss/jordan-frankfurt-videos-feed.json",
   "description": "mostly reading things",
-  "icon": "http://localhost:3000/me.jpg",
+  "icon": "https://jordanfrankfurt.com/me.jpg",
   "author": {
     "name": "Jordan Frankfurt",
     "url": "https://twitter.com/JordanFrankfurt"

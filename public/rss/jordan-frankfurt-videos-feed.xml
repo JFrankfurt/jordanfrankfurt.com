@@ -2,17 +2,17 @@
 <rss version="2.0">
     <channel>
         <title>Jordan Frankfurt videos</title>
-        <link>http://localhost:3000</link>
+        <link>https://jordanfrankfurt.com</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Sun, 08 Aug 2021 10:12:17 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Apr 2022 02:43:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
         <image>
             <title>Jordan Frankfurt videos</title>
-            <url>http://localhost:3000/me.jpg</url>
-            <link>http://localhost:3000</link>
+            <url>https://jordanfrankfurt.com/me.jpg</url>
+            <link>https://jordanfrankfurt.com</link>
         </image>
-        <copyright>All rights reserved 2021, Jordan Frankfurt</copyright>
+        <copyright>All rights reserved 2022, Jordan Frankfurt</copyright>
     </channel>
 </rss>

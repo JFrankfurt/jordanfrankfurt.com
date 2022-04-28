@@ -17,7 +17,16 @@ const dataWrapperCss = css`
   text-align: center;
 `
 const dataEntryCss = css``
-
+const titleCss = css`
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  &:hover {
+    text-decoration: underline;
+  }
+`
 const errorCss = css`
   color: red;
 `
@@ -36,10 +45,21 @@ const imageCss = css`
   border-radius: 1em;
 `
 
-function useEndpoint(endpoint: string) {
+interface TuckerData {
+  list: string[]
+  url: string
+  title: string
+}
+interface TuckerState {
+  data: TuckerData | null
+  error: string
+  loading: boolean
+}
+
+function useEndpoint(endpoint: string): TuckerState {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  const [data, setData] = useState<string[] | null>(null)
+  const [data, setData] = useState<TuckerData | null>(null)
   useEffect(() => {
     setLoading(true)
     fetch(endpoint)
@@ -67,12 +87,24 @@ export default function TuckTuck() {
           width="400px"
           height="225px"
         />
+        {data && (
+          <h1 css={titleCss}>
+            <a
+              href={data.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              css={titleCss}>
+              {data.title}
+            </a>
+          </h1>
+        )}
         <div>{now.toLocaleDateString()}</div>
         {loading && 'loading...'}
         {error && <code css={errorCss}>{error}</code>}
         <div css={dataWrapperCss}>
+          <strong>Speakers:</strong>
           {data &&
-            data.map((entry) => (
+            data.list.map((entry) => (
               <div css={dataEntryCss} key={entry}>
                 {entry}
               </div>

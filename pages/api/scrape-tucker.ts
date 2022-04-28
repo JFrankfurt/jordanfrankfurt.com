@@ -37,10 +37,8 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
       return res.status(400).send('unable to find link to first article')
     }
 
-    const mostRecentResponse = await fetch(
-      `https://www.foxnews.com/${linkToMostRecent.href}`,
-      { headers }
-    )
+    const mostRecentUrl = `https://www.foxnews.com${linkToMostRecent.href}`
+    const mostRecentResponse = await fetch(mostRecentUrl, { headers })
     if (!mostRecentResponse.ok) {
       return res.status(response.status).send('unable to load article')
     }
@@ -75,7 +73,10 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
           })
       )
     )
-    res.status(200).json(data)
+    const title =
+      mostRecentDOM.window.document.querySelector('h1')?.innerHTML ??
+      "couldn't get the title (。_。)"
+    res.status(200).json({ list: data, url: mostRecentUrl, title })
   } catch (e) {
     console.error(e)
     return res.status(400).send('something went wrong!')

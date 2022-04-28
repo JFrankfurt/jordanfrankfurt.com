@@ -82,7 +82,7 @@ function useEndpoint(endpoint: string): TuckerState {
 
 export default function TuckTuck() {
   const baseEndpoint = '/api/scrape-tucker'
-  const [offset, setOffset] = useState('1')
+  const [offset, setOffset] = useState('0')
   const { data, error, loading } = useEndpoint(
     `${baseEndpoint}${offset ? `?offset=${offset}` : ''}`
   )
@@ -90,14 +90,14 @@ export default function TuckTuck() {
   const handleOffsetChange: React.ChangeEventHandler<HTMLInputElement> = ({
     target: { value },
   }) => {
-    if (!value) {
-      return setOffset('1')
+    if (value === undefined || value === '') {
+      return setOffset('0')
     }
     if (Number.isNaN(parseInt(value))) {
-      return setOffset('1')
+      return setOffset('0')
     }
     if (parseInt(value) > 10) {
-      return setOffset('1')
+      return setOffset('0')
     }
     return setOffset(value)
   }

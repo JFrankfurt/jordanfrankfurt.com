@@ -1,15 +1,9 @@
-import { css } from '@emotion/core'
 import Layout from 'components/Layout'
-
-const rootCss = css`
-  min-width: 360px;
-  width: 45vw;
-`
 
 export default function About() {
   return (
     <Layout>
-      <div css={rootCss}>
+      <div className="min-w-[360px] w-[45vw]">
         <h1>About me</h1>
         <p>
           I fight people (

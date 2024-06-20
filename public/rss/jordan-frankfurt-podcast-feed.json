@@ -1,13 +1,13 @@
 {
-  "version": "https://jsonfeed.org/version/1",
-  "title": "Jordan Frankfurt podcast",
-  "home_page_url": "https://jordanfrankfurt.com",
-  "feed_url": "https://jordanfrankfurt.com/rss/jordan-frankfurt-podcast-feed.json",
-  "description": "mostly reading things",
-  "icon": "https://jordanfrankfurt.com/me.jpg",
-  "author": {
-    "name": "Jordan Frankfurt",
-    "url": "https://twitter.com/JordanFrankfurt"
-  },
-  "items": []
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Jordan Frankfurt podcast",
+    "home_page_url": "https://jordanfrankfurt.com",
+    "feed_url": "https://jordanfrankfurt.com/rss/jordan-frankfurt-podcast-feed.json",
+    "description": "mostly reading things",
+    "icon": "https://jordanfrankfurt.com/me.jpg",
+    "author": {
+        "name": "Jordan Frankfurt",
+        "url": "https://twitter.com/JordanFrankfurt"
+    },
+    "items": []
 }

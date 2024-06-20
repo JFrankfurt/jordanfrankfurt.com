@@ -1,24 +1,9 @@
-import { css } from '@emotion/core'
 import Layout from 'components/Layout'
 import { DateTime } from 'luxon'
 import { NextPage } from 'next'
 import Link from 'next/link'
-import React from 'react'
-import { theme } from 'styles/theme'
 import { runBuildJobs } from 'utils'
 import { getBlogPostsData, Post } from 'utils/blog'
-
-const rootCss = css``
-const titleLink = css`
-  text-decoration: none;
-`
-const postTitleCss = css`
-  color: ${theme.palette.black};
-  transition: color 200ms ease;
-  &:hover {
-    color: ${theme.palette.linkHoverRed};
-  }
-`
 
 interface props {
   posts: Post[]
@@ -26,7 +11,7 @@ interface props {
 
 const Index: NextPage<props> = ({ posts }) => (
   <Layout>
-    <main css={rootCss}>
+    <main>
       {posts
         .sort((a, b) => {
           const dateA = DateTime.fromISO(a.attributes.date)
@@ -39,8 +24,8 @@ const Index: NextPage<props> = ({ posts }) => (
           return (
             <div key={`post-list-${slug}`}>
               <Link href={slug} passHref>
-                <a key={slug} css={titleLink}>
-                  <h1 css={postTitleCss}>{attributes.title}</h1>
+                <a key={slug} className='no-underline'>
+                  <h1 className="transition-colors text-black hover:text-linkHoverRed">{attributes.title}</h1>
                 </a>
               </Link>
               <sub>{DT.toLocaleString(DateTime.DATE_MED)}</sub>

@@ -4,7 +4,7 @@
         <title>Jordan Frankfurt blog</title>
         <link>https://jordanfrankfurt.com</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Thu, 28 Apr 2022 16:01:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Jun 2024 20:47:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -13,7 +13,7 @@
             <url>https://jordanfrankfurt.com/me.jpg</url>
             <link>https://jordanfrankfurt.com</link>
         </image>
-        <copyright>All rights reserved 2022, Jordan Frankfurt</copyright>
+        <copyright>All rights reserved 2024, Jordan Frankfurt</copyright>
         <item>
             <title><![CDATA[investment strategy]]></title>
             <link>https://jordanfrankfurt.com/investment-strategy</link>

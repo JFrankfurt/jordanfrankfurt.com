@@ -1,22 +1,28 @@
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Layout from 'components/Layout'
 import { DateTime } from 'luxon'
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { remark } from 'remark'
+import html from 'remark-html'
+import styles from '../styles/article.module.css'
 
-interface props {
+interface Props {
   html: string
   attributes: Record<string, any>
 }
 
-const Post: NextPage<props> = ({ attributes, html }) => {
+const Post: NextPage<Props> = ({ attributes, html }) => {
   if (!html) return <div>not found</div>
 
-  const DT = DateTime.fromISO(attributes.date)
+  const DT = DateTime.fromISO(attributes.date as string)
   return (
     <Layout title={attributes.title}>
       <main>
-        <h1>{attributes.title}</h1>
+        <h1 className={styles.title}>{attributes.title}</h1>
         <sub>{DT.toLocaleString(DateTime.DATE_MED)}</sub>
-        <article dangerouslySetInnerHTML={{ __html: html }} />
+        <article dangerouslySetInnerHTML={{ __html: html }} className={styles.article} />
       </main>
     </Layout>
   )
@@ -26,29 +32,32 @@ export default Post
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { slug } = params as { slug: string }
-  const post = await import(`posts/${slug}.md`).catch(console.error)
-  return { props: { ...post.default } }
+  const filePath = path.join(process.cwd(), 'posts', `${slug}.md`)
+  const fileContents = fs.readFileSync(filePath, 'utf8')
+  const { data, content } = matter(fileContents)
+
+  const processedContent = await remark().use(html).process(content)
+  const contentHtml = processedContent.toString()
+
+  const attributes = {
+    ...data,
+    date: data.date ? new Date(data.date).toISOString() : null,
+  }
+
+  return { props: { attributes, html: contentHtml } }
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // https://webpack.js.org/guides/dependency-management/#requirecontext
-  const markdownFiles = require
-    // @ts-ignore
-    .context('posts', false, /\.md$/)
-    .keys()
-    .filter((path: string) => path.substring(0, 1) !== '.')
+  const postsDirectory = path.join(process.cwd(), 'posts')
+  const filenames = fs.readdirSync(postsDirectory)
 
-  const posts = (await Promise.all(
-    markdownFiles.map(async (path: string) => {
-      const markdown = await import(`../${path}`)
-      // .substring removes ".md" from path
-      let slug = path.substring(0, path.length - 3)
-      // .slice removes posts prefix
-      slug = slug.slice('posts/'.length)
-      return { ...markdown, slug }
+  const paths = filenames
+    .filter((filename) => filename.endsWith('.md'))
+    .map((filename) => {
+      const slug = filename.replace(/\.md$/, '')
+      return { params: { slug } }
     })
-  )) as { html: string; slug: string }[]
-  const paths = posts.map(({ slug }) => ({ params: { slug } }))
+
   return {
     paths,
     fallback: false,

@@ -4,7 +4,7 @@
         <title>Jordan Frankfurt blog</title>
         <link>https://jordanfrankfurt.com</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Wed, 19 Jun 2024 20:47:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Jun 2024 02:07:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -16,16 +16,16 @@
         <copyright>All rights reserved 2024, Jordan Frankfurt</copyright>
         <item>
             <title><![CDATA[investment strategy]]></title>
-            <link>https://jordanfrankfurt.com/investment-strategy</link>
-            <guid>https://jordanfrankfurt.com/investment-strategy</guid>
+            <link>https://jordanfrankfurt.cominvestment-strategy</link>
+            <guid>https://jordanfrankfurt.cominvestment-strategy</guid>
             <pubDate>Thu, 15 Apr 2021 06:36:00 GMT</pubDate>
-            <description><![CDATA[<p>Occasionally people I care about ask me something like &quot;Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?&quot; At first the question made me a little uncomfortable because:</p>
+            <description><![CDATA[<p>Occasionally people I care about ask me something like "Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?" At first the question made me a little uncomfortable because:</p>
 <ol>
 <li>I don't have a ton of money</li>
 <li>I haven't made insane returns investing what money I do have</li>
 <li>I don't want to be responsible for people I care about losing any portion of their savings</li>
 </ol>
-<p>I've started to get over all three of those frustrations only somewhat recently. It's more complicated than &quot;I just got over it&quot;, but basically I just accepted that:</p>
+<p>I've started to get over all three of those frustrations only somewhat recently. It's more complicated than "I just got over it", but basically I just accepted that:</p>
 <ol>
 <li>I care/read more about markets and personal finance than any normal person should</li>
 <li>I likely have a <em>far</em> better understanding of crypto than anyone else they'll ask about the topic</li>
@@ -40,7 +40,7 @@
 <li>preserving liquidity</li>
 </ul>
 <h2>Maximizing Returns Over Time</h2>
-<p>You've probably heard the term &quot;compounding interest&quot; at some point in your reading about personal finance. (If so, you may have come away from the topic underwhelmed, since typical examples are unrealistic have to do with bank interest.) Basically, the more money you make, the faster you make money in the future. Here's an example: If an investment opportunity could yield you a 10% annual return on $5,000 and it (or something like it) is available to you for multiple years, you'll make more money in each subsequent year than you did in year 1.</p>
+<p>You've probably heard the term "compounding interest" at some point in your reading about personal finance. (If so, you may have come away from the topic underwhelmed, since typical examples are unrealistic have to do with bank interest.) Basically, the more money you make, the faster you make money in the future. Here's an example: If an investment opportunity could yield you a 10% annual return on $5,000 and it (or something like it) is available to you for multiple years, you'll make more money in each subsequent year than you did in year 1.</p>
 <p>Year 1 - $5,000 * 10% = $5,500 (Δ 500)</p>
 <p>Year 2 - $5,500 * 10% = $6,050 (Δ 550)</p>
 <p>Year 3 - $6,050 * 10% = $6,655 (Δ 605)</p>
@@ -111,13 +111,13 @@ net APY roughly 2%</li>
 </ul>
 <p>Explaining the reasoning behind each of these investments is outside the scope of what I'm hoping to accomplish here. If you're interested, get in touch and maybe I'll use our convesation about one of these (or something you're interested in) to write another post explaining my thoughts on a particular crypto investment option. It's not my intent to encourage you to buy anything listed here, but I do think that you'll learn fun/interesting things if you spend time reading about these projects.</p>
 ]]></description>
-            <content:encoded><![CDATA[<p>Occasionally people I care about ask me something like &quot;Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?&quot; At first the question made me a little uncomfortable because:</p>
+            <content:encoded><![CDATA[<p>Occasionally people I care about ask me something like "Hey, can you help me understand investing? I have some money saved up and I know I should invest it, but I don't know exactly what to do. Crypto seems really interesting too, can you help me get started?" At first the question made me a little uncomfortable because:</p>
 <ol>
 <li>I don't have a ton of money</li>
 <li>I haven't made insane returns investing what money I do have</li>
 <li>I don't want to be responsible for people I care about losing any portion of their savings</li>
 </ol>
-<p>I've started to get over all three of those frustrations only somewhat recently. It's more complicated than &quot;I just got over it&quot;, but basically I just accepted that:</p>
+<p>I've started to get over all three of those frustrations only somewhat recently. It's more complicated than "I just got over it", but basically I just accepted that:</p>
 <ol>
 <li>I care/read more about markets and personal finance than any normal person should</li>
 <li>I likely have a <em>far</em> better understanding of crypto than anyone else they'll ask about the topic</li>
@@ -132,7 +132,7 @@ net APY roughly 2%</li>
 <li>preserving liquidity</li>
 </ul>
 <h2>Maximizing Returns Over Time</h2>
-<p>You've probably heard the term &quot;compounding interest&quot; at some point in your reading about personal finance. (If so, you may have come away from the topic underwhelmed, since typical examples are unrealistic have to do with bank interest.) Basically, the more money you make, the faster you make money in the future. Here's an example: If an investment opportunity could yield you a 10% annual return on $5,000 and it (or something like it) is available to you for multiple years, you'll make more money in each subsequent year than you did in year 1.</p>
+<p>You've probably heard the term "compounding interest" at some point in your reading about personal finance. (If so, you may have come away from the topic underwhelmed, since typical examples are unrealistic have to do with bank interest.) Basically, the more money you make, the faster you make money in the future. Here's an example: If an investment opportunity could yield you a 10% annual return on $5,000 and it (or something like it) is available to you for multiple years, you'll make more money in each subsequent year than you did in year 1.</p>
 <p>Year 1 - $5,000 * 10% = $5,500 (Δ 500)</p>
 <p>Year 2 - $5,500 * 10% = $6,050 (Δ 550)</p>
 <p>Year 3 - $6,050 * 10% = $6,655 (Δ 605)</p>
@@ -205,12 +205,12 @@ net APY roughly 2%</li>
 ]]></content:encoded>
             <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
             <category>Technology</category>
-            <enclosure url="https://jordanfrankfurt.com/investment-strategy/me.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jordanfrankfurt.cominvestment-strategy/me.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[My desktop setup]]></title>
-            <link>https://jordanfrankfurt.com/my-desktop-setup</link>
-            <guid>https://jordanfrankfurt.com/my-desktop-setup</guid>
+            <link>https://jordanfrankfurt.commy-desktop-setup</link>
+            <guid>https://jordanfrankfurt.commy-desktop-setup</guid>
             <pubDate>Wed, 23 Dec 2020 21:25:00 GMT</pubDate>
             <description><![CDATA[<p>I've finally got a desktop workstation arrangement that I'm relatively happy with. I'm usually working with two computers throughout the day one runs Windows/Ubuntu for personal gaming and dev work. The second is a macbook pro for work.</p>
 <h2>Common Components</h2>
@@ -219,8 +219,8 @@ net APY roughly 2%</li>
 <li>Lens: Fujinon XF16-55mmF2.8 R LM WR</li>
 <li>Magewell HDMI-USB 1080p capture dongle (The Elgato 4k camlink was sold out due to Corona, else I would have purchased that.)</li>
 <li>Manfrotto PIXI Mini Tripod</li>
-<li>Dell 24&quot; 1440p 144hz monitor</li>
-<li>Dell 27&quot; 4k 60hz monitor</li>
+<li>Dell 24" 1440p 144hz monitor</li>
+<li>Dell 27" 4k 60hz monitor</li>
 <li>Dual monitor arm desktop VESA mount</li>
 <li>Vari electric standing desk</li>
 <li>Coolermaster Master Keys M w/ white LEDs</li>
@@ -260,8 +260,8 @@ net APY roughly 2%</li>
 <li>Lens: Fujinon XF16-55mmF2.8 R LM WR</li>
 <li>Magewell HDMI-USB 1080p capture dongle (The Elgato 4k camlink was sold out due to Corona, else I would have purchased that.)</li>
 <li>Manfrotto PIXI Mini Tripod</li>
-<li>Dell 24&quot; 1440p 144hz monitor</li>
-<li>Dell 27&quot; 4k 60hz monitor</li>
+<li>Dell 24" 1440p 144hz monitor</li>
+<li>Dell 27" 4k 60hz monitor</li>
 <li>Dual monitor arm desktop VESA mount</li>
 <li>Vari electric standing desk</li>
 <li>Coolermaster Master Keys M w/ white LEDs</li>
@@ -296,14 +296,14 @@ net APY roughly 2%</li>
 ]]></content:encoded>
             <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
             <category>Technology</category>
-            <enclosure url="https://jordanfrankfurt.com/my-desktop-setup/me.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jordanfrankfurt.commy-desktop-setup/me.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[setting up a home server]]></title>
-            <link>https://jordanfrankfurt.com/setting-up-a-home-server</link>
-            <guid>https://jordanfrankfurt.com/setting-up-a-home-server</guid>
+            <link>https://jordanfrankfurt.comsetting-up-a-home-server</link>
+            <guid>https://jordanfrankfurt.comsetting-up-a-home-server</guid>
             <pubDate>Fri, 01 Jan 2021 21:25:00 GMT</pubDate>
-            <description><![CDATA[<p>For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing &quot;philanthropic&quot; donations to decentralized software networks/protocols I support.</p>
+            <description><![CDATA[<p>For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing "philanthropic" donations to decentralized software networks/protocols I support.</p>
 <p>About a month ago I finally took the leap and got started. (Thanks to Greg Taschuk and Nicholas Bourikas for the inspiration to finally go for it.) I've got an old laptop I used in college running Arch next to our router now. In fact, I'm writing this post with vim ssh'd into the thing from my couch.</p>
 <p>So far I've absolutely loved it. It feels like the learning:effort ratio is just insanely high. Every time I want to figure out how to accomplish anything, the knowledge for how to accomplish it is readily available at any degree of depth. I've learned so much about linux in the past month. My first task was getting the Arch install completed. That was probably the most challenging thing to accomplish. A lot of the steps involved had to do with physical aspects of the computer that I've not worked with in the past.</p>
 <p>Since then things have slowly gotten more familiar both due to my general work experience and due to my continued learning. I've figured out how to mount external drives, edited my logind.conf, set up an ssh server, installed gcc, go, python, node, and this evening I got geth running.</p>
@@ -311,7 +311,7 @@ net APY roughly 2%</li>
 <p>I want to figure out my router configuration and port opening such that I can access the server from outside our network. I want to get IPFS and bitcoind running smoothly, with the ipfs api server resolving assets that are requested by other computers on the network. I want to get familiar enough with systemd services that I can confidently use them to their fullest extent in managing one-off cron-like jobs, and potentially get some automated crypto bots up and running using data from the nodes on the system.</p>
 <p>I'm having a blast.</p>
 ]]></description>
-            <content:encoded><![CDATA[<p>For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing &quot;philanthropic&quot; donations to decentralized software networks/protocols I support.</p>
+            <content:encoded><![CDATA[<p>For a long time I've wanted to do a learn linux better than the unix generic stuff you pick up from doing devwork on macos. I've also had an aspirational hope to run a home server that operates as a general utility for running services I happen to build and doing "philanthropic" donations to decentralized software networks/protocols I support.</p>
 <p>About a month ago I finally took the leap and got started. (Thanks to Greg Taschuk and Nicholas Bourikas for the inspiration to finally go for it.) I've got an old laptop I used in college running Arch next to our router now. In fact, I'm writing this post with vim ssh'd into the thing from my couch.</p>
 <p>So far I've absolutely loved it. It feels like the learning:effort ratio is just insanely high. Every time I want to figure out how to accomplish anything, the knowledge for how to accomplish it is readily available at any degree of depth. I've learned so much about linux in the past month. My first task was getting the Arch install completed. That was probably the most challenging thing to accomplish. A lot of the steps involved had to do with physical aspects of the computer that I've not worked with in the past.</p>
 <p>Since then things have slowly gotten more familiar both due to my general work experience and due to my continued learning. I've figured out how to mount external drives, edited my logind.conf, set up an ssh server, installed gcc, go, python, node, and this evening I got geth running.</p>
@@ -321,15 +321,15 @@ net APY roughly 2%</li>
 ]]></content:encoded>
             <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
             <category>Technology</category>
-            <enclosure url="https://jordanfrankfurt.com/setting-up-a-home-server/me.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jordanfrankfurt.comsetting-up-a-home-server/me.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Starting Sima]]></title>
-            <link>https://jordanfrankfurt.com/starting-sima</link>
-            <guid>https://jordanfrankfurt.com/starting-sima</guid>
+            <link>https://jordanfrankfurt.comstarting-sima</link>
+            <guid>https://jordanfrankfurt.comstarting-sima</guid>
             <pubDate>Sat, 06 Jun 2020 19:14:16 GMT</pubDate>
-            <description><![CDATA[<p>Lauren and I had just gotten married, and she had about $55k in student loans. &gt;$20k of that was at 11.75% We were both working reliable jobs with decent salaries. I had gotten my first credit card about three years prior, so I had a (short) credit history. In spite of this, no one would refinance the 11% loan for us. It blew my mind that people like us who were clearly safe borrowers couldn't access credit at all. It wasn't that people would lend to us, but only at bad rates; no one would lend to us in any amount at any price.</p>
-<p>After college we were starting to build a social circle that included close friends who were further along in their lives and had been saving for a decade or more. I had the thought &quot;If I knew there were an easy way to refi my friend's 11% loan and I had the money, I'd do it.&quot; But at that point I didn't know of any way to make it happen without it being pretty socially uncomfortable.</p>
+            <description><![CDATA[<p>Lauren and I had just gotten married, and she had about $55k in student loans. >$20k of that was at 11.75% We were both working reliable jobs with decent salaries. I had gotten my first credit card about three years prior, so I had a (short) credit history. In spite of this, no one would refinance the 11% loan for us. It blew my mind that people like us who were clearly safe borrowers couldn't access credit at all. It wasn't that people would lend to us, but only at bad rates; no one would lend to us in any amount at any price.</p>
+<p>After college we were starting to build a social circle that included close friends who were further along in their lives and had been saving for a decade or more. I had the thought "If I knew there were an easy way to refi my friend's 11% loan and I had the money, I'd do it." But at that point I didn't know of any way to make it happen without it being pretty socially uncomfortable.</p>
 <p>A year or so later I had a good friend and coworker who is Indian and had gotten his masters degree in the US. He had more student debt than we did, and his was at about 17%. He was having the same experience I did trying to refinance our loans, though I imagine his citizenship made accessing credit in the US essentially impossible.</p>
 <p>I was blown away by that. <em>Surely</em> there had to be an easy way for me to pay off a small piece of his loans and cut his rate in half. I trusted my friend would pay me back and never have trouble finding work, and of course I'd love to get an 8% yield on an investment. Again, I looked for an easy way to manage funding/repaying loans between friends, and I couldn't find anything that I liked.</p>
 <p>So I started building. I figured all we really needed was an ACH api to set up auto-pay, and basically, that's what we are today.</p>
@@ -342,11 +342,11 @@ net APY roughly 2%</li>
 <li>The loan amount changes hands</li>
 <li>ACH repayment executes according to your agreement. (We even have IO/deferral available!)</li>
 </ol>
-<p>My use-case here, given my social situation, is based on friendships. But I have a feeling that the bigger opportunity is within families. Generational wealth differences are, obviously, huge. When a student goes through college, they are immediately massively indebted (average &gt;$30k) and the compensation the student (or recent grad) commands for their skills/experience is essentially the lowest it will ever be. At the same time, many have a family network that is in their peak earning period. The students' relatives are either making more money than they ever have or are transitioning from a growth to a wealth-preservation portfolio where fixed income is more attractive than it ever has been before. In fact, the older generation's FI portfolio is likely heavily weighted in diversified ABS instruments that are the ultimate buyer of student loan debt. It seems intuitive to me that there is more yield to be made for and a non-0 emotional value to be accrued to the older generation by funding the younger generation's education and early career endeavors.</p>
+<p>My use-case here, given my social situation, is based on friendships. But I have a feeling that the bigger opportunity is within families. Generational wealth differences are, obviously, huge. When a student goes through college, they are immediately massively indebted (average >$30k) and the compensation the student (or recent grad) commands for their skills/experience is essentially the lowest it will ever be. At the same time, many have a family network that is in their peak earning period. The students' relatives are either making more money than they ever have or are transitioning from a growth to a wealth-preservation portfolio where fixed income is more attractive than it ever has been before. In fact, the older generation's FI portfolio is likely heavily weighted in diversified ABS instruments that are the ultimate buyer of student loan debt. It seems intuitive to me that there is more yield to be made for and a non-0 emotional value to be accrued to the older generation by funding the younger generation's education and early career endeavors.</p>
 <p>The limiting factor in these situations is social risk. A lender doesn't want to fund a loan and end up having to hound their niece for missed payments over thanksgiving dinner. Sima aims to solve that w/ autopay, clear notifications, and a shared record of the state of the loan. Ideally you can just set it and forget it, which solves the social cost of servicing loans traditionally.</p>
 ]]></description>
-            <content:encoded><![CDATA[<p>Lauren and I had just gotten married, and she had about $55k in student loans. &gt;$20k of that was at 11.75% We were both working reliable jobs with decent salaries. I had gotten my first credit card about three years prior, so I had a (short) credit history. In spite of this, no one would refinance the 11% loan for us. It blew my mind that people like us who were clearly safe borrowers couldn't access credit at all. It wasn't that people would lend to us, but only at bad rates; no one would lend to us in any amount at any price.</p>
-<p>After college we were starting to build a social circle that included close friends who were further along in their lives and had been saving for a decade or more. I had the thought &quot;If I knew there were an easy way to refi my friend's 11% loan and I had the money, I'd do it.&quot; But at that point I didn't know of any way to make it happen without it being pretty socially uncomfortable.</p>
+            <content:encoded><![CDATA[<p>Lauren and I had just gotten married, and she had about $55k in student loans. >$20k of that was at 11.75% We were both working reliable jobs with decent salaries. I had gotten my first credit card about three years prior, so I had a (short) credit history. In spite of this, no one would refinance the 11% loan for us. It blew my mind that people like us who were clearly safe borrowers couldn't access credit at all. It wasn't that people would lend to us, but only at bad rates; no one would lend to us in any amount at any price.</p>
+<p>After college we were starting to build a social circle that included close friends who were further along in their lives and had been saving for a decade or more. I had the thought "If I knew there were an easy way to refi my friend's 11% loan and I had the money, I'd do it." But at that point I didn't know of any way to make it happen without it being pretty socially uncomfortable.</p>
 <p>A year or so later I had a good friend and coworker who is Indian and had gotten his masters degree in the US. He had more student debt than we did, and his was at about 17%. He was having the same experience I did trying to refinance our loans, though I imagine his citizenship made accessing credit in the US essentially impossible.</p>
 <p>I was blown away by that. <em>Surely</em> there had to be an easy way for me to pay off a small piece of his loans and cut his rate in half. I trusted my friend would pay me back and never have trouble finding work, and of course I'd love to get an 8% yield on an investment. Again, I looked for an easy way to manage funding/repaying loans between friends, and I couldn't find anything that I liked.</p>
 <p>So I started building. I figured all we really needed was an ACH api to set up auto-pay, and basically, that's what we are today.</p>
@@ -359,34 +359,34 @@ net APY roughly 2%</li>
 <li>The loan amount changes hands</li>
 <li>ACH repayment executes according to your agreement. (We even have IO/deferral available!)</li>
 </ol>
-<p>My use-case here, given my social situation, is based on friendships. But I have a feeling that the bigger opportunity is within families. Generational wealth differences are, obviously, huge. When a student goes through college, they are immediately massively indebted (average &gt;$30k) and the compensation the student (or recent grad) commands for their skills/experience is essentially the lowest it will ever be. At the same time, many have a family network that is in their peak earning period. The students' relatives are either making more money than they ever have or are transitioning from a growth to a wealth-preservation portfolio where fixed income is more attractive than it ever has been before. In fact, the older generation's FI portfolio is likely heavily weighted in diversified ABS instruments that are the ultimate buyer of student loan debt. It seems intuitive to me that there is more yield to be made for and a non-0 emotional value to be accrued to the older generation by funding the younger generation's education and early career endeavors.</p>
+<p>My use-case here, given my social situation, is based on friendships. But I have a feeling that the bigger opportunity is within families. Generational wealth differences are, obviously, huge. When a student goes through college, they are immediately massively indebted (average >$30k) and the compensation the student (or recent grad) commands for their skills/experience is essentially the lowest it will ever be. At the same time, many have a family network that is in their peak earning period. The students' relatives are either making more money than they ever have or are transitioning from a growth to a wealth-preservation portfolio where fixed income is more attractive than it ever has been before. In fact, the older generation's FI portfolio is likely heavily weighted in diversified ABS instruments that are the ultimate buyer of student loan debt. It seems intuitive to me that there is more yield to be made for and a non-0 emotional value to be accrued to the older generation by funding the younger generation's education and early career endeavors.</p>
 <p>The limiting factor in these situations is social risk. A lender doesn't want to fund a loan and end up having to hound their niece for missed payments over thanksgiving dinner. Sima aims to solve that w/ autopay, clear notifications, and a shared record of the state of the loan. Ideally you can just set it and forget it, which solves the social cost of servicing loans traditionally.</p>
 ]]></content:encoded>
             <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
             <category>Technology</category>
-            <enclosure url="https://jordanfrankfurt.com/starting-sima/me.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jordanfrankfurt.comstarting-sima/me.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[We're having a kid]]></title>
-            <link>https://jordanfrankfurt.com/thinking-about-kid-1</link>
-            <guid>https://jordanfrankfurt.com/thinking-about-kid-1</guid>
+            <link>https://jordanfrankfurt.comthinking-about-kid-1</link>
+            <guid>https://jordanfrankfurt.comthinking-about-kid-1</guid>
             <pubDate>Tue, 06 Oct 2020 23:25:00 GMT</pubDate>
-            <description><![CDATA[<p>I find it amusing that I was writing drafts of another post titled &quot;thinking about having kids&quot; seven months ago. It's happening for sure now for sure. Lauren's four months pregnant.</p>
+            <description><![CDATA[<p>I find it amusing that I was writing drafts of another post titled "thinking about having kids" seven months ago. It's happening for sure now for sure. Lauren's four months pregnant.</p>
 <p>People ask me how it feels frequently. I think the thing that crosses my mind most is confusion at the state of myself in relation to parenthood. Parenting seems an act of people who understand more about the world (and themselves) than I do. While I think I am maybe slightly better prepared to shepherd another human into the world than the average, I am having a hard time imagining what I will actually need to <em>do</em>. I am concerned that one day when the kid is 12 I will realize that I totally forgot something important I should/could have done for them and it'll be too late.</p>
 <p>It's reassuring to see people like Bryan Caplan talking about how you really don't need to do that much for kids to turn out alright, but at the same time it's clear he puts a lot of effort into providing his homeschooled kids what he believes to be the ideal educational and general childhood experience. So, I guess to summarize, I'm stressed out because I care a lot and I'm not sure where I should be applying that care (if anywhere).</p>
 ]]></description>
-            <content:encoded><![CDATA[<p>I find it amusing that I was writing drafts of another post titled &quot;thinking about having kids&quot; seven months ago. It's happening for sure now for sure. Lauren's four months pregnant.</p>
+            <content:encoded><![CDATA[<p>I find it amusing that I was writing drafts of another post titled "thinking about having kids" seven months ago. It's happening for sure now for sure. Lauren's four months pregnant.</p>
 <p>People ask me how it feels frequently. I think the thing that crosses my mind most is confusion at the state of myself in relation to parenthood. Parenting seems an act of people who understand more about the world (and themselves) than I do. While I think I am maybe slightly better prepared to shepherd another human into the world than the average, I am having a hard time imagining what I will actually need to <em>do</em>. I am concerned that one day when the kid is 12 I will realize that I totally forgot something important I should/could have done for them and it'll be too late.</p>
 <p>It's reassuring to see people like Bryan Caplan talking about how you really don't need to do that much for kids to turn out alright, but at the same time it's clear he puts a lot of effort into providing his homeschooled kids what he believes to be the ideal educational and general childhood experience. So, I guess to summarize, I'm stressed out because I care a lot and I'm not sure where I should be applying that care (if anywhere).</p>
 ]]></content:encoded>
             <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
             <category>Technology</category>
-            <enclosure url="https://jordanfrankfurt.com/thinking-about-kid-1/me.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jordanfrankfurt.comthinking-about-kid-1/me.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Some fortunate tax planning opportunities]]></title>
-            <link>https://jordanfrankfurt.com/using-sima-for-tax-planning</link>
-            <guid>https://jordanfrankfurt.com/using-sima-for-tax-planning</guid>
+            <link>https://jordanfrankfurt.comusing-sima-for-tax-planning</link>
+            <guid>https://jordanfrankfurt.comusing-sima-for-tax-planning</guid>
             <pubDate>Tue, 06 Oct 2020 10:57:16 GMT</pubDate>
             <description><![CDATA[<p>We've been trying to sell our car in Brooklyn for the past month or so, but have been stymied by issues with our title. The lender apparently never got around to putting themselves on it. So, in order to sell the thing in good faith I'm paying off the loan (very) early. Unfortunately, that means an unexpected short-term expense of about $25,000.</p>
 <p>Covering that would require me to sell some ADBE stock that has appreciated quite a bit in the past couple of years. This is obviously a great situation to be in, but unfortunately it means I'll owe a fair bit in capital gains taxes. Luckily, there's a classic trick of high-end personal finance that works perfectly for me here. What many executives with an equity-heavy compensation or net-worth will do in this situation is use their assets as collateral on a loan. The loan isn't taxable, and the lender knows that the debt is backed fully by your portfolio.</p>
@@ -400,7 +400,7 @@ net APY roughly 2%</li>
 ]]></content:encoded>
             <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
             <category>Technology</category>
-            <enclosure url="https://jordanfrankfurt.com/using-sima-for-tax-planning/me.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jordanfrankfurt.comusing-sima-for-tax-planning/me.jpg" length="0" type="image/jpg"/>
         </item>
     </channel>
 </rss>

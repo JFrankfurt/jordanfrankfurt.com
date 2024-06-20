@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Jordan Frankfurt podcast</title>
         <link>https://jordanfrankfurt.com</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Wed, 19 Jun 2024 20:47:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Jun 2024 02:07:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -14,5 +14,28 @@
             <link>https://jordanfrankfurt.com</link>
         </image>
         <copyright>All rights reserved 2024, Jordan Frankfurt</copyright>
+        <item>
+            <title><![CDATA[TWAMM reading]]></title>
+            <link>https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB</link>
+            <guid>https://jordanfrankfurt.comtwamm</guid>
+            <pubDate>Mon, 02 Aug 2021 09:15:00 GMT</pubDate>
+            <description><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
+<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB" title="TWAMM">audio file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49" title="TWAMM">video file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e" title="TWAMM">original post pdf (ipfs)</a></p>
+<p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>
+]]></description>
+            <content:encoded><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
+<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB" title="TWAMM">audio file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49" title="TWAMM">video file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e" title="TWAMM">original post pdf (ipfs)</a></p>
+<p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>
+]]></content:encoded>
+            <author>jordanwfrankfurt@gmail.com (Jordan Frankfurt)</author>
+            <category>Technology</category>
+            <enclosure url="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB" length="0" type="audio//ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB"/>
+        </item>
     </channel>
 </rss>

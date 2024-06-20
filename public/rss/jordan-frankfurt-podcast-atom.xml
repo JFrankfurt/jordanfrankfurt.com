@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jordanfrankfurt.com</id>
     <title>Jordan Frankfurt podcast</title>
-    <updated>2024-06-19T20:47:54.672Z</updated>
+    <updated>2024-06-20T02:07:34.666Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Jordan Frankfurt</name>
@@ -15,4 +15,35 @@
     <logo>https://jordanfrankfurt.com/me.jpg</logo>
     <icon>https://jordanfrankfurt.com/favicon.png</icon>
     <rights>All rights reserved 2024, Jordan Frankfurt</rights>
+    <entry>
+        <title type="html"><![CDATA[TWAMM reading]]></title>
+        <id>https://jordanfrankfurt.comtwamm</id>
+        <link href="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB"/>
+        <updated>2021-08-02T09:15:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
+<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB" title="TWAMM">audio file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49" title="TWAMM">video file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e" title="TWAMM">original post pdf (ipfs)</a></p>
+<p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
+<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB" title="TWAMM">audio file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49" title="TWAMM">video file (ipfs)</a></p>
+<p><a href="https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e" title="TWAMM">original post pdf (ipfs)</a></p>
+<p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>
+]]></content>
+        <author>
+            <name>Jordan Frankfurt</name>
+            <email>jordanwfrankfurt@gmail.com</email>
+            <uri>https://twitter.com/JordanFrankfurt</uri>
+        </author>
+        <category label="Technology"/>
+        <contributor>
+            <name>Jordan Frankfurt</name>
+            <email>jordanwfrankfurt@gmail.com</email>
+            <uri>https://twitter.com/JordanFrankfurt</uri>
+        </contributor>
+    </entry>
 </feed>

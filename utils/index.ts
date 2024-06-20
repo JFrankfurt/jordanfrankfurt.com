@@ -1,6 +1,7 @@
 import { Feed, FeedOptions, Item } from 'feed'
 import { mkdirSync, writeFileSync } from 'fs'
 import { getBlogPostsData } from 'utils/blog'
+import fetch from 'node-fetch'
 
 export async function runBuildJobs(): Promise<void> {
   await generateRssFeeds()
@@ -17,6 +18,7 @@ const generateRssFeeds = async () => {
     email: 'jordanwfrankfurt@gmail.com',
     link: 'https://twitter.com/JordanFrankfurt',
   }
+
   const baseFeed: FeedOptions = {
     author,
     copyright: `All rights reserved ${date.getFullYear()}, Jordan Frankfurt`,
@@ -30,46 +32,50 @@ const generateRssFeeds = async () => {
     link: siteURL,
     updated: date,
   }
-  const AudioFeed = new Feed({
+
+  const audioFeed = new Feed({
     ...baseFeed,
-    title: baseFeed.title + ' podcast',
+    title: `${baseFeed.title} podcast`,
     feedLinks: {
       rss2: `${siteURL}/rss/${encodeTitle(
-        baseFeed.title + ' podcast'
+        `${baseFeed.title} podcast`
       )}-feed.xml`,
       json: `${siteURL}/rss/${encodeTitle(
-        baseFeed.title + ' podcast'
+        `${baseFeed.title} podcast`
       )}-feed.json`,
       atom: `${siteURL}/rss/${encodeTitle(
-        baseFeed.title + ' podcast'
+        `${baseFeed.title} podcast`
       )}-atom.xml`,
     },
   })
-  const TextFeed = new Feed({
+
+  const textFeed = new Feed({
     ...baseFeed,
-    title: baseFeed.title + ' blog',
+    title: `${baseFeed.title} blog`,
     feedLinks: {
-      rss2: `${siteURL}/rss/${encodeTitle(baseFeed.title + ' blog')}-feed.xml`,
-      json: `${siteURL}/rss/${encodeTitle(baseFeed.title + ' blog')}-feed.json`,
-      atom: `${siteURL}/rss/${encodeTitle(baseFeed.title + ' blog')}-atom.xml`,
+      rss2: `${siteURL}/rss/${encodeTitle(`${baseFeed.title} blog`)}-feed.xml`,
+      json: `${siteURL}/rss/${encodeTitle(`${baseFeed.title} blog`)}-feed.json`,
+      atom: `${siteURL}/rss/${encodeTitle(`${baseFeed.title} blog`)}-atom.xml`,
     },
   })
-  const VideoFeed = new Feed({
+
+  const videoFeed = new Feed({
     ...baseFeed,
-    title: baseFeed.title + ' videos',
+    title: `${baseFeed.title} videos`,
     feedLinks: {
       rss2: `${siteURL}/rss/${encodeTitle(
-        baseFeed.title + ' videos'
+        `${baseFeed.title} videos`
       )}-feed.xml`,
       json: `${siteURL}/rss/${encodeTitle(
-        baseFeed.title + ' videos'
+        `${baseFeed.title} videos`
       )}-feed.json`,
       atom: `${siteURL}/rss/${encodeTitle(
-        baseFeed.title + ' videos'
+        `${baseFeed.title} videos`
       )}-atom.xml`,
     },
   })
-  posts.forEach(async (post) => {
+
+  for (const post of posts) {
     const url = `${siteURL}${post.slug}`
 
     const item: Item = {
@@ -96,21 +102,17 @@ const generateRssFeeds = async () => {
         length: data.byteLength,
       }
       item.link = post.attributes.audio
-      AudioFeed.addItem(item)
-      return
-    }
-
-    if (post.attributes.video) {
+      audioFeed.addItem(item)
+    } else if (post.attributes.video) {
       item.link = post.attributes.video
       item.video = post.attributes.video
-      VideoFeed.addItem(item)
-      return
+      videoFeed.addItem(item)
+    } else {
+      textFeed.addItem(item)
     }
+  }
 
-    TextFeed.addItem(item)
-    return
-  })
-  const feeds = [AudioFeed, TextFeed, VideoFeed]
+  const feeds = [audioFeed, textFeed, videoFeed]
   feeds.forEach((feed) => {
     mkdirSync('./public/rss', { recursive: true })
 

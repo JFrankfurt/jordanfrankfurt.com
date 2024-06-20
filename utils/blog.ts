@@ -1,3 +1,9 @@
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { remark } from 'remark'
+import html from 'remark-html'
+
 export interface Post {
   attributes: {
     audio?: string
@@ -10,21 +16,29 @@ export interface Post {
 }
 
 export async function getBlogPostsData(): Promise<Post[]> {
-  // https://webpack.js.org/guides/dependency-management/#requirecontext
-  const markdownFiles = require
-    // @ts-ignore
-    .context('posts', false, /\.md$/)
-    .keys()
-    .filter((path: string) => path.substring(0, 1) !== '.')
+  const postsDirectory = path.join(process.cwd(), 'posts')
+  const filenames = fs.readdirSync(postsDirectory)
 
-  return Promise.all(
-    markdownFiles.map(async (path: string) => {
-      const markdown = await import(`../${path}`)
-      // .substring removes ".md" from path
-      let slug = path.substring(0, path.length - 3)
-      // .slice removes posts prefix
-      slug = slug.slice('posts'.length)
-      return { ...markdown, slug }
-    })
+  const posts = await Promise.all(
+    filenames
+      .filter((filename) => filename.endsWith('.md'))
+      .map(async (filename) => {
+        const filePath = path.join(postsDirectory, filename)
+        const fileContents = fs.readFileSync(filePath, 'utf8')
+        const { data, content } = matter(fileContents)
+
+        const processedContent = await remark().use(html).process(content)
+        const contentHtml = processedContent.toString()
+
+        const slug = filename.replace(/\.md$/, '')
+
+        return {
+          attributes: data,
+          html: contentHtml,
+          slug,
+        } as Post
+      })
   )
+
+  return posts
 }

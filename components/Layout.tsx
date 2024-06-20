@@ -48,14 +48,17 @@ const Layout: FunctionComponent<Props> = ({
     <div className="flex flex-col items-center justify-center font-sans text-[3.8vmin] md:text-[3.5vmin] lg:text-[2.3vmin] xl:text-[2vmin]">
       <h1 className="my-12">
         <Link href="/" className="no-underline">
-         👺
+          👺
         </Link>
       </h1>
       <nav className="flex items-center justify-center mb-8 w-full">
         <Link href="/about" className="mx-3 ext-black">
           about
         </Link>
-        <Link href="https://twitter.com/jordanfrankfurt" className="mx-3 text-black">
+        <Link
+          href="https://twitter.com/jordanfrankfurt"
+          className="mx-3 text-black"
+        >
           <FaTwitter className="h-6 w-6" />
         </Link>
         <Link href="https://github.com/jfrankfurt" className="mx-3 text-black">

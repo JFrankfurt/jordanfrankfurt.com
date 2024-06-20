@@ -17,7 +17,7 @@ const calculateDeliveryNonASAP = (
   fuel: number,
   tax: number,
   rca: boolean
-): {ptc: number, ctu: number} => {
+): { ptc: number; ctu: number } => {
   const ctu = calculateCTU(dCost, fuel, tax)
   const additionalCost = rca ? 20 : 25
   const multiplier = rca ? 1.03 : 1.04
@@ -31,7 +31,7 @@ const calculateDeliveryASAP = (
   fuel: number,
   tax: number,
   rca: boolean
-): {ptc: number, ctu: number} => {
+): { ptc: number; ctu: number } => {
   const ctu = calculateCTU(dCost, fuel, tax)
   const additionalCost = 75 + (rca ? 20 : 25)
   const multiplier = rca ? 1.03 : 1.04
@@ -45,7 +45,7 @@ const calculateHaul = (
   fuel: number,
   tax: number,
   rca: boolean
-): {ptc: number, ctu: number} => {
+): { ptc: number; ctu: number } => {
   const ctu = calculateCTU(hCost, fuel, tax)
   const additionalCost = rca ? 85 : 125
   const multiplier = rca ? 1.03 : 1.04
@@ -54,7 +54,11 @@ const calculateHaul = (
 }
 
 // Function to calculate Price to Customer (PTC) for Rent
-const calculateRent = (rCost: number, tax: number, rca: boolean): {ptc: number, ctu: number} => {
+const calculateRent = (
+  rCost: number,
+  tax: number,
+  rca: boolean
+): { ptc: number; ctu: number } => {
   const ctu = rCost * (1 + tax / 100)
   const multiplier = rca ? 1.03 : 1.04
   const ptc = ctu * multiplier
@@ -94,7 +98,7 @@ const FlatRateCalculator: React.FC = () => {
 
   return (
     <div>
-      <div className='flex flex-col gap-2'>
+      <div className="flex flex-col gap-2">
         <label>
           Delivery Cost:
           <Input
@@ -159,7 +163,7 @@ const FlatRateCalculator: React.FC = () => {
           />
         </label>
       </div>
-      <div className='flex flex-row gap-8 border-t-2'> 
+      <div className="flex flex-row gap-8 border-t-2">
         <div>
           <h3>Cost to us</h3>
           <p>Delivery: ${delivery.ctu.toFixed(2)}</p>

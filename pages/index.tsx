@@ -24,8 +24,10 @@ const Index: NextPage<props> = ({ posts }) => (
           return (
             <div key={`post-list-${slug}`}>
               <Link href={slug} passHref>
-                <a key={slug} className='no-underline'>
-                  <h1 className="transition-colors text-black hover:text-linkHoverRed">{attributes.title}</h1>
+                <a key={slug} className="no-underline">
+                  <h1 className="transition-colors text-black hover:text-linkHoverRed">
+                    {attributes.title}
+                  </h1>
                 </a>
               </Link>
               <sub>{DT.toLocaleString(DateTime.DATE_MED)}</sub>

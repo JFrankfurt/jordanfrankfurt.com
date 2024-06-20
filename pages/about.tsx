@@ -10,7 +10,8 @@ export default function About() {
           <a
             href="https://www.youtube.com/watch?v=4qdaVwwz1bw"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             poorly
           </a>
           ) as often as I can.

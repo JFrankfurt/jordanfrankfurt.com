@@ -3,20 +3,24 @@ import { Field, Fieldset, Input, Label } from '@headlessui/react'
 import { DumpsterType } from 'pages/dumpster'
 
 // Utility function to round up to the nearest multiple
-const roundUp = (num: number, multiple: number): number => {
-  return Math.ceil(num / multiple) * multiple
+const roundUp = (num: number | string, multiple: number | string): number => {
+  return Math.ceil(Number(num) / Number(multiple)) * Number(multiple)
 }
 
 // Function to calculate Cost to Us (CTU)
-const calculateCTU = (cost: number, fuel: number, tax: number): number => {
-  return cost * (1 + fuel / 100) * (1 + tax / 100)
+const calculateCTU = (
+  cost: number | string,
+  fuel: number | string,
+  tax: number | string
+): number => {
+  return Number(cost) * (1 + Number(fuel) / 100) * (1 + Number(tax) / 100)
 }
 
 // Function to calculate Price to Customer (PTC) for Delivery - NON-ASAP
 const calculateDeliveryNonASAP = (
-  dCost: number,
-  fuel: number,
-  tax: number,
+  dCost: number | string,
+  fuel: number | string,
+  tax: number | string,
   rca: boolean
 ): { ptc: number; ctu: number } => {
   const ctu = calculateCTU(dCost, fuel, tax)
@@ -28,9 +32,9 @@ const calculateDeliveryNonASAP = (
 
 // Function to calculate Price to Customer (PTC) for Delivery - ASAP
 const calculateDeliveryASAP = (
-  dCost: number,
-  fuel: number,
-  tax: number,
+  dCost: number | string,
+  fuel: number | string,
+  tax: number | string,
   rca: boolean
 ): { ptc: number; ctu: number } => {
   const ctu = calculateCTU(dCost, fuel, tax)
@@ -42,17 +46,17 @@ const calculateDeliveryASAP = (
 
 // Function to calculate Price to Customer (PTC) for Haul Plus Rate
 const calculateHaulPlus = (
-  hCost: number,
-  fuel: number,
-  tax: number,
+  hCost: number | string,
+  fuel: number | string,
+  tax: number | string,
   rca: boolean,
-  expT: number,
-  minT: number,
-  tonnageCost: number
+  expT: number | string,
+  minT: number | string,
+  tonnageCost: number | string
 ): { ptc: number; ctu: number } => {
-  const difT = expT > minT ? expT - minT : 0
-  const additionalCost = difT * tonnageCost
-  const ctu = calculateCTU(hCost + additionalCost, fuel, tax)
+  const difT = expT > minT ? Number(expT) - Number(minT) : 0
+  const additionalCost = difT * Number(tonnageCost)
+  const ctu = calculateCTU(Number(hCost) + additionalCost, fuel, tax)
   const baseCost = rca ? 85 : 125
   const multiplier = rca ? 1.03 : 1.04
   const ptc = (ctu + baseCost) * multiplier
@@ -61,19 +65,19 @@ const calculateHaulPlus = (
 
 // Function to calculate Price to Customer (PTC) for Haul - Inclusion Rate
 const calculateHaulInclusion = (
-  hCost: number,
-  fuel: number,
-  tax: number,
+  hCost: number | string,
+  fuel: number | string,
+  tax: number | string,
   rca: boolean,
-  expT: number,
-  incT: number,
-  tonnageCost: number
+  expT: number | string,
+  incT: number | string,
+  tonnageCost: number | string
 ): { ptc: number; ctu: number } => {
   let ctu
   if (expT > incT) {
-    const difT = expT - incT
-    const additionalCost = difT * tonnageCost
-    ctu = calculateCTU(hCost + additionalCost, fuel, tax)
+    const difT = Number(expT) - Number(incT)
+    const additionalCost = difT * Number(tonnageCost)
+    ctu = calculateCTU(Number(hCost) + Number(additionalCost), fuel, tax)
   } else {
     ctu = calculateCTU(hCost, fuel, tax)
   }
@@ -85,11 +89,11 @@ const calculateHaulInclusion = (
 
 // Function to calculate Price to Customer (PTC) for Rent
 const calculateRent = (
-  rCost: number,
-  tax: number,
+  rCost: number | string,
+  tax: number | string,
   rca: boolean
 ): { ptc: number; ctu: number } => {
-  const ctu = rCost * (1 + tax / 100)
+  const ctu = Number(rCost) * (1 + Number(tax) / 100)
   const multiplier = rca ? 1.03 : 1.04
   const ptc = ctu * multiplier
   return { ptc: roundUp(ptc, 1), ctu }
@@ -100,20 +104,20 @@ interface CalculatorProps {
 }
 
 const DumpsterCalculator: React.FC<CalculatorProps> = ({ type }) => {
-  const [dCost, setDCost] = useState<number>(0)
-  const [hCost, setHCost] = useState<number>(0)
-  const [rCost, setRCost] = useState<number>(0)
-  const [fuel, setFuel] = useState<number>(0)
-  const [tax, setTax] = useState<number>(0)
+  const [dCost, setDCost] = useState<number|string>('')
+  const [hCost, setHCost] = useState<number|string>('')
+  const [rCost, setRCost] = useState<number|string>('')
+  const [fuel, setFuel] = useState<number|string>('')
+  const [tax, setTax] = useState<number|string>('')
   const [rca, setRca] = useState<boolean>(false)
   const [isASAP, setIsASAP] = useState<boolean>(false)
-  const [expT, setExpT] = useState<number>(0)
-  const [minT, setMinT] = useState<number>(0)
-  const [incT, setIncT] = useState<number>(0)
-  const [tonnageCost, setTonnageCost] = useState<number>(0)
+  const [expT, setExpT] = useState<number|string>('')
+  const [minT, setMinT] = useState<number|string>('')
+  const [incT, setIncT] = useState<number|string>('')
+  const [tonnageCost, setTonnageCost] = useState<number|string>('')
 
   const handleInputChange =
-    (setter: React.Dispatch<React.SetStateAction<number>>) =>
+    (setter: React.Dispatch<React.SetStateAction<number | string>>) =>
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setter(parseFloat(e.target.value))
     }
@@ -151,7 +155,7 @@ const DumpsterCalculator: React.FC<CalculatorProps> = ({ type }) => {
   const CTU = delivery.ctu + haul.ctu + rent.ctu
 
   return (
-    <div className="max-w-full sm:max-w-lg mx-auto p-4 bg-white rounded-lg shadow-md">
+    <div className="max-w-full sm:max-w-lg mx-auto mt-3 p-4 bg-white rounded-lg shadow-md">
       <Fieldset className="space-y-4">
         <Field className="flex flex-col">
           <Label className="text-sm font-semibold text-gray-700">
@@ -287,12 +291,12 @@ const DumpsterCalculator: React.FC<CalculatorProps> = ({ type }) => {
               <th
                 scope="col"
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Cost to Us
+                Our Cost
               </th>
               <th
                 scope="col"
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Price to Customer
+                Price
               </th>
             </tr>
           </thead>
@@ -302,10 +306,10 @@ const DumpsterCalculator: React.FC<CalculatorProps> = ({ type }) => {
                 Delivery
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                ${delivery.ctu.toFixed(2)}
+                ${delivery.ctu.toFixed(0)}
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                ${delivery.ptc.toFixed(2)}
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                ${delivery.ptc.toFixed(0)}
               </td>
             </tr>
             <tr>
@@ -313,10 +317,10 @@ const DumpsterCalculator: React.FC<CalculatorProps> = ({ type }) => {
                 Haul
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                ${haul.ctu.toFixed(2)}
+                ${haul.ctu.toFixed(0)}
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                ${haul.ptc.toFixed(2)}
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                ${haul.ptc.toFixed(0)}
               </td>
             </tr>
             <tr>
@@ -324,17 +328,17 @@ const DumpsterCalculator: React.FC<CalculatorProps> = ({ type }) => {
                 Rent
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                ${rent.ctu.toFixed(2)}
+                ${rent.ctu.toFixed(0)}
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                ${rent.ptc.toFixed(2)}
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
+                ${rent.ptc.toFixed(0)}
               </td>
             </tr>
             <tr>
               <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                 Total
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-800">
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
                 ${CTU.toFixed(2)}
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-800">

@@ -9,11 +9,11 @@ export enum DumpsterType {
   INCLUSION,
 }
 
-export default function About() {
+export default function Dumpster() {
   const [dumpsterType, setDumpsterType] = useState(DumpsterType.FLAT_RATE)
   return (
     <Layout>
-      <div className="max-w-full sm:max-w-lg mx-auto p-4">
+      <div className="max-w-full sm:max-w-lg mx-auto">
         <TabGroup>
           <TabList className="flex flex-row items-center justify-around gap-2 sm:gap-4">
             <Tab
@@ -32,9 +32,7 @@ export default function About() {
               <h2>Inclusion Rate</h2>
             </Tab>
           </TabList>
-          <div className="mt-3 rounded-xl bg-white/5 p-3">
-            <DumpsterCalculator type={dumpsterType} />
-          </div>
+          <DumpsterCalculator type={dumpsterType} />
         </TabGroup>
       </div>
     </Layout>

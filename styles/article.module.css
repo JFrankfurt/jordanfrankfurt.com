@@ -7,6 +7,10 @@
   font-weight: bold;
 }
 
+.article {
+  margin: 0 1em;
+}
+
 .article * {
   margin-bottom: 0.5em;
 }
@@ -17,10 +21,7 @@
 .article ol {
   padding-left: 2em;
 }
-.article ul > li {
-  list-style: inside;
-}
-.article ol > li {
+.article ul > li, .article ol > li {
   list-style: georgian;
 }
 .article a {

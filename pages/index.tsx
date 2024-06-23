@@ -23,7 +23,7 @@ const Index: NextPage<Props> = ({ posts }) => (
           if (!html) return <div key={slug}>not found</div>
           const DT = DateTime.fromISO(attributes.date as string)
           return (
-            <div key={`post-list-${slug}`}>
+            <div key={`post-list-${slug}`} className="mx-2">
               <h1 className={styles.title}>
                 <Link
                   href={slug}

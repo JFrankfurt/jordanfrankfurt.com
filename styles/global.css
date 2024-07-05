@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+a {
+  color: red;
+  transition: color 200ms ease;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+ul, ol {
+  padding-left: 2em;
+}
+ul > li, ol > li {
+  list-style: georgian;
+}

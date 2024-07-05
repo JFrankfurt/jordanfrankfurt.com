@@ -15,23 +15,3 @@
   margin-bottom: 0.5em;
 }
 
-.article ul {
-  padding-left: 2em;
-}
-.article ol {
-  padding-left: 2em;
-}
-.article ul > li, .article ol > li {
-  list-style: georgian;
-}
-.article a {
-  color: red;
-  transition: color 200ms ease;
-}
-.article a:hover {
-  color: black;
-  text-decoration: underline;
-}
-.article a:visited {
-  color: purple;
-}

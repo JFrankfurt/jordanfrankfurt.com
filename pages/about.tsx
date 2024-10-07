@@ -61,6 +61,19 @@ export default function About() {
               .45 ACP trilug?)
             </a>
           </li>
+          <li>
+            <Image
+              src="/rugged-suppressors-endcap-wrench.PNG"
+              width={250}
+              height={250}
+              alt="suppressor wrench"
+            />
+            <a
+              href="/Rugged Suppressors Obsidian 9 Endcap Wrench.3mf"
+              download="/Rugged Suppressors Obsidian 9 Endcap Wrench.3mf">
+              Wrench for Rugged Suppressors Obsidian9 endcap
+            </a>
+          </li>
         </ul>
       </div>
     </Layout>

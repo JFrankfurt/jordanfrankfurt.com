@@ -47,6 +47,20 @@ export default function About() {
               tubing)
             </a>
           </li>
+          <li>
+            <Image
+              src="/rugged-suppressors-fixed-mount-wrench.png"
+              width={250}
+              height={250}
+              alt="suppressor wrench"
+            />
+            <a
+              href="/Rugged-Suppressors-Fixed-Mount-Wrench.3mf"
+              download="/Rugged-Suppressors-Fixed-Mount-Wrench.3mf">
+              Wrench for Rugged Suppressors Obsidian9 fixed mount (and possibly
+              .45 ACP trilug?)
+            </a>
+          </li>
         </ul>
       </div>
     </Layout>

@@ -9,22 +9,5 @@
         "name": "Jordan Frankfurt",
         "url": "https://twitter.com/JordanFrankfurt"
     },
-    "items": [
-        {
-            "id": "https://jordanfrankfurt.comtwamm",
-            "content_html": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB\" title=\"TWAMM\">audio file (ipfs)</a></p>\n<p><a href=\"https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49\" title=\"TWAMM\">video file (ipfs)</a></p>\n<p><a href=\"https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e\" title=\"TWAMM\">original post pdf (ipfs)</a></p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
-            "url": "https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB",
-            "title": "TWAMM reading",
-            "summary": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://cloudflare-ipfs.com/ipfs/QmSWg4qVwva4wRBaR6F11oXj69u5AAL9bmdQBeKDkfC6NB\" title=\"TWAMM\">audio file (ipfs)</a></p>\n<p><a href=\"https://cloudflare-ipfs.com/ipfs/QmYEwseH3BZMrDLs6MLmCmkbvTgUcTtMMHJPriQgeL3q49\" title=\"TWAMM\">video file (ipfs)</a></p>\n<p><a href=\"https://cloudflare-ipfs.com/ipfs/QmPnwKNL5NHhW1QfZYU8JcA1k9SDxxeHU4r1ZNeU3WbZ8e\" title=\"TWAMM\">original post pdf (ipfs)</a></p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
-            "image": "https://jordanfrankfurt.comtwamm/me.jpg",
-            "date_modified": "2021-08-02T09:15:00.000Z",
-            "author": {
-                "name": "Jordan Frankfurt",
-                "url": "https://twitter.com/JordanFrankfurt"
-            },
-            "tags": [
-                "Technology"
-            ]
-        }
-    ]
+    "items": []
 }

@@ -9,5 +9,22 @@
         "name": "Jordan Frankfurt",
         "url": "https://twitter.com/JordanFrankfurt"
     },
-    "items": []
+    "items": [
+        {
+            "id": "https://jordanfrankfurt.comtwamm",
+            "content_html": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
+            "url": "https://www.youtube.com/watch?v=miCP-Qt4WII",
+            "title": "TWAMM reading",
+            "summary": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
+            "image": "https://jordanfrankfurt.comtwamm/me.jpg",
+            "date_modified": "2021-08-02T09:15:00.000Z",
+            "author": {
+                "name": "Jordan Frankfurt",
+                "url": "https://twitter.com/JordanFrankfurt"
+            },
+            "tags": [
+                "Technology"
+            ]
+        }
+    ]
 }

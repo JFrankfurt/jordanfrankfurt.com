@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Jordan Frankfurt videos</title>
-        <link>https://jordanfrankfurt.com</link>
+        <link>http://localhost:3000</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Wed, 09 Oct 2024 15:01:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Dec 2024 08:03:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
         <image>
             <title>Jordan Frankfurt videos</title>
-            <url>https://jordanfrankfurt.com/me.jpg</url>
-            <link>https://jordanfrankfurt.com</link>
+            <url>http://localhost:3000/me.jpg</url>
+            <link>http://localhost:3000</link>
         </image>
         <copyright>All rights reserved 2024, Jordan Frankfurt</copyright>
         <item>
             <title><![CDATA[TWAMM reading]]></title>
             <link>https://www.youtube.com/watch?v=miCP-Qt4WII</link>
-            <guid>https://jordanfrankfurt.comtwamm</guid>
+            <guid>http://localhost:3000/twamm</guid>
             <pubDate>Mon, 02 Aug 2021 09:15:00 GMT</pubDate>
             <description><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
 <p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>

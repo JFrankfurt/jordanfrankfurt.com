@@ -2,16 +2,16 @@
 <rss version="2.0">
     <channel>
         <title>Jordan Frankfurt podcast</title>
-        <link>https://jordanfrankfurt.com</link>
+        <link>http://localhost:3000</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Wed, 09 Oct 2024 15:01:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Dec 2024 08:03:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
         <image>
             <title>Jordan Frankfurt podcast</title>
-            <url>https://jordanfrankfurt.com/me.jpg</url>
-            <link>https://jordanfrankfurt.com</link>
+            <url>http://localhost:3000/me.jpg</url>
+            <link>http://localhost:3000</link>
         </image>
         <copyright>All rights reserved 2024, Jordan Frankfurt</copyright>
     </channel>

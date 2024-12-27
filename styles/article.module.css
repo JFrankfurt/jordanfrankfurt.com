@@ -15,3 +15,6 @@
   margin-bottom: 0.5em;
 }
 
+.article img {
+  border: 1px solid #000;
+}

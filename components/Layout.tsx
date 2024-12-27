@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, PropsWithChildren } from 'react'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
 
-interface Props {
+interface LayoutProps {
   description?: string
   title?: string
 }
 const defaultDescription = 'The blog and personal website of Jordan Frankfurt'
 const baseTitle = '👺'
 
-const Layout: FunctionComponent<Props> = ({
+const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
   children,
   description = defaultDescription,
   title,
@@ -57,8 +57,7 @@ const Layout: FunctionComponent<Props> = ({
         </Link>
         <Link
           href="https://twitter.com/jordanfrankfurt"
-          className="mx-3 text-black"
-        >
+          className="mx-3 text-black">
           <FaTwitter className="h-6 w-6" />
         </Link>
         <Link href="https://github.com/jfrankfurt" className="mx-3 text-black">

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Jordan Frankfurt blog</title>
-    <updated>2024-12-27T08:03:36.324Z</updated>
+    <updated>2024-12-27T08:20:08.699Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Jordan Frankfurt</name>

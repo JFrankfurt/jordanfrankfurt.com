@@ -20,6 +20,16 @@ export default function About() {
           </a>
           )
         </p>
+        <p className="ml-2">
+          (I{' '}
+          <a href="https://drive.google.com/file/d/1el63gWTYQisPg4Z2cZhlfeA-EN2VqWm6/view">
+            win
+          </a>{' '}
+          <a href="https://drive.google.com/file/d/1ooUTblxyUWsqIpikD4urVHZW0LFC92ZD/view?usp=sharing">
+            occasionally
+          </a>
+          .)
+        </p>
         <h2 className="text-3xl mb-2 mt-6">
           I like to model & print myself little useful objects:
         </h2>

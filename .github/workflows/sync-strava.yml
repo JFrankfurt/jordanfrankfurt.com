@@ -26,11 +26,15 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
 
-      - name: Pull latest before committing
-        run: git pull --rebase origin master
-
-      - name: Commit updated PRs
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'chore: update running PRs from Strava'
-          file_pattern: 'data/prs.json'
+      - name: Commit and push updated PRs
+        run: |
+          git add data/prs.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update running PRs from Strava"
+          git pull --rebase origin master
+          git push

@@ -27,7 +27,8 @@ const Index: NextPage<Props> = ({ posts }) => (
               <h1 className={styles.title}>
                 <Link
                   href={slug}
-                  className="no-underline transition-colors text-black hover:text-linkHoverRed">
+                  className="text-black no-underline transition-colors hover:text-linkHoverRed"
+                >
                   {attributes.title}
                 </Link>
               </h1>

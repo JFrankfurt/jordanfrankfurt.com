@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jordanfrankfurt.com</id>
     <title>Jordan Frankfurt blog</title>
-    <updated>2026-04-04T16:27:55.285Z</updated>
+    <updated>2026-04-04T23:55:02.172Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Jordan Frankfurt</name>
@@ -405,20 +405,20 @@ net APY roughly 2%</li>
         <link href="https://jordanfrankfurt.com/tactical-games-targets"/>
         <updated>2024-12-27T07:36:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Couldn't find a good source for these Tactical Games targets, so I made my own.</p>
-<p><img src="/images/tactical-games/circle.png" alt="Tactical Games Circle">
-<img src="/images/tactical-games/diamond.png" alt="Tactical Games Diamond">
-<img src="/images/tactical-games/mix.png" alt="Tactical Games Mixed">
-<img src="/images/tactical-games/rects.png" alt="Tactical Games Rectangles">
-<img src="/images/tactical-games/trigger.png" alt="Tactical Games Trigger Control">
-<img src="/images/tactical-games/triangle.png" alt="Tactical Games Triangle"></p>
+<p><img src="/images/tactical-games/circle.png" alt="Tactical Games Circle" width="612" height="792">
+<img src="/images/tactical-games/diamond.png" alt="Tactical Games Diamond" width="612" height="792">
+<img src="/images/tactical-games/mix.png" alt="Tactical Games Mixed" width="612" height="792">
+<img src="/images/tactical-games/rects.png" alt="Tactical Games Rectangles" width="612" height="792">
+<img src="/images/tactical-games/trigger.png" alt="Tactical Games Trigger Control" width="612" height="792">
+<img src="/images/tactical-games/triangle.png" alt="Tactical Games Triangle" width="612" height="792"></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>Couldn't find a good source for these Tactical Games targets, so I made my own.</p>
-<p><img src="/images/tactical-games/circle.png" alt="Tactical Games Circle">
-<img src="/images/tactical-games/diamond.png" alt="Tactical Games Diamond">
-<img src="/images/tactical-games/mix.png" alt="Tactical Games Mixed">
-<img src="/images/tactical-games/rects.png" alt="Tactical Games Rectangles">
-<img src="/images/tactical-games/trigger.png" alt="Tactical Games Trigger Control">
-<img src="/images/tactical-games/triangle.png" alt="Tactical Games Triangle"></p>
+<p><img src="/images/tactical-games/circle.png" alt="Tactical Games Circle" width="612" height="792">
+<img src="/images/tactical-games/diamond.png" alt="Tactical Games Diamond" width="612" height="792">
+<img src="/images/tactical-games/mix.png" alt="Tactical Games Mixed" width="612" height="792">
+<img src="/images/tactical-games/rects.png" alt="Tactical Games Rectangles" width="612" height="792">
+<img src="/images/tactical-games/trigger.png" alt="Tactical Games Trigger Control" width="612" height="792">
+<img src="/images/tactical-games/triangle.png" alt="Tactical Games Triangle" width="612" height="792"></p>
 ]]></content>
         <author>
             <name>Jordan Frankfurt</name>

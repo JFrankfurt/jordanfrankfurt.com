@@ -4,14 +4,15 @@ import Image from 'next/image'
 export default function About() {
   return (
     <Layout>
-      <div className="min-w-[360px] w-[45vw]">
-        <h2 className="text-3xl mb-2 mt-6">I fight people</h2>
+      <div className="w-[45vw] min-w-[360px]">
+        <h2 className="mb-2 mt-6 text-3xl">I fight people</h2>
         <p className="ml-2">
           (
           <a
             href="https://www.youtube.com/watch?v=4qdaVwwz1bw"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             Poorly
           </a>{' '}
           and{' '}
@@ -30,7 +31,7 @@ export default function About() {
           </a>
           .)
         </p>
-        <h2 className="text-3xl mb-2 mt-6">
+        <h2 className="mb-2 mt-6 text-3xl">
           I like to model & print myself little useful objects:
         </h2>
         <ul>
@@ -66,7 +67,8 @@ export default function About() {
             />
             <a
               href="/Rugged-Suppressors-Fixed-Mount-Wrench.3mf"
-              download="/Rugged-Suppressors-Fixed-Mount-Wrench.3mf">
+              download="/Rugged-Suppressors-Fixed-Mount-Wrench.3mf"
+            >
               Wrench for Rugged Suppressors Obsidian9 fixed mount (and possibly
               .45 ACP trilug?)
             </a>
@@ -80,7 +82,8 @@ export default function About() {
             />
             <a
               href="/Rugged Suppressors Obsidian 9 Endcap Wrench.3mf"
-              download="/Rugged Suppressors Obsidian 9 Endcap Wrench.3mf">
+              download="/Rugged Suppressors Obsidian 9 Endcap Wrench.3mf"
+            >
               Wrench for Rugged Suppressors Obsidian9 endcap
             </a>
           </li>

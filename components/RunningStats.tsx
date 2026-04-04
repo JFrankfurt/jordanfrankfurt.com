@@ -10,7 +10,7 @@ export default function RunningStats() {
   if (!hasPRs) return null
 
   return (
-    <div className="space-y-1 tabular-nums text-[0.75em]">
+    <div className="space-y-1 text-[0.75em] tabular-nums">
       {DISTANCES.map((d: Distance) => {
         const pr = prs[d]
         const goal = goals[d]

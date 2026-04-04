@@ -47,27 +47,24 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
       <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
     </Head>
     <div className="flex flex-col items-center justify-center font-sans text-sm lg:text-base">
-      <div className="flex flex-row items-end w-full max-w-[500px] sm:max-w-[600px] md:max-w-[650px] lg:max-w-[800px] mb-8 px-2">
-        <div className="w-3/4 flex flex-col items-center">
-          <h1 className="my-12">
-            <Link href="/" className="no-underline">
+      <div className="mb-8 flex w-full max-w-[500px] flex-row items-start px-2 sm:max-w-[600px] md:max-w-[650px] lg:max-w-[800px]">
+        <div className="my-12 flex w-3/4 flex-row flex-wrap items-center gap-4 sm:gap-6">
+          <h1 className="m-0 shrink-0 text-2xl leading-none">
+            <Link href="/" className="no-underline" aria-label="Home">
               👺
             </Link>
           </h1>
-          <nav className="flex items-center justify-center">
-            <Link href="/about" className="mx-3 ext-black">
+          <nav className="flex flex-wrap items-center justify-start gap-x-3 gap-y-2">
+            <Link href="/about" className="text-black">
               about
             </Link>
             <Link
               href="https://twitter.com/jordanfrankfurt"
-              className="mx-3 text-black"
+              className="text-black"
             >
               <FaTwitter className="h-6 w-6" />
             </Link>
-            <Link
-              href="https://github.com/jfrankfurt"
-              className="mx-3 text-black"
-            >
+            <Link href="https://github.com/jfrankfurt" className="text-black">
               <FaGithub className="h-6 w-6" />
             </Link>
           </nav>
@@ -76,7 +73,7 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
           <RunningStats />
         </div>
       </div>
-      <main className="flex flex-col items-start justify-start w-full max-w-[500px] sm:max-w-[600px] md:max-w-[650px] lg:max-w-[800px] mx-1 md:mx-auto">
+      <main className="mx-1 flex w-full max-w-[500px] flex-col items-start justify-start sm:max-w-[600px] md:mx-auto md:max-w-[650px] lg:max-w-[800px]">
         {children}
       </main>
     </div>

@@ -38,9 +38,18 @@ const generateRssFeeds = async () => {
     ...baseFeed,
     title: `${baseFeed.title} podcast`,
     feedLinks: {
-      rss2: new URL(`rss/${encodeTitle(`${baseFeed.title} podcast`)}-feed.xml`, siteURL).toString(),
-      json: new URL(`rss/${encodeTitle(`${baseFeed.title} podcast`)}-feed.json`, siteURL).toString(),
-      atom: new URL(`rss/${encodeTitle(`${baseFeed.title} podcast`)}-atom.xml`, siteURL).toString(),
+      rss2: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} podcast`)}-feed.xml`,
+        siteURL
+      ).toString(),
+      json: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} podcast`)}-feed.json`,
+        siteURL
+      ).toString(),
+      atom: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} podcast`)}-atom.xml`,
+        siteURL
+      ).toString(),
     },
   })
 
@@ -48,9 +57,18 @@ const generateRssFeeds = async () => {
     ...baseFeed,
     title: `${baseFeed.title} blog`,
     feedLinks: {
-      rss2: new URL(`rss/${encodeTitle(`${baseFeed.title} blog`)}-feed.xml`, siteURL).toString(),
-      json: new URL(`rss/${encodeTitle(`${baseFeed.title} blog`)}-feed.json`, siteURL).toString(),
-      atom: new URL(`rss/${encodeTitle(`${baseFeed.title} blog`)}-atom.xml`, siteURL).toString(),
+      rss2: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} blog`)}-feed.xml`,
+        siteURL
+      ).toString(),
+      json: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} blog`)}-feed.json`,
+        siteURL
+      ).toString(),
+      atom: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} blog`)}-atom.xml`,
+        siteURL
+      ).toString(),
     },
   })
 
@@ -58,14 +76,26 @@ const generateRssFeeds = async () => {
     ...baseFeed,
     title: `${baseFeed.title} videos`,
     feedLinks: {
-      rss2: new URL(`rss/${encodeTitle(`${baseFeed.title} videos`)}-feed.xml`, siteURL).toString(),
-      json: new URL(`rss/${encodeTitle(`${baseFeed.title} videos`)}-feed.json`, siteURL).toString(),
-      atom: new URL(`rss/${encodeTitle(`${baseFeed.title} videos`)}-atom.xml`, siteURL).toString(),
+      rss2: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} videos`)}-feed.xml`,
+        siteURL
+      ).toString(),
+      json: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} videos`)}-feed.json`,
+        siteURL
+      ).toString(),
+      atom: new URL(
+        `rss/${encodeTitle(`${baseFeed.title} videos`)}-atom.xml`,
+        siteURL
+      ).toString(),
     },
   })
 
   for (const post of posts) {
-    const postUrl = new URL(post.slug.startsWith('/') ? post.slug.slice(1) : post.slug, siteURL).toString()
+    const postUrl = new URL(
+      post.slug.startsWith('/') ? post.slug.slice(1) : post.slug,
+      siteURL
+    ).toString()
     const item: Item = {
       author: [author],
       category: [{ name: 'Technology' }],

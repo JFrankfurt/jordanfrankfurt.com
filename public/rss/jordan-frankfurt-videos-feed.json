@@ -1,29 +1,27 @@
 {
-    "version": "https://jsonfeed.org/version/1",
-    "title": "Jordan Frankfurt videos",
-    "home_page_url": "https://jordanfrankfurt.com",
-    "feed_url": "https://jordanfrankfurt.com/rss/jordan-frankfurt-videos-feed.json",
-    "description": "mostly reading things",
-    "icon": "https://jordanfrankfurt.com/me.jpg",
-    "author": {
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Jordan Frankfurt videos",
+  "home_page_url": "https://jordanfrankfurt.com",
+  "feed_url": "https://jordanfrankfurt.com/rss/jordan-frankfurt-videos-feed.json",
+  "description": "mostly reading things",
+  "icon": "https://jordanfrankfurt.com/me.jpg",
+  "author": {
+    "name": "Jordan Frankfurt",
+    "url": "https://twitter.com/JordanFrankfurt"
+  },
+  "items": [
+    {
+      "id": "https://jordanfrankfurt.com/twamm",
+      "content_html": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
+      "url": "https://www.youtube.com/watch?v=miCP-Qt4WII",
+      "title": "TWAMM reading",
+      "summary": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
+      "date_modified": "2021-08-02T09:15:00.000Z",
+      "author": {
         "name": "Jordan Frankfurt",
         "url": "https://twitter.com/JordanFrankfurt"
-    },
-    "items": [
-        {
-            "id": "https://jordanfrankfurt.com/twamm",
-            "content_html": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
-            "url": "https://www.youtube.com/watch?v=miCP-Qt4WII",
-            "title": "TWAMM reading",
-            "summary": "<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>\n<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>\n<p><a href=\"https://www.youtube.com/watch?v=miCP-Qt4WII\">youtube</a></p>\n",
-            "date_modified": "2021-08-02T09:15:00.000Z",
-            "author": {
-                "name": "Jordan Frankfurt",
-                "url": "https://twitter.com/JordanFrankfurt"
-            },
-            "tags": [
-                "Technology"
-            ]
-        }
-    ]
+      },
+      "tags": ["Technology"]
+    }
+  ]
 }

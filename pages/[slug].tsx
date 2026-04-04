@@ -19,10 +19,13 @@ const Post: NextPage<Props> = ({ attributes, html }) => {
   const DT = DateTime.fromISO(attributes.date as string)
   return (
     <Layout title={attributes.title}>
-      <main className='mx-2'>
+      <main className="mx-2">
         <h1 className={styles.title}>{attributes.title}</h1>
         <sub>{DT.toLocaleString(DateTime.DATE_MED)}</sub>
-        <article dangerouslySetInnerHTML={{ __html: html }} className={styles.article} />
+        <article
+          dangerouslySetInnerHTML={{ __html: html }}
+          className={styles.article}
+        />
       </main>
     </Layout>
   )

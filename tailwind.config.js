@@ -12,9 +12,8 @@ module.exports = {
     extend: {
       colors: {
         linkHoverRed: 'hsl(360, 100%, 60%)',
-      }
+      },
     },
   },
   plugins: [],
 }
-

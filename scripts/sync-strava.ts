@@ -139,7 +139,10 @@ async function fetchRunActivities(
     if (activities.length === 0) break
 
     const runs = activities.filter(
-      (a) => a.type === 'Run' || a.sport_type === 'Run'
+      (a) =>
+        a.type === 'Run' ||
+        a.sport_type === 'Run' ||
+        a.sport_type === 'TrailRun'
     )
     allRuns.push(...runs)
     console.log(

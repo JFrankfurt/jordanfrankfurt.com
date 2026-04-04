@@ -47,26 +47,35 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
       <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
     </Head>
     <div className="flex flex-col items-center justify-center font-sans text-[3.8vmin] md:text-[3.5vmin] lg:text-[2.3vmin] xl:text-[2vmin]">
-      <h1 className="my-12">
-        <Link href="/" className="no-underline">
-          👺
-        </Link>
-      </h1>
-      <nav className="flex items-center justify-center mb-8 w-full">
-        <Link href="/about" className="mx-3 ext-black">
-          about
-        </Link>
-        <Link
-          href="https://twitter.com/jordanfrankfurt"
-          className="mx-3 text-black"
-        >
-          <FaTwitter className="h-6 w-6" />
-        </Link>
-        <Link href="https://github.com/jfrankfurt" className="mx-3 text-black">
-          <FaGithub className="h-6 w-6" />
-        </Link>
-      </nav>
-      <RunningStats />
+      <div className="flex flex-row items-end w-full max-w-[500px] sm:max-w-[600px] md:max-w-[650px] lg:max-w-[800px] mb-8 px-2">
+        <div className="w-3/4 flex flex-col items-center">
+          <h1 className="my-12">
+            <Link href="/" className="no-underline">
+              👺
+            </Link>
+          </h1>
+          <nav className="flex items-center justify-center">
+            <Link href="/about" className="mx-3 ext-black">
+              about
+            </Link>
+            <Link
+              href="https://twitter.com/jordanfrankfurt"
+              className="mx-3 text-black"
+            >
+              <FaTwitter className="h-6 w-6" />
+            </Link>
+            <Link
+              href="https://github.com/jfrankfurt"
+              className="mx-3 text-black"
+            >
+              <FaGithub className="h-6 w-6" />
+            </Link>
+          </nav>
+        </div>
+        <div className="w-1/4">
+          <RunningStats />
+        </div>
+      </div>
       <main className="flex flex-col items-start justify-start w-full max-w-[500px] sm:max-w-[600px] md:max-w-[650px] lg:max-w-[800px] mx-1 md:mx-auto">
         {children}
       </main>

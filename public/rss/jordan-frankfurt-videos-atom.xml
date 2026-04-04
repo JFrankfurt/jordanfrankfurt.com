@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:3000</id>
+    <id>https://jordanfrankfurt.com</id>
     <title>Jordan Frankfurt videos</title>
-    <updated>2024-12-27T08:20:08.699Z</updated>
+    <updated>2026-04-04T16:27:55.285Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Jordan Frankfurt</name>
         <email>jordanwfrankfurt@gmail.com</email>
         <uri>https://twitter.com/JordanFrankfurt</uri>
     </author>
-    <link rel="alternate" href="http://localhost:3000"/>
-    <link rel="self" href="http://localhost:3000/rss/jordan-frankfurt-videos-atom.xml"/>
+    <link rel="alternate" href="https://jordanfrankfurt.com"/>
+    <link rel="self" href="https://jordanfrankfurt.com/rss/jordan-frankfurt-videos-atom.xml"/>
     <subtitle>mostly reading things</subtitle>
-    <logo>http://localhost:3000/me.jpg</logo>
-    <icon>http://localhost:3000/favicon.png</icon>
-    <rights>All rights reserved 2024, Jordan Frankfurt</rights>
+    <logo>https://jordanfrankfurt.com/me.jpg</logo>
+    <icon>https://jordanfrankfurt.com/favicon.png</icon>
+    <rights>All rights reserved 2026, Jordan Frankfurt</rights>
     <entry>
         <title type="html"><![CDATA[TWAMM reading]]></title>
-        <id>http://localhost:3000/twamm</id>
+        <id>https://jordanfrankfurt.com/twamm</id>
         <link href="https://www.youtube.com/watch?v=miCP-Qt4WII"/>
         <updated>2021-08-02T09:15:00.000Z</updated>
         <summary type="html"><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>

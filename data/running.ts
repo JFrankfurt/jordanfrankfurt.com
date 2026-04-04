@@ -12,9 +12,9 @@ export const STRAVA_NAME_MAP: Record<string, Distance> = {
 
 // Goal times in seconds. Edit manually.
 export const goals: Record<Distance, number> = {
-  mile: 300, // 5:00
-  '5k': 1110, // 18:30
-  '10k': 2340, // 39:00
-  half: 5220, // 1:27:00
-  full: 10800, // 3:00:00
+  mile: 60 * 5.6, // 5:36
+  '5k': 60 * 19.5, // 19:30
+  '10k': 60 * 41.5, // 41:30
+  half: 60 * 60 * 1.55, // 1:33:00
+  full: 60 * 60 * 3.2, // 3:12:00
 }

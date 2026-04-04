@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React, { FunctionComponent, PropsWithChildren } from 'react'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
+import RunningStats from './RunningStats'
 
 interface LayoutProps {
   description?: string
@@ -57,13 +58,15 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
         </Link>
         <Link
           href="https://twitter.com/jordanfrankfurt"
-          className="mx-3 text-black">
+          className="mx-3 text-black"
+        >
           <FaTwitter className="h-6 w-6" />
         </Link>
         <Link href="https://github.com/jfrankfurt" className="mx-3 text-black">
           <FaGithub className="h-6 w-6" />
         </Link>
       </nav>
+      <RunningStats />
       <main className="flex flex-col items-start justify-start w-full max-w-[500px] sm:max-w-[600px] md:max-w-[650px] lg:max-w-[800px] mx-1 md:mx-auto">
         {children}
       </main>

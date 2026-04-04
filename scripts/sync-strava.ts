@@ -69,12 +69,18 @@ function updateGitHubSecret(newToken: string): void {
     return
   }
 
-  execSync('gh secret set STRAVA_REFRESH_TOKEN', {
-    input: newToken,
-    env: { ...process.env, GH_TOKEN: process.env.GH_PAT },
-    stdio: ['pipe', 'inherit', 'inherit'],
-  })
-  console.log('Rotated STRAVA_REFRESH_TOKEN secret')
+  try {
+    execSync('gh secret set STRAVA_REFRESH_TOKEN', {
+      input: newToken,
+      env: { ...process.env, GH_TOKEN: process.env.GH_PAT },
+      stdio: ['pipe', 'inherit', 'inherit'],
+    })
+    console.log('Rotated STRAVA_REFRESH_TOKEN secret')
+  } catch {
+    console.warn(
+      'Failed to rotate STRAVA_REFRESH_TOKEN secret — check GH_PAT permissions'
+    )
+  }
 }
 
 async function stravaFetch<T>(

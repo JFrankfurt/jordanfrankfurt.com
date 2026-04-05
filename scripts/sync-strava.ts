@@ -33,7 +33,6 @@ interface PRsFile {
   '10k': number | null
   half: number | null
   full: number | null
-  updatedAt: string
   lastSyncedAt: string | null
 }
 
@@ -222,7 +221,6 @@ async function main() {
   const now = new Date()
   const newData: PRsFile = {
     ...currentPRs,
-    updatedAt: anyChanged ? now.toISOString().split('T')[0] : prsFile.updatedAt,
     lastSyncedAt: now.toISOString(),
   }
 

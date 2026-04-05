@@ -1,35 +1,50 @@
+import Link from 'next/link'
 import React from 'react'
 import { DISTANCES, goals, type Distance } from 'data/running'
 import prsData from 'data/prs.json'
 import { formatTime } from 'utils/formatTime'
 
+const STRAVA_PROFILE = 'https://www.strava.com/athletes/154239818'
 const prs = prsData as Record<string, number | string | null>
 
+function formatSyncDate(iso: string): string {
+  const d = new Date(iso)
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+}
+
 export default function RunningStats() {
-  const hasPRs = DISTANCES.some((d) => prs[d] != null)
-  if (!hasPRs) return null
+  const syncedAt = prs.lastSyncedAt as string | null
 
   return (
-    <div className="space-y-1 text-[0.75em] tabular-nums">
-      {DISTANCES.map((d: Distance) => {
-        const pr = prs[d]
-        const goal = goals[d]
-        return (
-          <div key={d} className="flex justify-between gap-2">
-            <span className="text-gray-400">{d}</span>
-            <span className="whitespace-nowrap">
-              {pr != null ? (
-                <>
-                  {formatTime(pr as number)}
-                  <span className="text-gray-300"> / {formatTime(goal)}</span>
-                </>
-              ) : (
-                <span className="text-gray-300">—</span>
-              )}
-            </span>
-          </div>
-        )
-      })}
+    <div className="text-[0.75em] tabular-nums">
+      <div className="mb-1">
+        <div className="font-medium">running</div>
+        <div className="text-gray-400">pr / goal</div>
+      </div>
+      <div className="grid grid-cols-[1fr_auto_auto_auto] items-baseline gap-x-1.5 gap-y-0.5">
+        {DISTANCES.map((d: Distance) => {
+          const pr = prs[d]
+          const goal = goals[d]
+          return (
+            <React.Fragment key={d}>
+              <span className="text-gray-400">{d}</span>
+              <span className="text-right">
+                {pr != null ? formatTime(pr as number) : '—'}
+              </span>
+              <span className="text-gray-300">/</span>
+              <span className="text-gray-300">{formatTime(goal)}</span>
+            </React.Fragment>
+          )
+        })}
+      </div>
+      {syncedAt && (
+        <Link
+          href={STRAVA_PROFILE}
+          className="mt-1.5 block text-gray-300 no-underline hover:text-gray-500"
+        >
+          synced {formatSyncDate(syncedAt)} ↗
+        </Link>
+      )}
     </div>
   )
 }

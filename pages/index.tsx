@@ -12,7 +12,7 @@ interface Props {
 
 const Index: NextPage<Props> = ({ posts }) => (
   <Layout>
-    <main>
+    <>
       {posts
         .sort((a, b) => {
           const dateA = DateTime.fromISO(a.attributes.date as string)
@@ -23,7 +23,7 @@ const Index: NextPage<Props> = ({ posts }) => (
           if (!html) return <div key={slug}>not found</div>
           const DT = DateTime.fromISO(attributes.date as string)
           return (
-            <div key={`post-list-${slug}`} className="mx-2">
+            <div key={`post-list-${slug}`}>
               <h1 className={styles.title}>
                 <Link
                   href={slug}
@@ -40,7 +40,7 @@ const Index: NextPage<Props> = ({ posts }) => (
             </div>
           )
         })}
-    </main>
+    </>
   </Layout>
 )
 

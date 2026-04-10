@@ -32,7 +32,6 @@ interface PRsFile {
   '5k': number | null
   '10k': number | null
   half: number | null
-  full: number | null
   lastSyncedAt: string | null
 }
 
@@ -205,7 +204,6 @@ async function main() {
     '5k': prsFile['5k'],
     '10k': prsFile['10k'],
     half: prsFile.half,
-    full: prsFile.full,
   }
   let anyChanged = false
 

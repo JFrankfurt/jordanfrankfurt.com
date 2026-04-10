@@ -6,7 +6,6 @@ const emptyPRs = () => ({
   '5k': null as number | null,
   '10k': null as number | null,
   half: null as number | null,
-  full: null as number | null,
 })
 
 function effort(name: string, moving_time: number): BestEffort {
@@ -53,13 +52,12 @@ describe('updatePRs', () => {
     expect(prs).toEqual(emptyPRs())
   })
 
-  it('handles all five Strava distance names', () => {
+  it('handles all four Strava distance names', () => {
     const efforts = [
       effort('1 mile', 300),
       effort('5k', 1100),
       effort('10k', 2300),
       effort('Half-Marathon', 5200),
-      effort('Marathon', 10700),
     ]
     const { prs, changed } = updatePRs(emptyPRs(), efforts)
     expect(changed).toBe(true)
@@ -67,7 +65,6 @@ describe('updatePRs', () => {
     expect(prs['5k']).toBe(1100)
     expect(prs['10k']).toBe(2300)
     expect(prs.half).toBe(5200)
-    expect(prs.full).toBe(10700)
   })
 
   it('handles mixed updates — some faster, some slower', () => {

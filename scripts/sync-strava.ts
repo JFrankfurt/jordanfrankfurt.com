@@ -209,6 +209,9 @@ async function main() {
 
   for (const run of runs) {
     const efforts = await fetchBestEfforts(run.id, accessToken)
+    console.log(
+      `Activity ${run.id} best efforts: ${efforts.map((e) => `${e.name}=${e.moving_time}s`).join(', ') || '(none)'}`
+    )
     const { prs: updatedPRs, changed } = updatePRs(currentPRs, efforts)
     if (changed) {
       currentPRs = updatedPRs

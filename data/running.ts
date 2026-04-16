@@ -5,7 +5,9 @@ export type Distance = (typeof DISTANCES)[number]
 export const STRAVA_NAME_MAP: Record<string, Distance> = {
   '1 mile': 'mile',
   '5k': '5k',
+  '5K': '5k',
   '10k': '10k',
+  '10K': '10k',
   'Half-Marathon': 'half',
 }
 

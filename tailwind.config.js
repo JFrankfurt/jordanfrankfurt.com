@@ -12,6 +12,16 @@ module.exports = {
     extend: {
       colors: {
         linkHoverRed: 'hsl(360, 100%, 60%)',
+        strava: '#FC4C02',
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
     },
   },

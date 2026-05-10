@@ -52,7 +52,7 @@ export default function RunningStats() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Strava live PR sync"
-      className="block w-full overflow-hidden bg-strava py-1 text-xs tabular-nums text-white no-underline hover:no-underline"
+      className="block w-full overflow-hidden bg-strava py-1.5 text-xs tabular-nums text-white no-underline hover:no-underline"
     >
       <div className="flex w-max animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
         <TickerRow />

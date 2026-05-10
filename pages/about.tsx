@@ -1,11 +1,51 @@
 import Layout from 'components/Layout'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function About() {
   return (
     <Layout>
       <div className="w-[45vw] min-w-[360px]">
-        <h2 className="mb-2 mt-6 text-3xl">I fight people</h2>
+        <p className="mt-6">
+          I&rsquo;m Jordan Frankfurt, a software engineer in Austin. I build web
+          products, crypto and payment infrastructure, small physical tools, and
+          occasionally over-serious systems for training, family life, and
+          personal sovereignty.
+        </p>
+        <p className="mt-3">
+          This site is mostly a notebook: projects, experiments, fitness
+          targets, technical writing, and things I wanted badly enough to make
+          myself.
+        </p>
+        <p className="mt-3">
+          The recurring theme is agency. I like systems that make people harder
+          to coerce, harder to confuse, and more capable of acting directly:
+          private keys, strong bodies, useful tools, legible finances, good
+          local infrastructure, and children who can do hard things.
+        </p>
+
+        <h2 className="mb-2 mt-8 text-3xl">I build software</h2>
+        <p className="ml-2">
+          Mostly web applications, crypto infrastructure, and tools that make
+          vague economic and social coordination problems more explicit. Themes
+          I keep coming back to:
+        </p>
+        <ul className="ml-6 mt-2 list-disc">
+          <li>stablecoins and consumer crypto</li>
+          <li>local-first and self-hosted infrastructure</li>
+          <li>financial products that make informal arrangements legible</li>
+          <li>
+            tools that turn messy real-world processes into usable interfaces
+          </li>
+        </ul>
+
+        <h2 className="mb-2 mt-8 text-3xl">I train</h2>
+        <p className="ml-2">
+          Targets and current numbers live on the{' '}
+          <Link href="/goals">goals page</Link>.
+        </p>
+
+        <h2 className="mb-2 mt-8 text-3xl">I fight people</h2>
         <p className="ml-2">
           (
           <a
@@ -31,15 +71,15 @@ export default function About() {
           </a>
           .)
         </p>
-        <h2 className="mb-2 mt-6 text-3xl">
-          I like to model & print myself little useful objects:
-        </h2>
+
+        <h2 className="mb-2 mt-8 text-3xl">I make useful physical objects</h2>
         <ul>
           <li>
             <Image
               src="/bracket-render.png"
               width={250}
               height={250}
+              style={{ width: 'auto', height: 'auto' }}
               alt="wall hanger render"
             />
             <a href="/painting-hanger.3mf" download="/painting-hanger.3mf">
@@ -51,6 +91,7 @@ export default function About() {
               src="/sharkbite-vinyl-fitting_render.png"
               width={250}
               height={250}
+              style={{ width: 'auto', height: 'auto' }}
               alt="sharkbite fitting render"
             />
             <a href="/sharkbite-fitting.3mf" download="/sharkbite-fitting.3mf">
@@ -63,6 +104,7 @@ export default function About() {
               src="/rugged-suppressors-fixed-mount-wrench.png"
               width={250}
               height={250}
+              style={{ width: 'auto', height: 'auto' }}
               alt="suppressor wrench"
             />
             <a
@@ -78,6 +120,7 @@ export default function About() {
               src="/rugged-suppressors-endcap-wrench.PNG"
               width={250}
               height={250}
+              style={{ width: 'auto', height: 'auto' }}
               alt="suppressor wrench"
             />
             <a

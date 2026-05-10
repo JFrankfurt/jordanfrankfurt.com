@@ -5,6 +5,7 @@ import prsData from 'data/prs.json'
 import { formatTime } from 'utils/formatTime'
 
 const STRAVA_PROFILE = 'https://www.strava.com/athletes/154239818'
+const STRAVA_ORANGE = '#FC4C02'
 const prs = prsData as Record<string, number | string | null>
 
 function formatSyncDate(iso: string): string {
@@ -37,14 +38,34 @@ export default function RunningStats() {
           )
         })}
       </div>
-      {syncedAt && (
-        <Link
-          href={STRAVA_PROFILE}
-          className="mt-1.5 block text-gray-300 no-underline hover:text-gray-500"
+      <Link
+        href={STRAVA_PROFILE}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-1.5 flex items-center gap-1 text-gray-500 no-underline hover:text-gray-700"
+        aria-label="Live PR sync from Strava"
+      >
+        <span
+          className="relative inline-flex h-1.5 w-1.5 shrink-0"
+          aria-hidden="true"
         >
-          synced {formatSyncDate(syncedAt)} ↗
-        </Link>
-      )}
+          <span
+            className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60"
+            style={{ backgroundColor: STRAVA_ORANGE }}
+          />
+          <span
+            className="relative inline-flex h-1.5 w-1.5 rounded-full"
+            style={{ backgroundColor: STRAVA_ORANGE }}
+          />
+        </span>
+        <span style={{ color: STRAVA_ORANGE }} className="font-medium">
+          live · strava
+        </span>
+        {syncedAt && (
+          <span className="text-gray-400">{formatSyncDate(syncedAt)}</span>
+        )}
+        <span className="text-gray-400">↗</span>
+      </Link>
     </div>
   )
 }

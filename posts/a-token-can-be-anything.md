@@ -1,5 +1,5 @@
 ---
-title: A Token Can Be Anything
+title: Stocks Were Tokens First
 date: 2026-04-26T12:00:00-05:00
 ---
 

@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React, { FunctionComponent, PropsWithChildren } from 'react'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
-import LiftingStats from './LiftingStats'
 import RunningStats from './RunningStats'
 
 interface LayoutProps {
@@ -69,7 +68,6 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
           </Link>
         </nav>
         <RunningStats />
-        <LiftingStats />
       </div>
       <main className="mx-1 flex w-full max-w-[500px] flex-col items-center justify-start px-2 sm:max-w-[600px] md:mx-auto md:max-w-[650px] lg:max-w-[800px]">
         {children}

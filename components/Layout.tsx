@@ -57,6 +57,9 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
           <Link href="/about" className="text-black">
             about
           </Link>
+          <Link href="/goals" className="text-black">
+            goals
+          </Link>
           <Link
             href="https://twitter.com/jordanfrankfurt"
             className="text-black"

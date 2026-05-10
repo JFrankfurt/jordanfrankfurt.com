@@ -1,146 +1,68 @@
 ---
-title: A Token Can Be Anything
+title: Stocks Were Tokens First
 date: 2026-04-26T12:00:00-05:00
 ---
 
-**Stocks already proved that standardized interfaces can wrap arbitrary economic meaning.**
+People talk about tokens as if they are some exotic new category of fake financial object, in contrast to stocks, which are supposedly "real." This is mostly an artifact of familiarity. Stocks are not real because they all represent one clean, coherent, uniform economic relationship. They are real because an enormous legal, custodial, accounting, tax, regulatory, and market apparatus knows how to handle them.
 
-Thesis: A token does not need to conform to one canonical model of legitimacy. Like a stock, it only needs a standard interface and a market-legible bundle of expectations. ERC-20s are technically standardized wrappers around wildly different bundles of expectations, exactly the way stocks are legally standardized wrappers around wildly different bundles of rights.
+That is the important point. A stock is already a standardized wrapper around arbitrary economic meaning. The thing that makes it legible is not that every share conveys the same bundle of rights. It is that the interface is standardized enough for the rest of the system to reason about it.
 
----
+Once you admit non-voting stock, super-voting stock, preferred stock, tracking stock, golden shares, SPAC units, options, warrants, RSUs, and phantom equity into the broader equity universe, the naive idea that "stock" means one specific thing collapses. Some stock conveys control. Some conveys almost no control. Some conveys a liquidation preference. Some tracks a business segment. Some is economically equity-like but not quite stock. Some is mostly a compensation artifact. Some is an option on a future financing story.
 
-## I. Stocks are already arbitrary tokens
+What survives is the interface. The market knows how to custody it, quote it, trade it, lend against it, tax it, regulate it, sue over it, and build products around it.
 
-People think stocks are "real" and tokens are "made up." But stocks are standardized legal interfaces around arbitrary right bundles. The category "stock" is not coherent because all stocks do the same thing. It is coherent because the legal and market infrastructure knows how to handle them.
+ERC-20 is the same kind of abstraction.
 
-### A stock that conveys little
+ERC-20 does not answer the question "what is this thing worth?" It does not answer "what rights does this represent?" It does not answer "why should anyone care?" It answers boring mechanical questions: who has what balance, how transfers work, how allowances work, what the supply is, and what metadata infrastructure can read.
 
-<!-- Alphabet Class C (GOOG): non-voting, pure economic exposure. Nobody thinks GOOG is "not a real stock" merely because it doesn't vote. Public float in a controlled company: the vote is ornamental. -->
+That is not a theory of value. It is plumbing.
 
-### A stock that conveys a lot
+The token's actual meaning lives elsewhere. It lives in issuer promises, smart-contract mechanics, exchange acceptance, meme strength, governance rights, redemption rights, fee discounts, collateral, regulatory posture, liquidity, Schelling points, brand, habit, and speculation. ERC-20 does not tell you what the token means. It tells infrastructure how to move it around.
 
-<!-- Founder super-voting shares: 10x voting power, minority economic ownership, total control. Berkshire Class A: enormous per-share economic weight + governance. Preferred stock w/ liquidation preference, anti-dilution, board rights — more bespoke financing contract than ownership slice. -->
-
-### A stock that conveys something strange
-
-<!-- Tracking stock: tracks a business segment, not ownership of the whole corporation. Golden shares: special veto/control rights disproportionate to economic ownership. SPAC units: blur cash claim, optionality, governance vote, redemption right, speculative merger exposure. -->
-
-Once you have non-voting stock, super-voting stock, preferred stock, tracking stock, golden shares, SPAC units, options, warrants, RSUs, and phantom equity, the idea that "stock" means one clean thing collapses. What survives is the interface. The market knows how to custody it, trade it, quote it, tax it, regulate it, and sue over it.
-
----
-
-## II. ERC-20 is the same kind of abstraction
-
-ERC-20 did for tokens what corporate/share infrastructure did for equity: it made arbitrary economic meaning fit through a common interface.
-
-ERC-20 answers boring mechanical questions: balance, transfer, allowance, supply, metadata. That is not a theory of value. It is plumbing.
-
-The token's actual meaning lives elsewhere: issuer promises, smart contract mechanics, exchange acceptance, meme strength, protocol governance, redemption rights, fee discounts, collateral, regulatory posture, liquidity, Schelling points, brand, habit, and speculation.
-
-> ERC-20 does not tell you what the token means. It tells infrastructure how to move it around.
-
----
-
-## III. Token value propositions are heterogeneous
-
-### MKR — governance/risk/protocol exposure
-
-<!-- Governance authority over a stablecoin system. Risk backstop expectations. Protocol economics. The "deep mechanism" token. -->
-
-### BNB — platform/ecosystem/fee/burn/network token
-
-<!-- Exchange-fee utility, ecosystem utility, buyback/burn dynamics, chain-native usage, brand/network effects. The corporate/ecosystem/platform token. -->
-
-### PEPE — meme/liquidity/speculation
-
-<!-- Pure memetic coordination and speculative liquidity. Does not need cash flows, collateral, or governance. The "nothing but Schelling-point energy" token. -->
-
-### USDC — regulated dollar redemption/institutional trust
-
-<!-- Issuer-backed dollar. Regulated issuer, reserves, redemption process, integrations, compliance posture. The off-chain redeemable claim token. -->
-
-### USDT — offshore dollar liquidity/network effects/path dependence
-
-<!-- Different jurisdictional posture, distribution, liquidity profile, exchange penetration, market psychology. Dominance not explained by "most decentralized" or "most transparent." -->
+This is why token value propositions look so heterogeneous. MKR is governance, risk, and protocol exposure. BNB is a platform token, ecosystem token, fee token, burn token, and network token. PEPE is attention, liquidity, reflexivity, and speculation. USDC is regulated dollar redemption and institutional trust. USDT is offshore dollar liquidity, exchange integration, network effects, and path dependence.
 
 These are not failed versions of the same thing. They are different things.
 
----
+The point becomes even harder to ignore once you leave ordinary ERC-20s and look at native assets. BTC, ETH, and OP are not merely different tickers. They are different theories of what a token can be.
 
-## IV. Native assets make the point even harder to ignore
+Bitcoin is money without an issuer. It has no fee-discount program, no redemption promise, no governance rights, no dividend, and no collateral pool. Its value proposition is fixed supply, censorship-resistant settlement, credible neutrality, proof-of-work security, monetary Schelling power, the deepest crypto-native brand, and a fifteen-year Lindy effect.
 
-The argument gets even clearer beyond ordinary ERC-20s. BTC, ETH, and OP are not merely different tickers. They are different theories of what a token can be.
+Bitcoin is not mechanically productive. It does not need to be. Its primary asset is the credibility of the shared belief around it. That sounds fake until you realize that monetary coordination is one of the most powerful economic phenomena in the world.
 
-### Bitcoin — money without an issuer
+Ethereum is different. ETH is closer to commodity-money for blockspace. It is the gas token, blockspace currency, staking asset, slashing collateral, DeFi reserve, monetary-premium candidate, and index-like exposure to Ethereum blockspace demand.
 
-No issuer, no fee-discount program, no redemption promise, no governance rights, no dividend, no collateral pool. Value proposition: fixed-supply monetary asset, censorship-resistant settlement, credible neutrality, proof-of-work security, monetary Schelling point, deepest crypto-native brand, fifteen-year Lindy effect.
+It is not stock. It is not a bond. It is not exactly a commodity. It is not exactly a currency. It is the native scarce asset required to consume, produce, and secure a decentralized computation network. You need it to buy blockspace. Validators need it to secure the chain. DeFi uses it as collateral. Investors treat it as monetary exposure to Ethereum's future.
 
-> Bitcoin's value proposition is not mechanical productivity. It is monetary coordination. A token whose primary asset is the credibility of the shared belief around it.
+ETH is what happens when the asset is endogenous to the network.
 
-### Ethereum — commodity-money for blockspace
+OP is different again. OP is governance as an asset. It represents influence over protocol and ecosystem decisions, participation in Retro Funding and public-goods allocation, exposure to OP Stack adoption, and speculative alignment with Optimism/Superchain growth. It is not trying to be digital gold, a dollar, or a memecoin. It is closer to a transferable unit of political influence in a network-state-like software economy.
 
-Gas token, blockspace currency, staking asset, slashing collateral, DeFi reserve, monetary premium candidate, index-like exposure to Ethereum blockspace demand. Not stock. Not bond. Not commodity. Not currency exactly. The native scarce asset required to consume, produce, and secure a decentralized computation network.
+The mistake is looking for one legitimacy ladder.
 
-> ETH is what happens when the asset is endogenous to the network. You need it to buy blockspace. Validators need it to secure the chain. DeFi uses it as collateral. Investors treat it as monetary exposure to Ethereum's future.
+There is no universal hierarchy where on-chain collateral beats buyback-and-burn, which beats fee discounts, which beats issuer redemption, which beats memes. That is the wrong frame. USDC is not less legitimate than DAI merely because its collateral is off-chain. BNB is not more legitimate than PEPE merely because it has exchange utility. PEPE is not illegitimate merely because it lacks mechanics. The market prices different stories for different reasons.
 
-### OP — governance as an asset
+BTC is a monetary Schelling asset. ETH is a network-native productive commodity. OP is a governance and coordination token. USDC is a redeemable dollar claim. BNB is platform and ecosystem exposure. PEPE is memetic speculation. MKR is protocol governance and risk absorption.
 
-Governance over protocol/ecosystem decisions, influence over Retro Funding / public-goods allocation, alignment with OP Stack adoption, speculative exposure to Optimism/Superchain growth, political participation in a network economy.
+The broader infrastructure mostly does not care about the metaphysics. It cares whether the token conforms to the interface.
 
-> OP is not trying to be digital gold, a dollar, or a memecoin. It is closer to a transferable unit of political influence in a network-state-like software economy.
+Buyers supply their own justification. Some buy redemption confidence. Some buy governance. Some buy cash-flow expectations. Some buy platform growth. Some buy memes. Some buy liquidity. Some buy reflexivity. Pricing emerges from the collision of those heterogeneous justifications.
 
----
+This is why elegance is overrated. USDT is not dominant because the market carefully evaluated every stablecoin design and selected the most philosophically satisfying version. Liquidity, distribution, exchange support, jurisdiction, redemption confidence, habit, and path dependence matter. A beautifully designed stablecoin can lose to an offshore bank account with a giant securities book and a "trust me bro" redemption model if the latter has the distribution.
 
-## V. Legitimacy is not one-dimensional
+That sounds offensive to protocol designers because protocol designers overvalue mechanism. Markets do not.
 
-There is no single legitimacy ladder where on-chain collateral > buyback/burn > fee discount > issuer redemption > meme. That is the wrong frame.
+The same point applies to token design generally. Do not overfit your token to someone else's theory of what a token is supposed to be. It does not need to be mined. It does not need on-chain collateral. It does not need cash flows. It does not need a burn. It does not need governance. It does not need to be a stablecoin, a security, a meme, a coupon, or a protocol backstop.
 
-| Asset | What is it "really"?                | Main legitimacy source                                                      |
-| ----- | ----------------------------------- | --------------------------------------------------------------------------- |
-| BTC   | Monetary Schelling asset            | Fixed supply, PoW security, liquidity, social consensus                     |
-| ETH   | Network-native productive commodity | Blockspace demand, staking/security, DeFi collateral, monetary premium      |
-| OP    | Governance/coordination token       | Ecosystem influence, governance, public-goods allocation, Superchain growth |
-| USDC  | Redeemable dollar claim             | Issuer trust, reserves, compliance, integrations                            |
-| BNB   | Platform/ecosystem token            | Exchange/chain utility, brand, burn mechanics, distribution                 |
-| PEPE  | Meme/speculation token              | Attention, liquidity, community, reflexivity                                |
-| MKR   | Protocol governance/risk token      | Control over stablecoin system, protocol economics, risk absorption         |
-
-USDC is not less legitimate than DAI because collateral is off-chain. BNB is not more legitimate than PEPE because it has exchange utility. PEPE is not illegitimate merely because it lacks mechanics. The market prices different stories for different reasons. The broader infrastructure mostly just cares that the token conforms to the interface.
-
----
-
-## VI. The market decides what bundle matters
-
-Buyers choose their own justification. Some buy redemption confidence. Some buy governance. Some buy cash-flow expectations. Some buy platform growth. Some buy memes. Some buy liquidity. Some buy reflexivity. Pricing emerges from those heterogeneous justifications.
-
-USDT is 3x the USDC market cap which is 22x the DAI market cap — not because the market read every whitepaper and selected the most philosophically elegant design. Liquidity, distribution, exchange support, jurisdiction, redemption confidence, habit, and path dependence matter. BNB and USDC can both be enormous while representing almost opposite things: one is speculative platform upside, the other is a dollar-denominated liability-like instrument designed not to appreciate.
-
-> The broader infrastructure is mostly indifferent to the token's metaphysics.
-
----
-
-## VII. Stop over-engineering legitimacy
-
-Do not overfit your token to someone else's theory of what a token is supposed to be. It does not need to be mined. Does not need on-chain collateral. Does not need cash flows. Does not need a burn. Does not need governance. Does not need to be a stablecoin, a security, a meme, a coupon, or a protocol backstop. It needs to be honest about what it is, expose a usable interface, and give the market a reason to care.
-
-The most ornate purple paper in the world will not automatically make your stablecoin more accepted than an offshore bank account with a giant MBS book issuing tokens on a "trust me bro" basis. Elegance does not beat distribution by default.
-
----
-
-## VIII. Just ship it
-
-Launch the token. Be clear about what it is. Let the market decide whether anyone cares.
-
-If users can pay with it for discounts, fine. If it is just a meme, fine. If it is a claim on future access, fine. If you migrate the contract later, fine, as long as the market understands. Do not confuse architectural ornamentation with market acceptance.
+It needs to be honest about what it is, expose a usable interface, and give the market a reason to care.
 
 "Doing something" is not limited to smart-contract mechanics. A meme does something. A brand does something. A discount does something. A redemption promise does something. A governance right does something. The mistake is assuming only the mechanism you personally respect counts as real utility.
 
----
+This does not mean everything is equally good. It means the category is wider than people want it to be. A dishonest redemption token is bad. A useless governance token is bad. A meme with no attention is bad. A platform token for a dead platform is bad. But those things are bad because their underlying bundle is weak, not because they failed to instantiate some canonical token form.
 
-## IX. Closing
+The right question is not "is this what a token is supposed to be?" The right question is "what bundle of expectations is this object wrapping, and does anyone care enough to price it?"
 
-> A stock is a token with a legal interface. An ERC-20 is a token with a technical interface. Neither interface determines the meaning of the thing inside it. That meaning comes from the rights, expectations, promises, memes, integrations, and markets built around it.
+A stock is a token with a legal interface. An ERC-20 is a token with a technical interface. Neither interface determines the meaning of the thing inside it. That meaning comes from rights, expectations, promises, memes, integrations, market structure, and user behavior.
 
 BTC, ETH, and OP are not three answers to the same question. They are proof that the question is wrong. There is no single thing a token is supposed to be. A token is a standard object with arbitrary meaning attached to it by protocol rules, issuer promises, social consensus, market structure, and user expectation.
 
-> Tokens can be anything because financial instruments were already anything. ERC-20 just made the arbitrariness programmable.
+Tokens can be anything because financial instruments were already anything. ERC-20 just made the arbitrariness programmable.

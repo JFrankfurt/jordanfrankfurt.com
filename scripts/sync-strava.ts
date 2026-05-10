@@ -28,7 +28,7 @@ interface DetailedActivity {
 }
 
 interface PRsFile {
-  mile: number | null
+  '400m': number | null
   '5k': number | null
   '10k': number | null
   half: number | null
@@ -200,7 +200,7 @@ async function main() {
   console.log(`Found ${runs.length} run(s) to process`)
 
   let currentPRs: Record<Distance, number | null> = {
-    mile: prsFile.mile,
+    '400m': prsFile['400m'],
     '5k': prsFile['5k'],
     '10k': prsFile['10k'],
     half: prsFile.half,

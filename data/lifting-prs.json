@@ -1,10 +1,10 @@
 {
   "deadlift": 325,
-  "front squat": null,
-  "back squat": null,
-  "bench": 145,
+  "back squat": 225,
+  "bench": 155,
   "strict press": 95,
-  "push press": null,
   "weighted pull-up": null,
-  "strict pull-ups": 12
+  "strict pull-ups": 12,
+  "towel hang": null,
+  "dead hang": null
 }

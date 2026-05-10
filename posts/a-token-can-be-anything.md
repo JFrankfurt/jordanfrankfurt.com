@@ -15,9 +15,7 @@ ERC-20 does not answer the question "what is this thing worth?" It does not answ
 
 The token's actual meaning lives elsewhere. It lives in issuer promises, smart-contract mechanics, exchange acceptance, meme strength, governance rights, redemption rights, fee discounts, collateral, regulatory posture, liquidity, Schelling points, brand, habit, and speculation. ERC-20 does not tell you what the token means; all it really does is tell infrastructure how to move it around.
 
-This is why token value propositions look so heterogeneous. MKR is governance, risk, and protocol exposure. BNB is a platform token, ecosystem token, fee token, burn token, and network token. PEPE is attention, liquidity, reflexivity, and speculation. USDC is regulated dollar redemption and institutional trust. USDT is offshore dollar liquidity, exchange integration, network effects, and path dependence.
-
-These are not failed versions of the same thing. They are different things.
+This is why token value propositions look so heterogeneous. MKR is governance, risk, and protocol exposure. BNB is a platform token, ecosystem token, fee token, burn token, and network token. PEPE is attention, liquidity, reflexivity, and speculation. USDC is regulated dollar redemption and institutional trust. USDT is offshore dollar liquidity, exchange integration, network effects, and path dependence. These are all fundamentally different things. None is more or less legitimate than the others.
 
 The point becomes even harder to ignore once you leave ordinary ERC-20s and look at native assets. BTC, ETH, and OP are not merely different tickers. They are different theories of what a token can be.
 

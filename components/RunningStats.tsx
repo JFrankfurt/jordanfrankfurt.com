@@ -26,6 +26,9 @@ function TickerRow({ ariaHidden = false }: { ariaHidden?: boolean }) {
         </span>
         live · strava
       </span>
+      <span className="uppercase tracking-wider opacity-70">
+        achieved / goal
+      </span>
       {DISTANCES.map((d: Distance) => {
         const pr = prs[d]
         const goal = goals[d]

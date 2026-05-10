@@ -4,7 +4,7 @@
         <title>Jordan Frankfurt videos</title>
         <link>https://jordanfrankfurt.com</link>
         <description>mostly reading things</description>
-        <lastBuildDate>Sun, 05 Apr 2026 21:40:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Apr 2026 17:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -19,10 +19,7 @@
             <link>https://www.youtube.com/watch?v=miCP-Qt4WII</link>
             <guid>https://jordanfrankfurt.com/twamm</guid>
             <pubDate>Mon, 02 Aug 2021 09:15:00 GMT</pubDate>
-            <description><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
-<p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
-<p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>
-]]></description>
+            <description><![CDATA[I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below. TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams youtube]]></description>
             <content:encoded><![CDATA[<p>I've been meaning to read through this, so to make myself do it I read it aloud and recorded it. If you're interested in listening or watching, you can find audio and video versions at the links below.</p>
 <p>TWAMM (7.28.2021) | Dave White, Dan Robinson, Hayden Adams</p>
 <p><a href="https://www.youtube.com/watch?v=miCP-Qt4WII">youtube</a></p>

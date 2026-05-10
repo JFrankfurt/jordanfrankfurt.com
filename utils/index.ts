@@ -10,10 +10,23 @@ export async function runBuildJobs(): Promise<void> {
 
 const encodeTitle = (s: string): string => s.toLowerCase().replace(/ /gi, '-')
 
+const buildExcerpt = (html: string, max = 280): string => {
+  const text = html
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+  if (text.length <= max) return text
+  return text.slice(0, max).replace(/\s+\S*$/, '') + '…'
+}
+
 const generateRssFeeds = async () => {
   const posts = await getBlogPostsData()
   const siteURL = process.env.SITE_URL || 'https://jordanfrankfurt.com'
-  const date = new Date()
+  const latestPostTime = posts.reduce((max, p) => {
+    const t = new Date(p.attributes.date).getTime()
+    return t > max ? t : max
+  }, 0)
+  const date = latestPostTime > 0 ? new Date(latestPostTime) : new Date(0)
   const author = {
     name: 'Jordan Frankfurt',
     email: 'jordanwfrankfurt@gmail.com',
@@ -92,6 +105,13 @@ const generateRssFeeds = async () => {
   })
 
   for (const post of posts) {
+    const postDate = post.attributes.date
+      ? new Date(post.attributes.date)
+      : null
+    if (!postDate || isNaN(postDate.getTime())) {
+      console.warn(`Skipping RSS item with invalid date: ${post.slug}`)
+      continue
+    }
     const postUrl = new URL(
       post.slug.startsWith('/') ? post.slug.slice(1) : post.slug,
       siteURL
@@ -101,8 +121,8 @@ const generateRssFeeds = async () => {
       category: [{ name: 'Technology' }],
       content: post.html,
       contributor: [author],
-      date: new Date(post.attributes.date),
-      description: post.html,
+      date: postDate,
+      description: buildExcerpt(post.html),
       id: postUrl,
       link: postUrl,
       title: post.attributes.title,

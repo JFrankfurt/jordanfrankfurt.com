@@ -44,6 +44,36 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
       <meta property="twitter:description" content={description} />
 
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="Jordan Frankfurt — blog (RSS)"
+        href="/rss/jordan-frankfurt-blog-feed.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/atom+xml"
+        title="Jordan Frankfurt — blog (Atom)"
+        href="/rss/jordan-frankfurt-blog-atom.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/feed+json"
+        title="Jordan Frankfurt — blog (JSON Feed)"
+        href="/rss/jordan-frankfurt-blog-feed.json"
+      />
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="Jordan Frankfurt — podcast (RSS)"
+        href="/rss/jordan-frankfurt-podcast-feed.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="Jordan Frankfurt — videos (RSS)"
+        href="/rss/jordan-frankfurt-videos-feed.xml"
+      />
       <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
     </Head>
     <div className="flex flex-col items-center justify-center font-sans text-sm lg:text-base">

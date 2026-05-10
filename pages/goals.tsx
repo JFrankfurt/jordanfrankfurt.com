@@ -77,6 +77,11 @@ export default function Goals() {
             <h2 className="m-0 text-lg font-semibold tracking-tight">
               {section.title}
             </h2>
+            {section.description && (
+              <p className="mt-1 text-sm leading-relaxed text-gray-600">
+                {section.description}
+              </p>
+            )}
 
             <div className="mt-3 hidden md:block">
               <table className="w-full border-collapse text-sm">

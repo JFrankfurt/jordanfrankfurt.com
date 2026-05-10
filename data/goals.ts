@@ -24,6 +24,7 @@ export interface Goal {
 
 export interface CategorySection {
   title: string
+  description?: string
   rows: Goal[]
 }
 
@@ -221,42 +222,56 @@ export const sections: CategorySection[] = [
     ],
   },
   {
-    title: 'Durability minimums',
+    title: 'Mobility',
+    description:
+      'Aspirational movement standards measured quarterly with fixed video angles.',
     rows: [
       {
         domain: 'Deep squat',
         current: 'Untested',
-        goal: '5 min relaxed deep squat, heels down, no pain',
+        goal: '10:00 continuous, heels down',
         status: 'Untested',
       },
       {
-        domain: 'Overhead position',
+        domain: 'Pancake',
         current: 'Untested',
-        goal: 'Shoulder-width PVC pass-through + pain-free loaded overhead squat pattern',
+        goal: 'Sternum to floor at fixed straddle angle',
         status: 'Untested',
       },
       {
-        domain: 'Hip extension',
+        domain: 'Front split',
         current: 'Untested',
-        goal: 'Couch stretch 2 min/side without lumbar compensation',
+        goal: 'Pelvis to floor both sides, hips square',
         status: 'Untested',
       },
       {
-        domain: 'Passive hang',
+        domain: 'Middle split',
         current: 'Untested',
-        goal: '2 min passive hang; stretch 60 sec one-arm aggregate/side',
+        goal: 'Pelvis ≤2" from floor; stretch 0"',
         status: 'Untested',
       },
       {
-        domain: 'Neck',
+        domain: 'Cossack squat',
         current: 'Untested',
-        goal: 'Full pain-free ROM + trained isometric flexion/extension/lateral strength',
+        goal: '5 full-depth heel-down reps per side',
         status: 'Untested',
       },
       {
-        domain: 'Ankles/calves',
+        domain: 'Skin-the-cat',
         current: 'Untested',
-        goal: 'Knee-to-wall symmetry + resilient calves/Achilles under running volume',
+        goal: '3 controlled ring reps to German hang and back',
+        status: 'Untested',
+      },
+      {
+        domain: 'Bridge',
+        current: 'Untested',
+        goal: '30-sec full bridge, straight arms, hands ≤26" from heels',
+        status: 'Untested',
+      },
+      {
+        domain: 'Overhead squat',
+        current: 'Untested',
+        goal: '5 full-depth reps with empty bar',
         status: 'Untested',
       },
     ],

@@ -3,6 +3,8 @@ export type Distance = (typeof DISTANCES)[number]
 
 // Strava best_efforts name → our distance key
 export const STRAVA_NAME_MAP: Record<string, Distance> = {
+  '400m': '400m',
+  '400M': '400m',
   '5k': '5k',
   '5K': '5k',
   '10k': '10k',

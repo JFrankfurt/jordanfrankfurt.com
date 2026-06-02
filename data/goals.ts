@@ -173,19 +173,19 @@ export const sections: CategorySection[] = [
       },
       {
         domain: 'Bodyweight',
-        current: '182 lb',
+        current: '184 lb',
         goal: '195 lb',
         status: 'Active',
         // Baseline 165 lb = lean untrained adult of similar frame.
-        progress: spanProgressUp(182, 165, 195),
+        progress: spanProgressUp(184, 165, 195),
       },
       {
         domain: 'Body fat',
-        current: '11%',
+        current: '10.3%',
         goal: '≤ 13%',
         status: 'Active',
         // Ceiling metric: at-or-under goal = full progress; over goal scales down.
-        progress: 11 <= 13 ? 1 : clamp01(13 / 11),
+        progress: 10.3 <= 13 ? 1 : clamp01(13 / 10.3),
       },
     ],
   },
@@ -212,7 +212,6 @@ export const sections: CategorySection[] = [
     rows: [
       runRow('5k', '5k'),
       runRow('10k', '10k'),
-      runRow('Half marathon', 'half'),
       {
         domain: 'Ruck',
         current: 'Untested',

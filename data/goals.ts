@@ -112,20 +112,20 @@ export const sections: CategorySection[] = [
     rows: [
       {
         domain: 'BJJ',
-        current: 'Purple, comp-tested',
-        goal: 'Black, comp-hardened',
+        current: 'Purple',
+        goal: 'Black',
         status: 'Active',
       },
       {
-        domain: 'Standing grappling',
-        current: 'White / untrained',
-        goal: 'Judo Shodan',
+        domain: 'Judo',
+        current: 'White',
+        goal: 'Shodan',
         status: 'Untested',
       },
       {
         domain: 'Striking',
         current: 'None',
-        goal: '2 yr cumulative training + safe sparring',
+        goal: '2 yr cumulative training',
         status: 'Untested',
       },
       {
@@ -194,15 +194,9 @@ export const sections: CategorySection[] = [
     rows: [
       {
         domain: '40-yard dash',
-        current: 'Untested',
+        current: '5.6 sec',
         goal: '4.8 sec',
-        status: 'Untested',
-      },
-      {
-        domain: '5-10-5 shuttle',
-        current: 'Untested',
-        goal: 'Sub-5.0 sec',
-        status: 'Untested',
+        status: 'Active',
       },
       runRow('400m', '400m'),
     ],
@@ -215,7 +209,7 @@ export const sections: CategorySection[] = [
       {
         domain: 'Ruck',
         current: 'Untested',
-        goal: '12 mi @ 45 lb, sub-3:00 (SFAS std)',
+        goal: '12 mi @ 45 lb, sub-3:00',
         status: 'Untested',
       },
     ],
@@ -247,12 +241,6 @@ export const sections: CategorySection[] = [
         domain: 'Middle split',
         current: 'Untested',
         goal: 'Pelvis ≤2" from floor; stretch 0"',
-        status: 'Untested',
-      },
-      {
-        domain: 'Cossack squat',
-        current: 'Untested',
-        goal: '5 full-depth heel-down reps per side',
         status: 'Untested',
       },
       {

@@ -25,20 +25,21 @@ export default function Goals() {
       <div className="w-full max-w-[800px] px-2 py-6">
         <h1 className="m-0 text-3xl font-semibold tracking-tight">Goals</h1>
         <p className="mt-3 text-sm leading-relaxed text-gray-700">
-          <span className="font-medium text-gray-900">Training thesis:</span>{' '}
-          build transferable capacity across the qualities that decide physical
-          contests — skill, strength, speed, endurance, precision, and
-          durability. The goal is not to maximize any single sport metric, but
-          to become broadly hard to control, hard to exhaust, hard to injure,
-          and hard to out-execute under pressure.
+          <span className="font-medium text-gray-900">
+            Training philosophy:
+          </span>{' '}
+          I want to build toward maximum violence capacity.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-gray-700">
-          The scoreboard favors combat sports, practical shooting, repeat-effort
-          conditioning, heavy strength, short-to-middle distance running, loaded
-          movement, and resilience. A goal earns its place by improving one of
-          four things: the ability to <em>impose force</em>,{' '}
-          <em>resist force</em>, <em>recover between efforts</em>, or{' '}
-          <em>perform accurately under stress</em>.
+          Practically this means I want explosive power, durability in both
+          strength and endurance disciplines, fast recovery between efforts,
+          stability under stress, clear thinking under stress, and a
+          comprehensive lifetime engagement in actively tested armed and unarmed
+          combat disciplines. For me that means a black belt in jiu jitsu and
+          judo with multiple competition victories at black belt, years spent
+          practicing a competitive striking art with live sparring, at least
+          A-class in USPSA carry optics, and the ability to podium at least once
+          in a Tactical Games or run-n-gun biathlon event.
         </p>
 
         <section

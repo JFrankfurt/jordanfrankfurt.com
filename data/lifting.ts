@@ -18,10 +18,10 @@ export const goals: Record<
   Lift,
   { value: number; unit: 'lb' | 'reps' | 'sec' }
 > = {
-  deadlift: { value: 400, unit: 'lb' },
-  'back squat': { value: 360, unit: 'lb' },
-  bench: { value: 265, unit: 'lb' },
-  'strict press': { value: 155, unit: 'lb' },
+  deadlift: { value: 520, unit: 'lb' },
+  'back squat': { value: 450, unit: 'lb' },
+  bench: { value: 285, unit: 'lb' },
+  'strict press': { value: 175, unit: 'lb' },
   'weighted pull-up': { value: 90, unit: 'lb' },
   'strict pull-ups': { value: 20, unit: 'reps' },
   'towel hang': { value: 90, unit: 'sec' },

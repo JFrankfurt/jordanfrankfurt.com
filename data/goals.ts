@@ -220,27 +220,9 @@ export const sections: CategorySection[] = [
       'Aspirational movement standards measured quarterly with fixed video angles.',
     rows: [
       {
-        domain: 'Deep squat',
-        current: 'Untested',
-        goal: '10:00 continuous, heels down',
-        status: 'Untested',
-      },
-      {
         domain: 'Pancake',
         current: 'Untested',
         goal: 'Sternum to floor at fixed straddle angle',
-        status: 'Untested',
-      },
-      {
-        domain: 'Front split',
-        current: 'Untested',
-        goal: 'Pelvis to floor both sides, hips square',
-        status: 'Untested',
-      },
-      {
-        domain: 'Middle split',
-        current: 'Untested',
-        goal: 'Pelvis ≤2" from floor; stretch 0"',
         status: 'Untested',
       },
       {

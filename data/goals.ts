@@ -72,6 +72,24 @@ function spanProgressDown(
   return clamp01((baseline - current) / (baseline - goal))
 }
 
+/**
+ * Progress toward a target band [low, high] for a value-down domain (e.g. body
+ * fat). Inside the band = full. Above `high` scales from `baseline` (untrained,
+ * worse) down to high. Below `low` scales from `floor` (too-far overshoot) up to
+ * low, so both sides are penalized.
+ */
+function bandProgressDown(
+  current: number,
+  low: number,
+  high: number,
+  baseline: number,
+  floor: number
+): number {
+  if (current >= low && current <= high) return 1
+  if (current > high) return spanProgressDown(current, baseline, high)
+  return clamp01((current - floor) / (low - floor))
+}
+
 function liftRow(domain: string, lift: Lift): Goal {
   const current = liftingPrs[lift]
   const { value: goalVal } = liftingGoals[lift]
@@ -182,10 +200,11 @@ export const sections: CategorySection[] = [
       {
         domain: 'Body fat',
         current: '10.3%',
-        goal: '≤ 13%',
+        goal: '11–15%',
         status: 'Active',
-        // Ceiling metric: at-or-under goal = full progress; over goal scales down.
-        progress: 10.3 <= 13 ? 1 : clamp01(13 / 10.3),
+        // Two-sided band [11, 15]. Inside = full. Over scales from a 22%
+        // untrained baseline; under scales toward a 5% too-lean floor.
+        progress: bandProgressDown(10.3, 11, 15, 22, 5),
       },
     ],
   },

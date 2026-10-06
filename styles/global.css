@@ -1,20 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss' source(none);
+@source '../pages';
+@source '../components';
 
-a {
-  color: red;
-  transition: color 200ms ease;
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --color-linkHoverRed: hsl(360, 100%, 60%);
+  --color-strava: #fc4c02;
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
-a:hover {
-  color: black;
-  text-decoration: underline;
-}
-ul,
-ol {
-  padding-left: 2em;
-}
-ul > li,
-ol > li {
-  list-style: georgian;
+
+@layer base {
+  a {
+    color: red;
+    transition: color 200ms ease;
+  }
+  a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  ul,
+  ol {
+    padding-left: 2em;
+  }
+  ul > li,
+  ol > li {
+    list-style: georgian;
+  }
 }

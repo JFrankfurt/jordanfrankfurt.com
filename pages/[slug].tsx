@@ -1,22 +1,15 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Layout from 'components/Layout'
 import { DateTime } from 'luxon'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { remark } from 'remark'
-import html from 'remark-html'
+import { getPostBySlug, getPostSlugs, Post } from 'utils/blog'
 import styles from '../styles/article.module.css'
 
-interface Props {
-  html: string
-  attributes: Record<string, any>
-}
+type Props = Pick<Post, 'attributes' | 'html'>
 
-const Post: NextPage<Props> = ({ attributes, html }) => {
+const PostPage: NextPage<Props> = ({ attributes, html }) => {
   if (!html) return <div>not found</div>
 
-  const DT = DateTime.fromISO(attributes.date as string)
+  const DT = DateTime.fromISO(attributes.date)
   return (
     <Layout title={attributes.title}>
       <main className="mx-2">
@@ -31,38 +24,17 @@ const Post: NextPage<Props> = ({ attributes, html }) => {
   )
 }
 
-export default Post
+export default PostPage
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { slug } = params as { slug: string }
-  const filePath = path.join(process.cwd(), 'posts', `${slug}.md`)
-  const fileContents = fs.readFileSync(filePath, 'utf8')
-  const { data, content } = matter(fileContents)
-
-  const processedContent = await remark().use(html).process(content)
-  const contentHtml = processedContent.toString()
-
-  const attributes = {
-    ...data,
-    date: data.date ? new Date(data.date).toISOString() : null,
-  }
-
-  return { props: { attributes, html: contentHtml } }
+export const getStaticProps: GetStaticProps<Props, { slug: string }> = async ({
+  params,
+}) => {
+  if (!params) throw new Error('Missing route params')
+  const { attributes, html } = await getPostBySlug(params.slug)
+  return { props: { attributes, html } }
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const postsDirectory = path.join(process.cwd(), 'posts')
-  const filenames = fs.readdirSync(postsDirectory)
-
-  const paths = filenames
-    .filter((filename) => filename.endsWith('.md'))
-    .map((filename) => {
-      const slug = filename.replace(/\.md$/, '')
-      return { params: { slug } }
-    })
-
-  return {
-    paths,
-    fallback: false,
-  }
-}
+export const getStaticPaths: GetStaticPaths = async () => ({
+  paths: getPostSlugs().map((slug) => ({ params: { slug } })),
+  fallback: false,
+})

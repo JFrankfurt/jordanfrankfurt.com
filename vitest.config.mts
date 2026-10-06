@@ -8,7 +8,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      utils: path.resolve(__dirname, './utils'),
+      utils: path.resolve(import.meta.dirname, './utils'),
     },
   },
 })

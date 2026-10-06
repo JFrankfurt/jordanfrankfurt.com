@@ -1,9 +1,9 @@
 import Layout from 'components/Layout'
 import { DateTime } from 'luxon'
-import { NextPage } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import { runBuildJobs } from 'utils'
-import { getBlogPostsData, Post } from 'utils/blog'
+import { getBlogPostsData, Post, sortPostsNewestFirst } from 'utils/blog'
 import styles from '../styles/article.module.css'
 
 interface Props {
@@ -13,50 +13,35 @@ interface Props {
 const Index: NextPage<Props> = ({ posts }) => (
   <Layout>
     <>
-      {posts
-        .sort((a, b) => {
-          const dateA = DateTime.fromISO(a.attributes.date as string)
-          const dateB = DateTime.fromISO(b.attributes.date as string)
-          return dateA < dateB ? 1 : -1
-        })
-        .map(({ attributes, html, slug }) => {
-          if (!html) return <div key={slug}>not found</div>
-          const DT = DateTime.fromISO(attributes.date as string)
-          return (
-            <div key={`post-list-${slug}`}>
-              <h1 className={styles.title}>
-                <Link
-                  href={slug}
-                  className="text-black no-underline transition-colors hover:text-linkHoverRed"
-                >
-                  {attributes.title}
-                </Link>
-              </h1>
-              <sub>{DT.toLocaleString(DateTime.DATE_MED)}</sub>
-              <article
-                dangerouslySetInnerHTML={{ __html: html }}
-                className={styles.article}
-              />
-            </div>
-          )
-        })}
+      {posts.map(({ attributes, html, slug }) => {
+        if (!html) return <div key={slug}>not found</div>
+        const DT = DateTime.fromISO(attributes.date)
+        return (
+          <div key={`post-list-${slug}`}>
+            <h1 className={styles.title}>
+              <Link
+                href={slug}
+                className="hover:text-linkHoverRed text-black no-underline transition-colors"
+              >
+                {attributes.title}
+              </Link>
+            </h1>
+            <sub>{DT.toLocaleString(DateTime.DATE_MED)}</sub>
+            <article
+              dangerouslySetInnerHTML={{ __html: html }}
+              className={styles.article}
+            />
+          </div>
+        )
+      })}
     </>
   </Layout>
 )
 
 export default Index
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   await runBuildJobs()
-  let posts = (await getBlogPostsData()).map((post) => ({
-    ...post,
-    attributes: {
-      ...post.attributes,
-      date: post.attributes.date
-        ? new Date(post.attributes.date).toISOString()
-        : null,
-    },
-  }))
-
+  const posts = sortPostsNewestFirst(await getBlogPostsData())
   return { props: { posts } }
 }

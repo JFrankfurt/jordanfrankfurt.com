@@ -15,48 +15,64 @@
   "main": "",
   "scripts": {
     "build": "next build",
-    "lint": "next lint",
+    "lint": "eslint .",
     "start": "next start",
     "dev": "next",
     "test": "vitest run",
     "test:watch": "vitest",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "prepare": "husky"
+    "prepare": "husky",
+    "sync:strava": "tsx scripts/sync-strava.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@headlessui/react": "^2.0.4",
-    "feed": "^4.2.2",
+    "feed": "^6.0.0",
     "gray-matter": "^4.0.3",
     "image-size": "^2.0.2",
     "luxon": "^3.4.4",
-    "next": "^16.2.2",
-    "node-fetch": "^3.3.2",
-    "polished": "^4.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "react-icons": "^5.0.1",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "sharp": "^0.33.2"
+    "sharp": "^0.35.5",
+    "yaml": "^2.9.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/luxon": "^3.4.2",
-    "@types/node": "^20.11.25",
-    "@types/react": "^18.2.64",
-    "@vitest/coverage-v8": "^4.0.18",
-    "autoprefixer": "^10.4.19",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitest/coverage-v8": "^5.0.3",
     "eslint": "^9.39.4",
-    "eslint-config-next": "^16.2.2",
+    "eslint-config-next": "^16.3.8",
+    "fast-glob": "file:tooling/next-root-glob",
     "husky": "^9.1.7",
-    "lint-staged": "^16.4.0",
-    "oxfmt": "^0.43.0",
+    "lint-staged": "^17.6.0",
+    "oxfmt": "^0.72.0",
     "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^5.4.2",
-    "vitest": "^4.0.18"
+    "vitest": "^5.0.3"
+  },
+  "overrides": {
+    "@next/eslint-plugin-next": {
+      "fast-glob": "$fast-glob"
+    },
+    "gray-matter": {
+      "js-yaml": {
+        "argparse": "^2.0.1"
+      }
+    }
   },
   "lint-staged": {
     "*": "oxfmt --no-error-on-unmatched-pattern"
+  },
+  "engines": {
+    "node": ">=24.21.0 <25"
   }
 }

@@ -213,7 +213,7 @@ export const sections: CategorySection[] = [
     rows: [
       {
         domain: '40-yard dash',
-        current: '5.6 sec',
+        current: '5.0 sec',
         goal: '4.8 sec',
         status: 'Active',
       },
